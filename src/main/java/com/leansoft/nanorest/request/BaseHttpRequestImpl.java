@@ -62,8 +62,10 @@ public abstract class BaseHttpRequestImpl<T> implements HttpRequest {
         final ResponseStatus status = client.getResponseStatus();
         ALog.d(TAG, status.toString());
         if (status.getStatusCode() < 200 || status.getStatusCode() >= 300) {
-            handler.handleError(status);
-            return;
+        	if (!isXmlResponse(client.getResponse())) { // if response is xml, ignore http error
+        		handler.handleError(status);
+        		return;
+        	}
         }
 
         try {
@@ -75,6 +77,11 @@ public abstract class BaseHttpRequestImpl<T> implements HttpRequest {
             handler.handleError(responseStatus);
         }
 
+    }
+    
+    private boolean isXmlResponse(String response) {
+    	if (response == null) return false;
+    	return response.startsWith("<?xml");
     }
 
     @Override
