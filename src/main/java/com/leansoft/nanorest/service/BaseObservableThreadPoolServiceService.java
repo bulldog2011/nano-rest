@@ -2,7 +2,7 @@ package com.leansoft.nanorest.service;
 
 import java.util.concurrent.TimeUnit;
 
-import com.leansoft.nanorest.HttpRequest;
+import com.leansoft.nanorest.RequestProcessor;
 import com.leansoft.nanorest.domain.DownloadPriority;
 import com.leansoft.nanorest.logger.ALog;
 
@@ -64,12 +64,12 @@ public abstract class BaseObservableThreadPoolServiceService extends BaseThreadP
     class WorkerThread implements Runnable, WorkerPriority {
 
         private final DownloadPriority downloadPriority;
-        private final HttpRequest request;
+        private final RequestProcessor requestProcessor;
 
-        public WorkerThread(final DownloadPriority downloadPriority, final HttpRequest request) {
+        public WorkerThread(final DownloadPriority downloadPriority, final RequestProcessor requestProcessor) {
             super();
             this.downloadPriority = downloadPriority;
-            this.request = request;
+            this.requestProcessor = requestProcessor;
         }
 
         /** @return the priority */
@@ -81,7 +81,7 @@ public abstract class BaseObservableThreadPoolServiceService extends BaseThreadP
         @Override
         public void run() {
             observer.registerRunnable(this);
-            request.execute();
+            requestProcessor.invoke();
             observer.unregisterRunnable(this);
         }
     }

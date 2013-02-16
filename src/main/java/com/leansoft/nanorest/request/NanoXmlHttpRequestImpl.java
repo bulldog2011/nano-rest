@@ -3,15 +3,14 @@ package com.leansoft.nanorest.request;
 import com.leansoft.nano.IWriter;
 import com.leansoft.nano.NanoFactory;
 import com.leansoft.nanorest.callback.HttpCallback;
-import com.leansoft.nanorest.client.Rest;
+import com.leansoft.nanorest.client.RestClient;
 import com.leansoft.nanorest.client.StringBodyRestClient;
 import com.leansoft.nanorest.client.BaseRestClient.RequestMethod;
-import com.leansoft.nanorest.exception.HttpException;
 import com.leansoft.nanorest.exception.MarshallException;
 import com.leansoft.nanorest.logger.ALog;
 import com.leansoft.nanorest.parser.NanoXmlResponseParser;
 
-public abstract class NanoXmlHttpRequestImpl<T> extends BaseHttpRequestImpl<T>  {
+public abstract class NanoXmlHttpRequestImpl<T> extends BaseRequestProcessor<T>  {
 	
     private final StringBodyRestClient client;
 
@@ -30,16 +29,12 @@ public abstract class NanoXmlHttpRequestImpl<T> extends BaseHttpRequestImpl<T>  
         client.setRequestMethod(RequestMethod.POST);
 	}
 	
-    @Override
-    protected void prepareAndExecuteRequest() throws HttpException {
-        prepareParams();
-        
-        String requestXml = marshallRequestObject();
-        ALog.d(TAG, "String body" + requestXml);
-        client.setBody(requestXml);
-        
-        client.execute();
-    }
+	@Override
+	protected void prepareRequest() {
+      String requestXml = marshallRequestObject();
+      ALog.d(TAG, "String body" + requestXml);
+      client.setBody(requestXml);
+	}
     
     private String marshallRequestObject() {
 		String requestXml;
@@ -52,7 +47,7 @@ public abstract class NanoXmlHttpRequestImpl<T> extends BaseHttpRequestImpl<T>  
     }
 
     @Override
-    public Rest getClient() {
+    public RestClient getRestClient() {
         return client;
     }
     

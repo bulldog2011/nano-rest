@@ -77,11 +77,11 @@ public class HttpRequestStore {
         return getRequest(id);
     }
 
-    public Integer launchServiceIntent(final HttpRequest block) {
+    public Integer launchServiceIntent(final RequestProcessor block) {
         return launchServiceIntent(block, null);
     }
 
-    public Integer launchServiceIntent(final HttpRequest block, RequestOptions options) {
+    public Integer launchServiceIntent(final RequestProcessor block, RequestOptions options) {
         if (executorServiceClass == null) {
             throw new RuntimeException("Initialize the Executor service class in a class extending application");
         }

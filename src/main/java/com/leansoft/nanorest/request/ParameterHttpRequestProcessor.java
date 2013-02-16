@@ -3,16 +3,15 @@ package com.leansoft.nanorest.request;
 import com.leansoft.nanorest.callback.HttpCallback;
 import com.leansoft.nanorest.client.BaseRestClient.RequestMethod;
 import com.leansoft.nanorest.client.ParametersRestClient;
-import com.leansoft.nanorest.client.Rest;
-import com.leansoft.nanorest.exception.HttpException;
+import com.leansoft.nanorest.client.RestClient;
 import com.leansoft.nanorest.parser.HttpResponseParser;
 
-public abstract class ParameterHttpRequestImpl<T> extends BaseHttpRequestImpl<T> {
+public abstract class ParameterHttpRequestProcessor<T> extends BaseRequestProcessor<T> {
 
-    public static final String TAG = ParameterHttpRequestImpl.class.getSimpleName();
+    public static final String TAG = ParameterHttpRequestProcessor.class.getSimpleName();
     protected ParametersRestClient client;
 
-    public ParameterHttpRequestImpl(
+    public ParameterHttpRequestProcessor(
             final RequestMethod requestMethod,
             final HttpResponseParser<T> parser,
             final HttpCallback<T> callback) {
@@ -22,13 +21,7 @@ public abstract class ParameterHttpRequestImpl<T> extends BaseHttpRequestImpl<T>
     }
 
     @Override
-    protected void prepareAndExecuteRequest() throws HttpException {
-        prepareParams();
-        client.execute();
-    }
-
-    @Override
-    public Rest getClient() {
+    public RestClient getRestClient() {
         return client;
     }
 

@@ -1,16 +1,16 @@
 package com.leansoft.nanorest.domain;
 
-import com.leansoft.nanorest.HttpRequest;
+import com.leansoft.nanorest.RequestProcessor;
 
 
 public class RequestWrapper {
 
     public static final String TAG = RequestWrapper.class.getSimpleName();
 
-    private final HttpRequest request;
+    private final RequestProcessor request;
     private final RequestOptions options;
 
-    public RequestWrapper(HttpRequest request, RequestOptions options) {
+    public RequestWrapper(RequestProcessor request, RequestOptions options) {
         super();
         this.request = request;
         if (options != null) {
@@ -20,7 +20,7 @@ public class RequestWrapper {
         }
     }
 
-    public HttpRequest getRequest() {
+    public RequestProcessor getRequest() {
         return request;
     }
 

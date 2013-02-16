@@ -8,22 +8,28 @@ import java.util.ArrayList;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
+import org.apache.http.HttpVersion;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.methods.HttpUriRequest;
+import org.apache.http.conn.scheme.PlainSocketFactory;
+import org.apache.http.conn.scheme.Scheme;
+import org.apache.http.conn.scheme.SchemeRegistry;
+import org.apache.http.conn.ssl.SSLSocketFactory;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.params.BasicHttpParams;
 import org.apache.http.params.HttpConnectionParams;
 import org.apache.http.params.HttpParams;
+import org.apache.http.params.HttpProtocolParams;
 
 import com.leansoft.nanorest.auth.AuthenticationProvider;
-import com.leansoft.nanorest.auth.TokenAuthenticationProvider;
 import com.leansoft.nanorest.domain.ResponseStatus;
 
 import android.text.TextUtils;
 import android.util.Log;
 
-public abstract class BaseRestClient implements Rest {
+public abstract class BaseRestClient implements RestClient {
 
 	public enum RequestMethod {
 		GET, POST, PUT, DELETE
@@ -33,7 +39,7 @@ public abstract class BaseRestClient implements Rest {
 			.getSimpleName();
 
 
-	private static DefaultHttpClient httpClient;
+	private static DefaultHttpClient innerHttpClient;
 	private RequestMethod requestMethod = RequestMethod.GET;
 	
 	private final ArrayList<NameValuePair> headers;
@@ -41,14 +47,14 @@ public abstract class BaseRestClient implements Rest {
 
 	private String url;
 
-	ResponseStatus responseStatus = new ResponseStatus();
+	private ResponseStatus responseStatus = new ResponseStatus();
 	private String response;
 
-	int connectionTimeout = 8000;
-	int socketTimeout = 12000;
+	private int connectionTimeout = 8000;
+	private int socketTimeout = 12000;
 
 	private AuthenticationProvider authProvider;
-	private static AuthenticationProvider authenticationProvider;
+	private static AuthenticationProvider defaultAuthProvider;
 
 	public BaseRestClient() {
 		headers = new ArrayList<NameValuePair>();
@@ -136,7 +142,7 @@ public abstract class BaseRestClient implements Rest {
 
 	public static void setDefaultAuthenticationProvider(
 			AuthenticationProvider provider) {
-		BaseRestClient.authenticationProvider = provider;
+		BaseRestClient.defaultAuthProvider = provider;
 	}
 
 	private void authenticateRequest() {
@@ -144,11 +150,11 @@ public abstract class BaseRestClient implements Rest {
 			authProvider.authenticateRequest(this);
 			return;
 		}
-		if (authenticationProvider != null) {
-			authenticationProvider.authenticateRequest(this);
+		if (defaultAuthProvider != null) {
+			defaultAuthProvider.authenticateRequest(this);
 			return;
 		}
-		TokenAuthenticationProvider.getInstance().authenticateRequest(this);
+		//TokenAuthenticationProvider.getInstance().authenticateRequest(this);
 	}
 
 	@Override
@@ -168,12 +174,12 @@ public abstract class BaseRestClient implements Rest {
 		// in milliseconds which is the timeout for waiting for data.
 		HttpConnectionParams.setSoTimeout(httpParameters, socketTimeout);
 
-		getHttpClient().setParams(httpParameters);
+		getInnerHttpClient().setParams(httpParameters);
 		HttpResponse httpResponse;
 		InputStream instream = null;
 		try {
 
-			httpResponse = getHttpClient().execute(request);
+			httpResponse = getInnerHttpClient().execute(request);
 
 			responseStatus.setStatusCode(httpResponse.getStatusLine()
 					.getStatusCode());
@@ -183,12 +189,9 @@ public abstract class BaseRestClient implements Rest {
 			final HttpEntity entity = httpResponse.getEntity();
 
 			if (entity != null) {
-
 				instream = entity.getContent();
 				response = StreamUtil.convertStreamToString(instream);
 				Log.d(TAG, "URL: " + url + " RESPONSE: " + response);
-				// Closing the input stream will trigger connection release
-				instream.close();
 			}
 
 		} catch (final IOException e) {
@@ -200,19 +203,40 @@ public abstract class BaseRestClient implements Rest {
 			request.abort();
 			throw ex;
 		} finally {
-			// Closing the input stream will trigger connection release
-			StreamUtil.silentClose(instream);
+			if (instream != null) {
+				// Closing the input stream will trigger connection release
+				StreamUtil.silentClose(instream);
+			}
 		}
 	}
 
-	public static DefaultHttpClient getHttpClient() {
-		if (httpClient == null) {
-			httpClient = StreamUtil.generateClient();
+	public static DefaultHttpClient getInnerHttpClient() {
+		if (innerHttpClient == null) {
+			innerHttpClient = buildHttpClient();
 		}
-		return httpClient;
+		return innerHttpClient;
 	}
+	
 
-	public static String generateParametersString(
+    private static DefaultHttpClient buildHttpClient() {
+        final HttpParams params = new BasicHttpParams();
+        HttpConnectionParams.setConnectionTimeout(params, 20 * 1000);
+        HttpProtocolParams.setVersion(params, HttpVersion.HTTP_1_1);
+
+        // Create and initialize scheme registry
+        final SchemeRegistry schemeRegistry = new SchemeRegistry();
+        schemeRegistry.register(new Scheme("http", PlainSocketFactory.getSocketFactory(), 80));
+        schemeRegistry.register(new Scheme("https", SSLSocketFactory.getSocketFactory(), 443));
+
+        // Create a HttpClient with the ThreadSafeClientConnManager.
+        // This connection manager must be used if more than one thread will
+        // be using the HttpClient.
+        final ThreadSafeClientConnManager cm = new ThreadSafeClientConnManager(params, schemeRegistry);
+        final DefaultHttpClient httpClient = new DefaultHttpClient(cm, params);
+        return httpClient;
+    }
+
+	static String generateParametersString(
 			final ArrayList<NameValuePair> params)
 			throws UnsupportedEncodingException {
 		// add parameters

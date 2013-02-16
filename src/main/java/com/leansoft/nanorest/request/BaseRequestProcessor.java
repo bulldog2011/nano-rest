@@ -1,9 +1,9 @@
 package com.leansoft.nanorest.request;
 
-import com.leansoft.nanorest.HttpRequest;
+import com.leansoft.nanorest.RequestProcessor;
 import com.leansoft.nanorest.HttpRequestStore;
 import com.leansoft.nanorest.callback.HttpCallback;
-import com.leansoft.nanorest.client.Rest;
+import com.leansoft.nanorest.client.RestClient;
 import com.leansoft.nanorest.domain.ResponseStatus;
 import com.leansoft.nanorest.exception.HttpException;
 import com.leansoft.nanorest.handler.ResponseHandler;
@@ -13,21 +13,21 @@ import com.leansoft.nanorest.parser.HttpResponseParser;
 
 import android.content.Context;
 
-public abstract class BaseHttpRequestImpl<T> implements HttpRequest {
+public abstract class BaseRequestProcessor<T> implements RequestProcessor {
 
-    public static final String TAG = BaseHttpRequestImpl.class.getSimpleName();
+    public static final String TAG = BaseRequestProcessor.class.getSimpleName();
 
-    private final HttpResponseParser<T> parser;
-    private ResponseHandler<T> handler;
-    private final HttpCallback<T> callback;
+    final HttpResponseParser<T> parser;
+    ResponseHandler<T> handler;
+    final HttpCallback<T> callback;
 
-    public BaseHttpRequestImpl(final HttpResponseParser<T> parser, final HttpCallback<T> callback) {
+    public BaseRequestProcessor(final HttpResponseParser<T> parser, final HttpCallback<T> callback) {
         super();
         this.parser = parser;
         this.callback = callback;
     }
 
-    public abstract Rest getClient();
+    public abstract RestClient getRestClient();
 
 
     protected HttpCallback<T> getCallback() {
@@ -42,59 +42,63 @@ public abstract class BaseHttpRequestImpl<T> implements HttpRequest {
         return parser;
     }
 
-    protected void runRequest() {
-
-        if (handler == null) {
-            handler = new UIThreadResponseHandler<T>(callback);
-        }
-
-        final Rest client = getClient();
-        try {
-            prepareAndExecuteRequest();
-            // Execute the HTTP request
-        } catch (final Exception e) {
+    @Override
+    public void invokeAsync(Context context) {
+        HttpRequestStore.getInstance(context).launchServiceIntent(this);
+    }
+    
+    @Override
+    public void invoke() {
+    	// step 1
+    	this.setupResponseHandler();
+    	
+    	// step 2
+    	this.prepareRequest();
+    	
+    	// step 3
+    	try {
+			this.getRestClient().execute();
+		} catch (HttpException e) {
             ResponseStatus responseStatus = ResponseStatus.getConnectionErrorStatus();
             ALog.d(TAG, responseStatus.toString(), e);
             handler.handleError(responseStatus);
             return;
+		}
+    	
+    	// step 4
+    	this.handleResponse();
+    }
+    
+    protected void setupResponseHandler() {
+        if (handler == null) {
+            handler = new UIThreadResponseHandler<T>(callback);
         }
-
+    }
+    
+    protected abstract void prepareRequest();
+    
+    protected void handleResponse() {
+    	
+        final RestClient client = getRestClient();
         final ResponseStatus status = client.getResponseStatus();
         ALog.d(TAG, status.toString());
         if (status.getStatusCode() < 200 || status.getStatusCode() >= 300) {
-        	if (!isXmlResponse(client.getResponse())) { // if response is xml, ignore http error
-        		handler.handleError(status);
-        		return;
-        	}
+    		handler.handleError(status);
+    		return;
+        } else {
+        	parseHttpResponse(client.getResponse());
         }
-
+    	
+    }
+    
+    protected void parseHttpResponse(String response) {
         try {
-            final T responseData = parser.parse(client.getResponse());
+            final T responseData = parser.parse(response);
             handler.handleSuccess(responseData);
         } catch (final Exception e) {
             ResponseStatus responseStatus = ResponseStatus.getParseErrorStatus();
             ALog.d(TAG, responseStatus.toString(), e);
             handler.handleError(responseStatus);
         }
-
     }
-    
-    private boolean isXmlResponse(String response) {
-    	if (response == null) return false;
-    	return response.startsWith("<?xml");
-    }
-
-    @Override
-    public void executeAsync(Context context) {
-        HttpRequestStore.getInstance(context).launchServiceIntent(this);
-    }
-    
-    @Override
-    public void execute() {
-    	this.runRequest();
-    }
-
-    protected abstract void prepareAndExecuteRequest() throws HttpException;
-
-    protected abstract void prepareParams();
 }

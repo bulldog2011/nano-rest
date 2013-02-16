@@ -2,18 +2,17 @@ package com.leansoft.nanorest.request;
 
 import com.leansoft.nanorest.callback.HttpCallback;
 import com.leansoft.nanorest.client.BaseRestClient.RequestMethod;
-import com.leansoft.nanorest.client.Rest;
+import com.leansoft.nanorest.client.RestClient;
 import com.leansoft.nanorest.client.StringBodyRestClient;
-import com.leansoft.nanorest.exception.HttpException;
 import com.leansoft.nanorest.logger.ALog;
 import com.leansoft.nanorest.parser.HttpResponseParser;
 
-public abstract class StringBodyHttpRequestImpl<T> extends BaseHttpRequestImpl<T> {
+public abstract class StringBodyHttpRequestProcessor<T> extends BaseRequestProcessor<T> {
 
-    public static final String TAG = StringBodyHttpRequestImpl.class.getSimpleName();
+    public static final String TAG = StringBodyHttpRequestProcessor.class.getSimpleName();
     private final StringBodyRestClient client;
 
-    public StringBodyHttpRequestImpl(
+    public StringBodyHttpRequestProcessor(
     		RequestMethod requestMethod,
             final HttpResponseParser<T> parser,
             final HttpCallback<T> callback) {
@@ -22,19 +21,13 @@ public abstract class StringBodyHttpRequestImpl<T> extends BaseHttpRequestImpl<T
         client.setRequestMethod(requestMethod);
     }
 
-    @Override
-    protected void prepareAndExecuteRequest() throws HttpException {
-        prepareParams();
-        client.execute();
-    }
-
     public void setBody(final String body) {
         ALog.d(TAG, "String body" + body);
         client.setBody(body);
     }
 
     @Override
-    public Rest getClient() {
+    public RestClient getRestClient() {
         return client;
     }
 }
