@@ -10,14 +10,14 @@ import com.leansoft.nanorest.exception.MarshallException;
 import com.leansoft.nanorest.logger.ALog;
 import com.leansoft.nanorest.parser.NanoXmlResponseParser;
 
-public abstract class NanoXmlHttpRequestImpl<T> extends BaseRequestProcessor<T>  {
+public abstract class NanoXmlRequestProcessor<T> extends BaseRequestProcessor<T>  {
 	
     private final StringBodyRestClient client;
 
 	private IWriter xmlWriter = NanoFactory.getXMLWriter();
 	private Object requestObject;
 	
-	public NanoXmlHttpRequestImpl(
+	public NanoXmlRequestProcessor(
 			Object requestObject, 
 			Class<T> responseType,
 			HttpCallback<T> callback) {

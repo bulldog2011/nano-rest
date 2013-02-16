@@ -7,12 +7,12 @@ import com.leansoft.nanorest.client.StringBodyRestClient;
 import com.leansoft.nanorest.logger.ALog;
 import com.leansoft.nanorest.parser.HttpResponseParser;
 
-public abstract class StringBodyHttpRequestProcessor<T> extends BaseRequestProcessor<T> {
+public abstract class StringBodyRequestProcessor<T> extends BaseRequestProcessor<T> {
 
-    public static final String TAG = StringBodyHttpRequestProcessor.class.getSimpleName();
+    public static final String TAG = StringBodyRequestProcessor.class.getSimpleName();
     private final StringBodyRestClient client;
 
-    public StringBodyHttpRequestProcessor(
+    public StringBodyRequestProcessor(
     		RequestMethod requestMethod,
             final HttpResponseParser<T> parser,
             final HttpCallback<T> callback) {

@@ -6,12 +6,12 @@ import com.leansoft.nanorest.client.ParametersRestClient;
 import com.leansoft.nanorest.client.RestClient;
 import com.leansoft.nanorest.parser.HttpResponseParser;
 
-public abstract class ParameterHttpRequestProcessor<T> extends BaseRequestProcessor<T> {
+public abstract class ParameterRequestProcessor<T> extends BaseRequestProcessor<T> {
 
-    public static final String TAG = ParameterHttpRequestProcessor.class.getSimpleName();
+    public static final String TAG = ParameterRequestProcessor.class.getSimpleName();
     protected ParametersRestClient client;
 
-    public ParameterHttpRequestProcessor(
+    public ParameterRequestProcessor(
             final RequestMethod requestMethod,
             final HttpResponseParser<T> parser,
             final HttpCallback<T> callback) {
