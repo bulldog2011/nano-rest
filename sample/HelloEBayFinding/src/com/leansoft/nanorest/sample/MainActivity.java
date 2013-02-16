@@ -5,7 +5,7 @@ import com.ebay.marketplace.search.v1.services.AckValue;
 import com.ebay.marketplace.search.v1.services.FindItemsByKeywordsRequest;
 import com.ebay.marketplace.search.v1.services.FindItemsByKeywordsResponse;
 import com.ebay.marketplace.search.v1.services.PaginationInput;
-import com.leansoft.nanorest.HttpRequest;
+import com.leansoft.nanorest.RequestProcessor;
 import com.leansoft.nanorest.callback.HttpCallback;
 import com.leansoft.nanorest.domain.ResponseStatus;
 
@@ -40,11 +40,11 @@ public class MainActivity extends Activity {
 		        pi.setEntriesPerPage(1);
 		        request.setPaginationInput(pi);
 		        
-				HttpRequest httpRequest = FindingService.getFindItemsByKeywordsHttpRequest(
+				RequestProcessor requestProcessor = FindingService.getFindItemsByKeywordsHttpRequest(
 						request, 
 						new FindItemsByKeywordsCallback()
 						);
-				httpRequest.executeAsync(MainActivity.this.getApplicationContext());
+				requestProcessor.invokeAsync(MainActivity.this.getApplicationContext());
 			}
         	
         });

@@ -1,5 +1,7 @@
 package com.leansoft.nanorest.parser;
 
+import com.leansoft.nanorest.exception.ParseException;
+
 /**
  * The {@link HttpResponseParser} interface has the responsibility to parse XML or JSON responses from the
  * server.
@@ -14,7 +16,7 @@ public interface HttpResponseParser<T> {
      * 
      * @param responseBody The XML or JSON string needed for parsing.
      * @return instance of type T returned by the parser.
-     * @throws ParserException Thrown when various XML or JSON errors occur, such as missing attribute.
+     * @throws ParseException Thrown when various XML or JSON errors occur, such as missing attribute.
      */
-    public T parse(final String responseBody) throws Exception;
+    public T parse(final String responseBody) throws ParseException;
 }

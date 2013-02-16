@@ -34,8 +34,15 @@ public abstract class BaseRequestProcessor<T> implements RequestProcessor {
         return callback;
     }
 
-    public void setHandler(ResponseHandler<T> handler) {
+    public void setResponseHandler(ResponseHandler<T> handler) {
         this.handler = handler;
+    }
+    
+    public ResponseHandler<T> getResponseHandler() {
+    	if (handler == null) {
+    		handler = new UIThreadResponseHandler<T>(callback);
+    	}
+    	return this.handler;
     }
 
     protected HttpResponseParser<T> getParser() {
@@ -50,7 +57,7 @@ public abstract class BaseRequestProcessor<T> implements RequestProcessor {
     @Override
     public void invoke() {
     	// step 1
-    	this.setupResponseHandler();
+    	this.getResponseHandler();
     	
     	// step 2
     	this.prepareRequest();
@@ -67,12 +74,6 @@ public abstract class BaseRequestProcessor<T> implements RequestProcessor {
     	
     	// step 4
     	this.handleResponse();
-    }
-    
-    protected void setupResponseHandler() {
-        if (handler == null) {
-            handler = new UIThreadResponseHandler<T>(callback);
-        }
     }
     
     protected abstract void prepareRequest();

@@ -8,7 +8,7 @@ public class AppNameAuthenticationProvider implements AuthenticationProvider {
 
 	@Override
 	public void authenticateRequest(BaseRestClient client) {
-		client.addHeader(FindingConstants.X_EBAY_SOA_SECURITY_APPNAME, "ebaysjinternal1");
+		client.addHeader(FindingConstants.X_EBAY_SOA_SECURITY_APPNAME, "ebaysjinternal");
 	}
 
 }
