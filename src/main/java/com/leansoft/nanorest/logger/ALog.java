@@ -3,7 +3,7 @@ package com.leansoft.nanorest.logger;
 import android.util.Log;
 
 public class ALog {
-    private static String debugTag = "MyApplication";
+    private static String debugTag = "myApp";
     private static DebugLevel debugLevel = DebugLevel.VERBOSE;
 
     private ALog() {
@@ -38,6 +38,24 @@ public class ALog {
         }
         Log.v(tag, message);
     }
+    
+    
+	public static void debugLongMessage(final String tag, String msg) {
+        if (isDebuggable(DebugLevel.DEBUG) == false) {
+            return;
+        }
+		println(tag, msg);
+	}
+	
+	private static void println(final String tag, String msg) {
+		if (msg == null) return;
+	    int l = msg.length();
+	    int c = Log.println(Log.DEBUG, tag, msg);
+	    if (c < l) {
+	       println(tag, msg.substring(c+1));
+	    }
+	}
+    
 
     public static void d(final String message) {
         ALog.d(debugTag, message, null);

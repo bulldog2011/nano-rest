@@ -25,6 +25,7 @@ import org.apache.http.params.HttpProtocolParams;
 
 import com.leansoft.nanorest.auth.AuthenticationProvider;
 import com.leansoft.nanorest.domain.ResponseStatus;
+import com.leansoft.nanorest.logger.ALog;
 
 import android.text.TextUtils;
 import android.util.Log;
@@ -191,7 +192,9 @@ public abstract class BaseRestClient implements RestClient {
 			if (entity != null) {
 				instream = entity.getContent();
 				response = StreamUtil.convertStreamToString(instream);
-				Log.d(TAG, "URL: " + url + " RESPONSE: " + response);
+				ALog.d(TAG, "URL: " + url);
+				ALog.d(TAG, "RESPONSE:");
+				ALog.debugLongMessage(TAG, response);
 			}
 
 		} catch (final IOException e) {
