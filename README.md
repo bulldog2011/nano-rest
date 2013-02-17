@@ -15,15 +15,13 @@ By default authentication is handled by setting an OAuth token in the header, bu
 Note: The process of getting an oauth token from the server is not part of this library implementation and have to be set according to the specification for your webserivce.
 
 
-###Usage:
-Look at the demo projects and tutorials for details.
-
 ###Steps to setup the library
-1. Add nano-rest-with-dependencies.jar in the classpath of your project.
-2. Look into the project manifest and copy the definitions.
-3. (optional)Define a Class extending application and init the Authorization class.
+1. Add nano-rest-xxx-shaded.jar in the classpath of your project.  
+Download latest [0.5.0 snapshot release](https://github.com/bulldog2011/bulldog-repo/tree/master/repo/snapshots/com/leansoft/nano-rest/0.5.0-SNAPSHOT)  
+***Note:*** please use the shaded jar which includes Nano dependency, if not, you should add Nano jar reference by yourself.
+2. Look into the project manifest and copy the definitions below.
 
-###Manifest Declarations
+###Required Manifest Declarations
 ```
   <uses-permission android:name="android.permission.INTERNET" />
 

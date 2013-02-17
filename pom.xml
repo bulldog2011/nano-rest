@@ -86,13 +86,16 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-shade-plugin</artifactId>
+        <version>2.0</version>
         <executions>
           <execution>
             <phase>package</phase>
             <goals>
               <goal>shade</goal>
             </goals>
+            
             <configuration>
+                <shadedArtifactAttached>true</shadedArtifactAttached>
                 <artifactSet>
                     <excludes>
                         <exclude>net.sf.kxml:kxml2</exclude>
@@ -141,7 +144,7 @@
                 </executions>
             </plugin>
       
-            <plugin>
+            <!-- plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
                 <version>2.4</version>
@@ -159,7 +162,7 @@
 						</configuration>
 					</execution>
 				</executions>
-            </plugin>
+            </plugin-->
       
 	  <plugin>
 		  <groupId>org.apache.maven.plugins</groupId>
@@ -175,7 +178,11 @@
 	<repository>
 	  <id>github.release.repo</id>
 	  <url>https://raw.github.com/bulldog2011/bulldog-repo/master/repo/releases/</url>
-	</repository>      
+	</repository>    
+	<repository>
+	  <id>github.snapshot.repo</id>
+	  <url>https://raw.github.com/bulldog2011/bulldog-repo/master/repo/snapshots/</url>
+	</repository>    
   </repositories>  
   
 </project>
