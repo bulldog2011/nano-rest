@@ -19,8 +19,7 @@ public interface HttpCallback<T> {
     public void onSuccess(T responseData);
 
     /**
-     * This method shows that the callback has failed due to server issue, no connectivity or parser
-     * error
+     * This method shows that the callback has failed due to HTTP related issue
      * 
      * @param responseCode
      */
