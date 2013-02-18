@@ -2,7 +2,6 @@
 // DO NOT CHANGE!
 package com.ebay.marketplace.search.v1.services;
 
-import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 import java.util.List;
 
@@ -12,31 +11,29 @@ import java.util.List;
  * 
  */
 @RootElement(name = "findItemsAdvancedRequest", namespace = "http://www.ebay.com/marketplace/search/v1/services")
-public class FindItemsAdvancedRequest extends BaseFindingServiceRequest implements Serializable {
-
-    private static final long serialVersionUID = -1L;
+public class FindItemsAdvancedRequest extends BaseFindingServiceRequest  {
 
 	@Element
 	private String keywords;
-	
+    
 	@Element
 	private List<String> categoryId;
-	
+    
 	@Element
 	private List<ItemFilter> itemFilter;
-	
+    
 	@Element
 	private List<AspectFilter> aspectFilter;
-	
+    
 	@Element
 	private List<OutputSelectorType> outputSelector;
-	
+    
 	@Element
 	private Boolean descriptionSearch;
-	
+    
 	@Element
 	private List<DomainFilter> domainFilter;
-	
+    
     
 	/**
      * public getter

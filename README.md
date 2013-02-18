@@ -18,7 +18,7 @@ Note: The process of getting an oauth token from the server is not part of this 
 ###Steps to setup the library
 1. Add nano-rest-xxx-shaded.jar in the classpath of your project.  
 Download latest [0.5.0 snapshot release](https://github.com/bulldog2011/bulldog-repo/tree/master/repo/snapshots/com/leansoft/nano-rest/0.5.0-SNAPSHOT)  
-***Note:*** please use the shaded jar which includes Nano dependency, if not, you should add Nano jar reference by yourself.
+***Note:*** please use the shaded jar which includes [Nano](https://github.com/bulldog2011/nano) dependency, if not, you should add Nano jar reference by yourself.
 2. Look into the project manifest and copy the definitions below.
 
 ###Required Manifest Declarations
@@ -33,3 +33,6 @@ Download latest [0.5.0 snapshot release](https://github.com/bulldog2011/bulldog-
   </application>
 
 ```
+
+###Docs
+1. [Schema Driven Web Serivce Client Development on Android, Part 1 : Hello eBay Finding](http://bulldog2011.github.com/blog/2013/02/17/schema-driven-on-android-part-1-hello-ebay-finding/)

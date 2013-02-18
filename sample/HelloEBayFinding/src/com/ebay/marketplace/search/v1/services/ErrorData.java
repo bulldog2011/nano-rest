@@ -2,7 +2,6 @@
 // DO NOT CHANGE!
 package com.ebay.marketplace.search.v1.services;
 
-import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 import java.util.List;
 
@@ -11,34 +10,32 @@ import java.util.List;
  * A container for error details.
  * 
  */
-public class ErrorData implements Serializable {
-
-    private static final long serialVersionUID = -1L;
+public class ErrorData   {
 
 	@Element
 	private long errorId;
-	
+    
 	@Element
 	private String domain;
-	
+    
 	@Element
 	private ErrorSeverity severity;
-	
+    
 	@Element
 	private ErrorCategory category;
-	
+    
 	@Element
 	private String message;
-	
+    
 	@Element
 	private String subdomain;
-	
+    
 	@Element
 	private String exceptionId;
-	
+    
 	@Element
 	private List<ErrorParameter> parameter;
-	
+    
     
 	/**
      * public getter

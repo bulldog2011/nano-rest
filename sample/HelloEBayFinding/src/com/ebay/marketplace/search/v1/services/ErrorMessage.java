@@ -2,7 +2,6 @@
 // DO NOT CHANGE!
 package com.ebay.marketplace.search.v1.services;
 
-import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 import java.util.List;
 
@@ -13,13 +12,11 @@ import java.util.List;
  * not reported here, but are instead reported as part of a SOAP fault.
  * 
  */
-public class ErrorMessage implements Serializable {
-
-    private static final long serialVersionUID = -1L;
+public class ErrorMessage   {
 
 	@Element
 	private List<ErrorData> error;
-	
+    
     
 	/**
      * public getter

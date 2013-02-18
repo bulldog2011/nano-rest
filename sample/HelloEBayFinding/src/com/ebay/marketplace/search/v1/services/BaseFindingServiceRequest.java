@@ -2,7 +2,6 @@
 // DO NOT CHANGE!
 package com.ebay.marketplace.search.v1.services;
 
-import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 
 /**
@@ -10,13 +9,11 @@ import com.leansoft.nano.annotation.*;
  * This is the base request container for all Finding Service operations.
  * 
  */
-public abstract class BaseFindingServiceRequest extends BestMatchFindingServiceRequest implements Serializable {
-
-    private static final long serialVersionUID = -1L;
+public abstract class BaseFindingServiceRequest extends BestMatchFindingServiceRequest  {
 
 	@Element
 	private SortOrderType sortOrder;
-	
+    
     
 	/**
      * public getter

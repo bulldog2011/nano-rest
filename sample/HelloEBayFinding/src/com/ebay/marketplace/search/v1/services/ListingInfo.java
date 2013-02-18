@@ -2,8 +2,8 @@
 // DO NOT CHANGE!
 package com.ebay.marketplace.search.v1.services;
 
-import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
+import java.util.List;
 import java.util.Date;
 
 /**
@@ -11,37 +11,37 @@ import java.util.Date;
  * Contains information specific to the item listing.
  * 
  */
-public class ListingInfo implements Serializable {
-
-    private static final long serialVersionUID = -1L;
+public class ListingInfo   {
 
 	@Element
 	private Boolean bestOfferEnabled;
-	
+    
 	@Element
 	private Boolean buyItNowAvailable;
-	
+    
 	@Element
 	private Amount buyItNowPrice;
-	
+    
 	@Element
 	private Amount convertedBuyItNowPrice;
-	
+    
 	@Element
 	private Date startTime;
-	
+    
 	@Element
 	private Date endTime;
-	
+    
 	@Element
 	private String listingType;
-	
+    
 	@Element
 	private Boolean gift;
-	
+    
 	@Element
 	private String delimiter;
-	
+    
+	private List<Object> any;
+    
     
 	/**
      * public getter
@@ -487,6 +487,23 @@ public class ListingInfo implements Serializable {
 	 */
 	public void setDelimiter(String delimiter) {
 	    this.delimiter = delimiter;
+	}
+	/**
+	 * public getter
+	 *
+     * @returns java.util.List<java.lang.Object>
+	 */
+	public List<Object> getAny() {
+	    return this.any;
+	}
+	
+	/**
+	 * public setter
+	 *
+     * @param java.util.List<java.lang.Object>
+	 */
+	public void setAny(List<Object> any) {
+	    this.any = any;
 	}
 
 }

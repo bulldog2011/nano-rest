@@ -2,31 +2,31 @@
 // DO NOT CHANGE!
 package com.ebay.marketplace.search.v1.services;
 
-import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 import java.math.BigInteger;
+import java.util.List;
 
 /**
  * 
  * Reserved for future use.
  * 
  */
-public class ExtensionType implements Serializable {
-
-    private static final long serialVersionUID = -1L;
+public class ExtensionType   {
 
 	@Element
 	private BigInteger id;
-	
+    
 	@Element
 	private String version;
-	
+    
 	@Element
 	private String contentType;
-	
+    
 	@Element
 	private String value;
-	
+    
+	private List<Object> any;
+    
     
 	/**
      * public getter
@@ -127,6 +127,23 @@ public class ExtensionType implements Serializable {
 	 */
 	public void setValue(String value) {
 	    this.value = value;
+	}
+	/**
+	 * public getter
+	 *
+     * @returns java.util.List<java.lang.Object>
+	 */
+	public List<Object> getAny() {
+	    return this.any;
+	}
+	
+	/**
+	 * public setter
+	 *
+     * @param java.util.List<java.lang.Object>
+	 */
+	public void setAny(List<Object> any) {
+	    this.any = any;
 	}
 
 }

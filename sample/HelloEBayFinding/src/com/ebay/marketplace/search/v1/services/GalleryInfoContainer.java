@@ -2,7 +2,6 @@
 // DO NOT CHANGE!
 package com.ebay.marketplace.search.v1.services;
 
-import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 import java.util.List;
 
@@ -11,13 +10,11 @@ import java.util.List;
  * Container for URLs of thumbnail images for an item.
  * 
  */
-public class GalleryInfoContainer implements Serializable {
-
-    private static final long serialVersionUID = -1L;
+public class GalleryInfoContainer   {
 
 	@Element
 	private List<GalleryURL> galleryURL;
-	
+    
     
 	/**
      * public getter

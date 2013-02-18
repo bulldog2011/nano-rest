@@ -2,7 +2,6 @@
 // DO NOT CHANGE!
 package com.ebay.marketplace.search.v1.services;
 
-import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 import java.util.List;
 
@@ -11,22 +10,20 @@ import java.util.List;
  * Base response container for all Finding Service operations.
  * 
  */
-public abstract class BaseFindingServiceResponse extends BaseServiceResponse implements Serializable {
-
-    private static final long serialVersionUID = -1L;
+public abstract class BaseFindingServiceResponse extends BaseServiceResponse  {
 
 	@Element
 	private SearchResult searchResult;
-	
+    
 	@Element
 	private PaginationOutput paginationOutput;
-	
+    
 	@Element
 	private String itemSearchURL;
-	
+    
 	@Element
 	private List<ExtensionType> extension;
-	
+    
     
 	/**
      * public getter

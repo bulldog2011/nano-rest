@@ -2,7 +2,6 @@
 // DO NOT CHANGE!
 package com.ebay.marketplace.search.v1.services;
 
-import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 import java.util.List;
 
@@ -12,19 +11,19 @@ import java.util.List;
  * returned in individual item containers.
  * 
  */
-public class SearchResult implements Serializable {
-
-    private static final long serialVersionUID = -1L;
+public class SearchResult   {
 
 	@Element
 	private List<SearchItem> item;
-	
+    
 	@Element
 	private String delimiter;
-	
+    
+	private List<Object> any;
+    
 	@Attribute  
 	private int count;
-	
+    
     
 	/**
      * public getter
@@ -67,6 +66,23 @@ public class SearchResult implements Serializable {
 	 */
 	public void setDelimiter(String delimiter) {
 	    this.delimiter = delimiter;
+	}
+	/**
+	 * public getter
+	 *
+     * @returns java.util.List<java.lang.Object>
+	 */
+	public List<Object> getAny() {
+	    return this.any;
+	}
+	
+	/**
+	 * public setter
+	 *
+     * @param java.util.List<java.lang.Object>
+	 */
+	public void setAny(List<Object> any) {
+	    this.any = any;
 	}
 	/**
 	 * public getter

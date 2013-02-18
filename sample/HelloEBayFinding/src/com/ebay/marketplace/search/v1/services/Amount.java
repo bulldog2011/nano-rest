@@ -2,7 +2,6 @@
 // DO NOT CHANGE!
 package com.ebay.marketplace.search.v1.services;
 
-import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 
 /**
@@ -10,16 +9,14 @@ import com.leansoft.nano.annotation.*;
  * Monetary amount.
  * 
  */
-public class Amount implements Serializable {
-
-    private static final long serialVersionUID = -1L;
+public class Amount   {
 
 	@Value
 	private double value;
-	
+    
 	@Attribute  
 	private String currencyId;
-	
+    
     
 	/**
 	 * public getter

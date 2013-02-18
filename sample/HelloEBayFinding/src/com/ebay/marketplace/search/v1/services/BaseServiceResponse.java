@@ -2,7 +2,6 @@
 // DO NOT CHANGE!
 package com.ebay.marketplace.search.v1.services;
 
-import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 import java.util.Date;
 
@@ -12,22 +11,20 @@ import java.util.Date;
  * information associated with the request.
  * 
  */
-public abstract class BaseServiceResponse implements Serializable {
-
-    private static final long serialVersionUID = -1L;
+public abstract class BaseServiceResponse   {
 
 	@Element
 	private AckValue ack;
-	
+    
 	@Element
 	private ErrorMessage errorMessage;
-	
+    
 	@Element
 	private String version;
-	
+    
 	@Element
 	private Date timestamp;
-	
+    
     
 	/**
      * public getter

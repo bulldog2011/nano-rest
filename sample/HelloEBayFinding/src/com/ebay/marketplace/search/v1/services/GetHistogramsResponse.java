@@ -2,7 +2,6 @@
 // DO NOT CHANGE!
 package com.ebay.marketplace.search.v1.services;
 
-import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 import java.util.List;
 
@@ -12,22 +11,20 @@ import java.util.List;
  * 
  */
 @RootElement(name = "getHistogramsResponse", namespace = "http://www.ebay.com/marketplace/search/v1/services")
-public class GetHistogramsResponse extends BaseServiceResponse implements Serializable {
-
-    private static final long serialVersionUID = -1L;
+public class GetHistogramsResponse extends BaseServiceResponse  {
 
 	@Element
 	private CategoryHistogramContainer categoryHistogramContainer;
-	
+    
 	@Element
 	private AspectHistogramContainer aspectHistogramContainer;
-	
+    
 	@Element
 	private ConditionHistogramContainer conditionHistogramContainer;
-	
+    
 	@Element
 	private List<ExtensionType> extension;
-	
+    
     
 	/**
      * public getter

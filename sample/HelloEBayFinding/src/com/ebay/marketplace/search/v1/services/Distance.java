@@ -2,7 +2,6 @@
 // DO NOT CHANGE!
 package com.ebay.marketplace.search.v1.services;
 
-import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 
 /**
@@ -10,16 +9,14 @@ import com.leansoft.nano.annotation.*;
  * Distance, used for local searches.
  * 
  */
-public class Distance implements Serializable {
-
-    private static final long serialVersionUID = -1L;
+public class Distance   {
 
 	@Value
 	private double value;
-	
+    
 	@Attribute  
 	private String unit;
-	
+    
     
 	/**
 	 * public getter
