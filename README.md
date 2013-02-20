@@ -37,3 +37,9 @@ Download latest [0.5.0 snapshot release](https://github.com/bulldog2011/bulldog-
 ###Docs
 1. [Schema Driven Web Serivce Client Development on Android, Part 1 : Hello eBay Finding](http://bulldog2011.github.com/blog/2013/02/17/schema-driven-on-android-part-1-hello-ebay-finding/)
 2. [Schema Driven Web Serivce Client Development on Android, Part 2 : eBay Search App](http://bulldog2011.github.com/blog/2013/02/19/schema-driven-on-android-part-2-ebay-search/)
+
+###Samples
+1. [Hello eBay Finding](https://github.com/bulldog2011/nano-rest/tree/master/sample/HelloEBayFinding)
+2. [Hello eBay Shopping](https://github.com/bulldog2011/nano-rest/tree/master/sample/HelloEBayShopping)
+3. [eBay Search App](https://github.com/bulldog2011/nano-rest/tree/master/sample/EBaySearch)
+
