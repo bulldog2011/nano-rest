@@ -2,27 +2,27 @@
 // DO NOT CHANGE!
 package com.ebay.marketplace.search.v1.services;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
-import java.util.List;
 
 /**
  * 
  * Container for histogram fields.
  * 
  */
-public class ConditionHistogram   {
+public class ConditionHistogram implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element
 	private Condition condition;
-    
+	
 	@Element
 	private int count;
-    
+	
 	@Element
 	private String delimiter;
-    
-	private List<Object> any;
-    
+	
     
 	/**
      * public getter
@@ -94,23 +94,6 @@ public class ConditionHistogram   {
 	 */
 	public void setDelimiter(String delimiter) {
 	    this.delimiter = delimiter;
-	}
-	/**
-	 * public getter
-	 *
-     * @returns java.util.List<java.lang.Object>
-	 */
-	public List<Object> getAny() {
-	    return this.any;
-	}
-	
-	/**
-	 * public setter
-	 *
-     * @param java.util.List<java.lang.Object>
-	 */
-	public void setAny(List<Object> any) {
-	    this.any = any;
 	}
 
 }

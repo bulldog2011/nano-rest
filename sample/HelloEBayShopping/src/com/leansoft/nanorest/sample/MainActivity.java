@@ -35,7 +35,7 @@ public class MainActivity extends Activity {
 				String keywords = ((EditText) findViewById(R.id.edit_input)).getText().toString();	
 				FindPopularItemsRequestType request = new FindPopularItemsRequestType();
 				request.setQueryKeywords(keywords);
-				request.setMaxEntries(-1);
+				request.setMaxEntries(1);
 		        
 				RequestProcessor requestProcessor = ShoppingService.getFindPopularItemsHttpRequest(
 						request, 

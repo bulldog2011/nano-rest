@@ -2,6 +2,7 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 import java.util.List;
 
@@ -10,46 +11,46 @@ import java.util.List;
  * Information about an Half.com catalog product.
  * 
  */
-public class HalfCatalogProductType   {
+public class HalfCatalogProductType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "Title")
 	private String title;
-    
+	
 	@Element(name = "DetailsURL")
 	private String detailsURL;
-    
+	
 	@Element(name = "StockPhotoURL")
 	private String stockPhotoURL;
-    
+	
 	@Element(name = "ShippingCostSummary")
 	private ShippingCostSummaryType shippingCostSummary;
-    
+	
 	@Element(name = "DisplayStockPhotos")
 	private Boolean displayStockPhotos;
-    
+	
 	@Element(name = "ItemCount")
 	private Integer itemCount;
-    
+	
 	@Element(name = "ProductID")
 	private List<ProductIDType> productID;
-    
+	
 	@Element(name = "DomainName")
 	private String domainName;
-    
+	
 	@Element(name = "ItemSpecifics")
 	private NameValueListArrayType itemSpecifics;
-    
+	
 	@Element(name = "ItemArray")
 	private SimpleItemArrayType itemArray;
-    
+	
 	@Element(name = "ReviewCount")
 	private Integer reviewCount;
-    
+	
 	@Element(name = "MinPrice")
 	private AmountType minPrice;
-    
-	private List<Object> any;
-    
+	
     
 	/**
      * public getter
@@ -470,23 +471,6 @@ public class HalfCatalogProductType   {
 	 */
 	public void setMinPrice(AmountType minPrice) {
 	    this.minPrice = minPrice;
-	}
-	/**
-	 * public getter
-	 *
-     * @returns java.util.List<java.lang.Object>
-	 */
-	public List<Object> getAny() {
-	    return this.any;
-	}
-	
-	/**
-	 * public setter
-	 *
-     * @param java.util.List<java.lang.Object>
-	 */
-	public void setAny(List<Object> any) {
-	    this.any = any;
 	}
 
 }

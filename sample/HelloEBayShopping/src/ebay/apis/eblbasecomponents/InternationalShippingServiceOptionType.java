@@ -2,6 +2,7 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 import java.util.List;
 import java.util.Date;
@@ -13,37 +14,37 @@ import java.util.Date;
  * provided. This type does not exist before compatibility level 383.
  * 
  */
-public class InternationalShippingServiceOptionType   {
+public class InternationalShippingServiceOptionType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "ShippingInsuranceCost")
 	private AmountType shippingInsuranceCost;
-    
+	
 	@Element(name = "ShippingServiceName")
 	private String shippingServiceName;
-    
+	
 	@Element(name = "ShippingServiceAdditionalCost")
 	private AmountType shippingServiceAdditionalCost;
-    
+	
 	@Element(name = "ShippingServiceCost")
 	private AmountType shippingServiceCost;
-    
+	
 	@Element(name = "ShippingServicePriority")
 	private Integer shippingServicePriority;
-    
+	
 	@Element(name = "ShipsTo")
 	private List<String> shipsTo;
-    
+	
 	@Element(name = "EstimatedDeliveryMinTime")
 	private Date estimatedDeliveryMinTime;
-    
+	
 	@Element(name = "EstimatedDeliveryMaxTime")
 	private Date estimatedDeliveryMaxTime;
-    
+	
 	@Element(name = "ImportCharge")
 	private AmountType importCharge;
-    
-	private List<Object> any;
-    
+	
     
 	/**
      * public getter
@@ -345,23 +346,6 @@ public class InternationalShippingServiceOptionType   {
 	 */
 	public void setImportCharge(AmountType importCharge) {
 	    this.importCharge = importCharge;
-	}
-	/**
-	 * public getter
-	 *
-     * @returns java.util.List<java.lang.Object>
-	 */
-	public List<Object> getAny() {
-	    return this.any;
-	}
-	
-	/**
-	 * public setter
-	 *
-     * @param java.util.List<java.lang.Object>
-	 */
-	public void setAny(List<Object> any) {
-	    this.any = any;
 	}
 
 }

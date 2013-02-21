@@ -2,8 +2,8 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
-import java.util.List;
 
 /**
  * 
@@ -11,19 +11,19 @@ import java.util.List;
  * values are computed by eBay and cannot be specified at listing time.
  * 
  */
-public class SellingStatusType   {
+public class SellingStatusType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "ConvertedCurrentPrice")
 	private AmountType convertedCurrentPrice;
-    
+	
 	@Element(name = "CurrentPrice")
 	private AmountType currentPrice;
-    
+	
 	@Element(name = "QuantitySold")
 	private Integer quantitySold;
-    
-	private List<Object> any;
-    
+	
     
 	/**
      * public getter
@@ -101,23 +101,6 @@ public class SellingStatusType   {
 	 */
 	public void setQuantitySold(Integer quantitySold) {
 	    this.quantitySold = quantitySold;
-	}
-	/**
-	 * public getter
-	 *
-     * @returns java.util.List<java.lang.Object>
-	 */
-	public List<Object> getAny() {
-	    return this.any;
-	}
-	
-	/**
-	 * public setter
-	 *
-     * @param java.util.List<java.lang.Object>
-	 */
-	public void setAny(List<Object> any) {
-	    this.any = any;
 	}
 
 }

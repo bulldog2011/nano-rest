@@ -2,6 +2,7 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 import java.util.List;
 
@@ -11,16 +12,16 @@ import java.util.List;
  * VariationSpecificName (e.g., Color) whose values differ across variations.
  * 
  */
-public class PicturesType   {
+public class PicturesType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "VariationSpecificName")
 	private String variationSpecificName;
-    
+	
 	@Element(name = "VariationSpecificPictureSet")
 	private List<VariationSpecificPictureSetType> variationSpecificPictureSet;
-    
-	private List<Object> any;
-    
+	
     
 	/**
      * public getter
@@ -103,23 +104,6 @@ public class PicturesType   {
 	 */
 	public void setVariationSpecificPictureSet(List<VariationSpecificPictureSetType> variationSpecificPictureSet) {
 	    this.variationSpecificPictureSet = variationSpecificPictureSet;
-	}
-	/**
-	 * public getter
-	 *
-     * @returns java.util.List<java.lang.Object>
-	 */
-	public List<Object> getAny() {
-	    return this.any;
-	}
-	
-	/**
-	 * public setter
-	 *
-     * @param java.util.List<java.lang.Object>
-	 */
-	public void setAny(List<Object> any) {
-	    this.any = any;
 	}
 
 }

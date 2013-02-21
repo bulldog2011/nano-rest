@@ -2,6 +2,7 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 import java.util.List;
 
@@ -10,19 +11,19 @@ import java.util.List;
  * At least one container is required (minOccurs="1") if Pictures container is present in the request.
  * 
  */
-public class VariationSpecificPictureSetType   {
+public class VariationSpecificPictureSetType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "VariationSpecificValue")
 	private String variationSpecificValue;
-    
+	
 	@Element(name = "PictureURL")
 	private List<String> pictureURL;
-    
+	
 	@Element(name = "GalleryURL")
 	private String galleryURL;
-    
-	private List<Object> any;
-    
+	
     
 	/**
      * public getter
@@ -116,23 +117,6 @@ public class VariationSpecificPictureSetType   {
 	 */
 	public void setGalleryURL(String galleryURL) {
 	    this.galleryURL = galleryURL;
-	}
-	/**
-	 * public getter
-	 *
-     * @returns java.util.List<java.lang.Object>
-	 */
-	public List<Object> getAny() {
-	    return this.any;
-	}
-	
-	/**
-	 * public setter
-	 *
-     * @param java.util.List<java.lang.Object>
-	 */
-	public void setAny(List<Object> any) {
-	    this.any = any;
 	}
 
 }

@@ -2,6 +2,7 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 import java.util.List;
 
@@ -13,17 +14,19 @@ import java.util.List;
  * 
  */
 @RootElement(name = "FindPopularSearchesResponse", namespace = "urn:ebay:apis:eBLBaseComponents")
-public class FindPopularSearchesResponseType extends AbstractResponseType  {
+public class FindPopularSearchesResponseType extends AbstractResponseType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "PopularSearchResult")
 	private List<PopularSearchesType> popularSearchResult;
-    
+	
 	@Element(name = "PageNumber")
 	private Integer pageNumber;
-    
+	
 	@Element(name = "TotalPages")
 	private Integer totalPages;
-    
+	
     
 	/**
      * public getter

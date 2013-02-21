@@ -2,6 +2,7 @@
 // DO NOT CHANGE!
 package com.ebay.marketplace.search.v1.services;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 
 /**
@@ -10,11 +11,13 @@ import com.leansoft.nano.annotation.*;
  * 
  */
 @RootElement(name = "getHistogramsRequest", namespace = "http://www.ebay.com/marketplace/search/v1/services")
-public class GetHistogramsRequest extends BaseServiceRequest  {
+public class GetHistogramsRequest extends BaseServiceRequest implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element
 	private String categoryId;
-    
+	
     
 	/**
      * public getter

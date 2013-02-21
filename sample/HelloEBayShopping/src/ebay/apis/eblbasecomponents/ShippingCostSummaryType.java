@@ -2,42 +2,42 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
-import java.util.List;
 
 /**
  * 
  * Type for the shipping-related details for an item or transaction.
  * 
  */
-public class ShippingCostSummaryType   {
+public class ShippingCostSummaryType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "ShippingServiceName")
 	private String shippingServiceName;
-    
+	
 	@Element(name = "ShippingServiceCost")
 	private AmountType shippingServiceCost;
-    
+	
 	@Element(name = "InsuranceCost")
 	private AmountType insuranceCost;
-    
+	
 	@Element(name = "ShippingType")
 	private ShippingTypeCodeType shippingType;
-    
+	
 	@Element(name = "LocalPickup")
 	private Boolean localPickup;
-    
+	
 	@Element(name = "InsuranceOption")
 	private InsuranceOptionCodeType insuranceOption;
-    
+	
 	@Element(name = "ListedShippingServiceCost")
 	private AmountType listedShippingServiceCost;
-    
+	
 	@Element(name = "ImportCharge")
 	private AmountType importCharge;
-    
-	private List<Object> any;
-    
+	
     
 	/**
      * public getter
@@ -330,23 +330,6 @@ public class ShippingCostSummaryType   {
 	 */
 	public void setImportCharge(AmountType importCharge) {
 	    this.importCharge = importCharge;
-	}
-	/**
-	 * public getter
-	 *
-     * @returns java.util.List<java.lang.Object>
-	 */
-	public List<Object> getAny() {
-	    return this.any;
-	}
-	
-	/**
-	 * public setter
-	 *
-     * @param java.util.List<java.lang.Object>
-	 */
-	public void setAny(List<Object> any) {
-	    this.any = any;
 	}
 
 }

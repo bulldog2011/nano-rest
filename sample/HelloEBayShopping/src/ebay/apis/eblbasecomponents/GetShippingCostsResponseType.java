@@ -2,6 +2,7 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 
 /**
@@ -10,14 +11,16 @@ import com.leansoft.nano.annotation.*;
  * 
  */
 @RootElement(name = "GetShippingCostsResponse", namespace = "urn:ebay:apis:eBLBaseComponents")
-public class GetShippingCostsResponseType extends AbstractResponseType  {
+public class GetShippingCostsResponseType extends AbstractResponseType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "ShippingDetails")
 	private ShippingDetailsType shippingDetails;
-    
+	
 	@Element(name = "ShippingCostSummary")
 	private ShippingCostSummaryType shippingCostSummary;
-    
+	
     
 	/**
      * public getter

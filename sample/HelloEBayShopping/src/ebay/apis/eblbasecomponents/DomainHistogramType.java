@@ -2,6 +2,7 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 import java.util.List;
 
@@ -10,13 +11,13 @@ import java.util.List;
  * A generic type used for histograms.
  * 
  */
-public class DomainHistogramType   {
+public class DomainHistogramType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "Domain")
 	private List<HistogramEntryType> domain;
-    
-	private List<Object> any;
-    
+	
     
 	/**
      * public getter
@@ -48,23 +49,6 @@ public class DomainHistogramType   {
 	 */
 	public void setDomain(List<HistogramEntryType> domain) {
 	    this.domain = domain;
-	}
-	/**
-	 * public getter
-	 *
-     * @returns java.util.List<java.lang.Object>
-	 */
-	public List<Object> getAny() {
-	    return this.any;
-	}
-	
-	/**
-	 * public setter
-	 *
-     * @param java.util.List<java.lang.Object>
-	 */
-	public void setAny(List<Object> any) {
-	    this.any = any;
 	}
 
 }

@@ -2,8 +2,8 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
-import java.util.List;
 
 /**
  * 
@@ -14,25 +14,25 @@ import java.util.List;
  * B2B business features.
  * 
  */
-public class VATDetailsType   {
+public class VATDetailsType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "BusinessSeller")
 	private Boolean businessSeller;
-    
+	
 	@Element(name = "RestrictedToBusiness")
 	private Boolean restrictedToBusiness;
-    
+	
 	@Element(name = "VATPercent")
 	private Float vatPercent;
-    
+	
 	@Element(name = "VATSite")
 	private String vatSite;
-    
+	
 	@Element(name = "VATID")
 	private String vatid;
-    
-	private List<Object> any;
-    
+	
     
 	/**
      * public getter
@@ -236,23 +236,6 @@ public class VATDetailsType   {
 	 */
 	public void setVatid(String vatid) {
 	    this.vatid = vatid;
-	}
-	/**
-	 * public getter
-	 *
-     * @returns java.util.List<java.lang.Object>
-	 */
-	public List<Object> getAny() {
-	    return this.any;
-	}
-	
-	/**
-	 * public setter
-	 *
-     * @param java.util.List<java.lang.Object>
-	 */
-	public void setAny(List<Object> any) {
-	    this.any = any;
 	}
 
 }

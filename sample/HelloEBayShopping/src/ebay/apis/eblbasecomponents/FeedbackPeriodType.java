@@ -2,8 +2,8 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
-import java.util.List;
 
 /**
  * 
@@ -12,16 +12,16 @@ import java.util.List;
  * feedback counted: positive, neutral, negative, or total. 
  * 
  */
-public class FeedbackPeriodType   {
+public class FeedbackPeriodType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "PeriodInDays")
 	private Integer periodInDays;
-    
+	
 	@Element(name = "Count")
 	private Long count;
-    
-	private List<Object> any;
-    
+	
     
 	/**
      * public getter
@@ -78,23 +78,6 @@ public class FeedbackPeriodType   {
 	 */
 	public void setCount(Long count) {
 	    this.count = count;
-	}
-	/**
-	 * public getter
-	 *
-     * @returns java.util.List<java.lang.Object>
-	 */
-	public List<Object> getAny() {
-	    return this.any;
-	}
-	
-	/**
-	 * public setter
-	 *
-     * @param java.util.List<java.lang.Object>
-	 */
-	public void setAny(List<Object> any) {
-	    this.any = any;
 	}
 
 }

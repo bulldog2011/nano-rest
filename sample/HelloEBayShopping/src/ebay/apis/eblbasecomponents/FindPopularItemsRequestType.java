@@ -2,6 +2,7 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 import java.util.List;
 
@@ -11,20 +12,22 @@ import java.util.List;
  * 
  */
 @RootElement(name = "FindPopularItemsRequest", namespace = "urn:ebay:apis:eBLBaseComponents")
-public class FindPopularItemsRequestType extends AbstractRequestType  {
+public class FindPopularItemsRequestType extends AbstractRequestType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "CategoryID")
 	private List<String> categoryID;
-    
+	
 	@Element(name = "QueryKeywords")
 	private String queryKeywords;
-    
+	
 	@Element(name = "CategoryIDExclude")
 	private List<String> categoryIDExclude;
-    
+	
 	@Element(name = "MaxEntries")
 	private Integer maxEntries;
-    
+	
     
 	/**
      * public getter

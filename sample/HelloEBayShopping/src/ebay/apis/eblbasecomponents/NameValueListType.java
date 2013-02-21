@@ -2,6 +2,7 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 import java.util.List;
 
@@ -10,16 +11,16 @@ import java.util.List;
  * A name and corresponding value (a name/value pair).
  * 
  */
-public class NameValueListType   {
+public class NameValueListType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "Name")
 	private String name;
-    
+	
 	@Element(name = "Value")
 	private List<String> value;
-    
-	private List<Object> any;
-    
+	
     
 	/**
      * public getter
@@ -134,23 +135,6 @@ public class NameValueListType   {
 	 */
 	public void setValue(List<String> value) {
 	    this.value = value;
-	}
-	/**
-	 * public getter
-	 *
-     * @returns java.util.List<java.lang.Object>
-	 */
-	public List<Object> getAny() {
-	    return this.any;
-	}
-	
-	/**
-	 * public setter
-	 *
-     * @param java.util.List<java.lang.Object>
-	 */
-	public void setAny(List<Object> any) {
-	    this.any = any;
 	}
 
 }

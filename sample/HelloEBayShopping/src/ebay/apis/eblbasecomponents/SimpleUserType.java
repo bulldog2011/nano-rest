@@ -2,8 +2,8 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
-import java.util.List;
 import java.util.Date;
 
 /**
@@ -14,76 +14,76 @@ import java.util.Date;
  * the GetUser call.
  * 
  */
-public class SimpleUserType   {
+public class SimpleUserType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "UserID")
 	private String userID;
-    
+	
 	@Element(name = "FeedbackPrivate")
 	private Boolean feedbackPrivate;
-    
+	
 	@Element(name = "FeedbackRatingStar")
 	private FeedbackRatingStarCodeType feedbackRatingStar;
-    
+	
 	@Element(name = "FeedbackScore")
 	private Integer feedbackScore;
-    
+	
 	@Element(name = "UserAnonymized")
 	private Boolean userAnonymized;
-    
+	
 	@Element(name = "NewUser")
 	private Boolean newUser;
-    
+	
 	@Element(name = "RegistrationDate")
 	private Date registrationDate;
-    
+	
 	@Element(name = "RegistrationSite")
 	private SiteCodeType registrationSite;
-    
+	
 	@Element(name = "Status")
 	private UserStatusCodeType status;
-    
+	
 	@Element(name = "SellerBusinessType")
 	private SellerBusinessCodeType sellerBusinessType;
-    
+	
 	@Element(name = "StoreURL")
 	private String storeURL;
-    
+	
 	@Element(name = "StoreName")
 	private String storeName;
-    
+	
 	@Element(name = "SellerItemsURL")
 	private String sellerItemsURL;
-    
+	
 	@Element(name = "AboutMeURL")
 	private String aboutMeURL;
-    
+	
 	@Element(name = "MyWorldURL")
 	private String myWorldURL;
-    
+	
 	@Element(name = "MyWorldSmallImage")
 	private String myWorldSmallImage;
-    
+	
 	@Element(name = "MyWorldLargeImage")
 	private String myWorldLargeImage;
-    
+	
 	@Element(name = "ReviewsAndGuidesURL")
 	private String reviewsAndGuidesURL;
-    
+	
 	@Element(name = "FeedbackDetailsURL")
 	private String feedbackDetailsURL;
-    
+	
 	@Element(name = "PositiveFeedbackPercent")
 	private Float positiveFeedbackPercent;
-    
+	
 	@Element(name = "SellerLevel")
 	private SellerLevelCodeType sellerLevel;
-    
+	
 	@Element(name = "TopRatedSeller")
 	private Boolean topRatedSeller;
-    
-	private List<Object> any;
-    
+	
     
 	/**
      * public getter
@@ -716,23 +716,6 @@ public class SimpleUserType   {
 	 */
 	public void setTopRatedSeller(Boolean topRatedSeller) {
 	    this.topRatedSeller = topRatedSeller;
-	}
-	/**
-	 * public getter
-	 *
-     * @returns java.util.List<java.lang.Object>
-	 */
-	public List<Object> getAny() {
-	    return this.any;
-	}
-	
-	/**
-	 * public setter
-	 *
-     * @param java.util.List<java.lang.Object>
-	 */
-	public void setAny(List<Object> any) {
-	    this.any = any;
 	}
 
 }

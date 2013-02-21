@@ -2,6 +2,7 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 import java.util.List;
 
@@ -11,11 +12,13 @@ import java.util.List;
  * SimpleItemType objects, each of which conveys the data for one item listing.
  * 
  */
-public class SimpleItemArrayType   {
+public class SimpleItemArrayType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "Item")
 	private List<SimpleItemType> item;
-    
+	
     
 	/**
      * public getter

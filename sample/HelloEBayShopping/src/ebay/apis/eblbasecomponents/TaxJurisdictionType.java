@@ -2,27 +2,27 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
-import java.util.List;
 
 /**
  * 
  * Tax-related details for a region or jurisdiction.
  * 
  */
-public class TaxJurisdictionType   {
+public class TaxJurisdictionType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "JurisdictionID")
 	private String jurisdictionID;
-    
+	
 	@Element(name = "SalesTaxPercent")
 	private Float salesTaxPercent;
-    
+	
 	@Element(name = "ShippingIncludedInTax")
 	private Boolean shippingIncludedInTax;
-    
-	private List<Object> any;
-    
+	
     
 	/**
      * public getter
@@ -108,23 +108,6 @@ public class TaxJurisdictionType   {
 	 */
 	public void setShippingIncludedInTax(Boolean shippingIncludedInTax) {
 	    this.shippingIncludedInTax = shippingIncludedInTax;
-	}
-	/**
-	 * public getter
-	 *
-     * @returns java.util.List<java.lang.Object>
-	 */
-	public List<Object> getAny() {
-	    return this.any;
-	}
-	
-	/**
-	 * public setter
-	 *
-     * @param java.util.List<java.lang.Object>
-	 */
-	public void setAny(List<Object> any) {
-	    this.any = any;
 	}
 
 }

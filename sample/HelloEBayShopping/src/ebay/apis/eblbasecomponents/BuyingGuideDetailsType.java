@@ -2,6 +2,7 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 import java.util.List;
 
@@ -13,16 +14,16 @@ import java.util.List;
  * Multiple buying guides can be returned. See the eBay Web Services Guide for additional information.
  * 
  */
-public class BuyingGuideDetailsType   {
+public class BuyingGuideDetailsType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "BuyingGuide")
 	private List<BuyingGuideType> buyingGuide;
-    
+	
 	@Element(name = "BuyingGuideHub")
 	private String buyingGuideHub;
-    
-	private List<Object> any;
-    
+	
     
 	/**
      * public getter
@@ -89,23 +90,6 @@ public class BuyingGuideDetailsType   {
 	 */
 	public void setBuyingGuideHub(String buyingGuideHub) {
 	    this.buyingGuideHub = buyingGuideHub;
-	}
-	/**
-	 * public getter
-	 *
-     * @returns java.util.List<java.lang.Object>
-	 */
-	public List<Object> getAny() {
-	    return this.any;
-	}
-	
-	/**
-	 * public setter
-	 *
-     * @param java.util.List<java.lang.Object>
-	 */
-	public void setAny(List<Object> any) {
-	    this.any = any;
 	}
 
 }

@@ -2,6 +2,7 @@
 // DO NOT CHANGE!
 package com.ebay.marketplace.search.v1.services;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 
 /**
@@ -9,14 +10,16 @@ import com.leansoft.nano.annotation.*;
  * Contains details about a category.
  * 
  */
-public class Category   {
+public class Category implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element
 	private String categoryId;
-    
+	
 	@Element
 	private String categoryName;
-    
+	
     
 	/**
      * public getter

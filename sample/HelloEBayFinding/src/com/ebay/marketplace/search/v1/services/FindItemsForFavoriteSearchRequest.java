@@ -2,6 +2,7 @@
 // DO NOT CHANGE!
 package com.ebay.marketplace.search.v1.services;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 import java.util.Date;
 
@@ -11,20 +12,22 @@ import java.util.Date;
  * 
  */
 @RootElement(name = "findItemsForFavoriteSearchRequest", namespace = "http://www.ebay.com/marketplace/search/v1/services")
-public class FindItemsForFavoriteSearchRequest extends BaseServiceRequest  {
+public class FindItemsForFavoriteSearchRequest extends BaseServiceRequest implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element
 	private Long searchId;
-    
+	
 	@Element
 	private String searchName;
-    
+	
 	@Element
 	private Date startTimeFrom;
-    
+	
 	@Element
 	private PaginationInput paginationInput;
-    
+	
     
 	/**
      * public getter

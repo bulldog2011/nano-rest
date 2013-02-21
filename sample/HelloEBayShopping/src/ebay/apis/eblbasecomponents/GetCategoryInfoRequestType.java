@@ -2,6 +2,7 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 
 /**
@@ -11,14 +12,16 @@ import com.leansoft.nano.annotation.*;
  * 
  */
 @RootElement(name = "GetCategoryInfoRequest", namespace = "urn:ebay:apis:eBLBaseComponents")
-public class GetCategoryInfoRequestType extends AbstractRequestType  {
+public class GetCategoryInfoRequestType extends AbstractRequestType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "CategoryID")
 	private String categoryID;
-    
+	
 	@Element(name = "IncludeSelector")
 	private String includeSelector;
-    
+	
     
 	/**
      * public getter

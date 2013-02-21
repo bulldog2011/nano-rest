@@ -2,8 +2,8 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
-import java.util.List;
 
 /**
  * 
@@ -14,34 +14,34 @@ import java.util.List;
  *   Business Seller options enabled.
  * 
  */
-public class BusinessSellerDetailsType   {
+public class BusinessSellerDetailsType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "Address")
 	private AddressType address;
-    
+	
 	@Element(name = "Fax")
 	private String fax;
-    
+	
 	@Element(name = "Email")
 	private String email;
-    
+	
 	@Element(name = "AdditionalContactInformation")
 	private String additionalContactInformation;
-    
+	
 	@Element(name = "TradeRegistrationNumber")
 	private String tradeRegistrationNumber;
-    
+	
 	@Element(name = "LegalInvoice")
 	private Boolean legalInvoice;
-    
+	
 	@Element(name = "TermsAndConditions")
 	private String termsAndConditions;
-    
+	
 	@Element(name = "VATDetails")
 	private VATDetailsType vatDetails;
-    
-	private List<Object> any;
-    
+	
     
 	/**
      * public getter
@@ -288,23 +288,6 @@ public class BusinessSellerDetailsType   {
 	 */
 	public void setVatDetails(VATDetailsType vatDetails) {
 	    this.vatDetails = vatDetails;
-	}
-	/**
-	 * public getter
-	 *
-     * @returns java.util.List<java.lang.Object>
-	 */
-	public List<Object> getAny() {
-	    return this.any;
-	}
-	
-	/**
-	 * public setter
-	 *
-     * @param java.util.List<java.lang.Object>
-	 */
-	public void setAny(List<Object> any) {
-	    this.any = any;
 	}
 
 }

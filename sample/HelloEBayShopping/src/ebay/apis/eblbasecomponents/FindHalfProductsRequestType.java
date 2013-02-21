@@ -2,6 +2,7 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 import java.util.List;
 
@@ -14,38 +15,40 @@ import java.util.List;
  * 
  */
 @RootElement(name = "FindHalfProductsRequest", namespace = "urn:ebay:apis:eBLBaseComponents")
-public class FindHalfProductsRequestType extends AbstractRequestType  {
+public class FindHalfProductsRequestType extends AbstractRequestType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "IncludeSelector")
 	private String includeSelector;
-    
+	
 	@Element(name = "AvailableItemsOnly")
 	private Boolean availableItemsOnly;
-    
+	
 	@Element(name = "DomainName")
 	private List<String> domainName;
-    
+	
 	@Element(name = "ProductID")
 	private ProductIDType productID;
-    
+	
 	@Element(name = "QueryKeywords")
 	private String queryKeywords;
-    
+	
 	@Element(name = "SellerID")
 	private String sellerID;
-    
+	
 	@Element(name = "ProductSort")
 	private ProductSortCodeType productSort;
-    
+	
 	@Element(name = "SortOrder")
 	private SortOrderCodeType sortOrder;
-    
+	
 	@Element(name = "MaxEntries")
 	private Integer maxEntries;
-    
+	
 	@Element(name = "PageNumber")
 	private Integer pageNumber;
-    
+	
     
 	/**
      * public getter

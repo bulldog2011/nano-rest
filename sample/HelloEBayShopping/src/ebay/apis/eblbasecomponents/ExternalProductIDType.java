@@ -2,6 +2,7 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 import java.util.List;
 
@@ -14,22 +15,22 @@ import java.util.List;
  * Information.
  * 
  */
-public class ExternalProductIDType   {
+public class ExternalProductIDType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "Value")
 	private String value;
-    
+	
 	@Element(name = "ReturnSearchResultOnDuplicates")
 	private Boolean returnSearchResultOnDuplicates;
-    
+	
 	@Element(name = "Type")
 	private ExternalProductCodeType type;
-    
+	
 	@Element(name = "AlternateValue")
 	private List<String> alternateValue;
-    
-	private List<Object> any;
-    
+	
     
 	/**
      * public getter
@@ -224,23 +225,6 @@ public class ExternalProductIDType   {
 	 */
 	public void setAlternateValue(List<String> alternateValue) {
 	    this.alternateValue = alternateValue;
-	}
-	/**
-	 * public getter
-	 *
-     * @returns java.util.List<java.lang.Object>
-	 */
-	public List<Object> getAny() {
-	    return this.any;
-	}
-	
-	/**
-	 * public setter
-	 *
-     * @param java.util.List<java.lang.Object>
-	 */
-	public void setAny(List<Object> any) {
-	    this.any = any;
 	}
 
 }

@@ -2,6 +2,7 @@
 // DO NOT CHANGE!
 package com.ebay.marketplace.search.v1.services;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 import java.util.List;
 
@@ -12,19 +13,19 @@ import java.util.List;
  * response of a query that returns an aspectHistogram.
  * 
  */
-public class AspectFilter   {
+public class AspectFilter implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element
 	private String aspectName;
-    
+	
 	@Element
 	private List<String> aspectValueName;
-    
+	
 	@Element
 	private String delimiter;
-    
-	private List<Object> any;
-    
+	
     
 	/**
      * public getter
@@ -106,23 +107,6 @@ public class AspectFilter   {
 	 */
 	public void setDelimiter(String delimiter) {
 	    this.delimiter = delimiter;
-	}
-	/**
-	 * public getter
-	 *
-     * @returns java.util.List<java.lang.Object>
-	 */
-	public List<Object> getAny() {
-	    return this.any;
-	}
-	
-	/**
-	 * public setter
-	 *
-     * @param java.util.List<java.lang.Object>
-	 */
-	public void setAny(List<Object> any) {
-	    this.any = any;
 	}
 
 }

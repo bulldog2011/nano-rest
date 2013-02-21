@@ -2,30 +2,30 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
-import java.util.List;
 
 /**
  * 
  * Type for expressing sales tax data.
  * 
  */
-public class SalesTaxType   {
+public class SalesTaxType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "SalesTaxPercent")
 	private Float salesTaxPercent;
-    
+	
 	@Element(name = "SalesTaxState")
 	private String salesTaxState;
-    
+	
 	@Element(name = "ShippingIncludedInTax")
 	private Boolean shippingIncludedInTax;
-    
+	
 	@Element(name = "SalesTaxAmount")
 	private AmountType salesTaxAmount;
-    
-	private List<Object> any;
-    
+	
     
 	/**
      * public getter
@@ -136,23 +136,6 @@ public class SalesTaxType   {
 	 */
 	public void setSalesTaxAmount(AmountType salesTaxAmount) {
 	    this.salesTaxAmount = salesTaxAmount;
-	}
-	/**
-	 * public getter
-	 *
-     * @returns java.util.List<java.lang.Object>
-	 */
-	public List<Object> getAny() {
-	    return this.any;
-	}
-	
-	/**
-	 * public setter
-	 *
-     * @param java.util.List<java.lang.Object>
-	 */
-	public void setAny(List<Object> any) {
-	    this.any = any;
 	}
 
 }

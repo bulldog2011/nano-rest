@@ -2,6 +2,7 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 
 /**
@@ -15,20 +16,22 @@ import com.leansoft.nano.annotation.*;
  * 
  */
 @RootElement(name = "GetSingleItemRequest", namespace = "urn:ebay:apis:eBLBaseComponents")
-public class GetSingleItemRequestType extends AbstractRequestType  {
+public class GetSingleItemRequestType extends AbstractRequestType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "ItemID")
 	private String itemID;
-    
+	
 	@Element(name = "VariationSKU")
 	private String variationSKU;
-    
+	
 	@Element(name = "VariationSpecifics")
 	private NameValueListArrayType variationSpecifics;
-    
+	
 	@Element(name = "IncludeSelector")
 	private String includeSelector;
-    
+	
     
 	/**
      * public getter

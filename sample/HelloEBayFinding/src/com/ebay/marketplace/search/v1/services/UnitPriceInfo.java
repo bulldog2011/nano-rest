@@ -2,6 +2,7 @@
 // DO NOT CHANGE!
 package com.ebay.marketplace.search.v1.services;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 
 /**
@@ -13,14 +14,16 @@ import com.leansoft.nano.annotation.*;
  * the item's listed price to calculate and display the per-unit price on eBay EU sites.
  * 
  */
-public class UnitPriceInfo   {
+public class UnitPriceInfo implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element
 	private String type;
-    
+	
 	@Element
 	private double quantity;
-    
+	
     
 	/**
      * public getter

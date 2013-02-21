@@ -2,6 +2,7 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 import java.util.List;
 
@@ -14,40 +15,40 @@ import java.util.List;
  * predefined time periods.
  * 
  */
-public class FeedbackHistoryType   {
+public class FeedbackHistoryType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "BidRetractionFeedbackPeriods")
 	private List<FeedbackPeriodType> bidRetractionFeedbackPeriods;
-    
+	
 	@Element(name = "NegativeFeedbackPeriods")
 	private List<FeedbackPeriodType> negativeFeedbackPeriods;
-    
+	
 	@Element(name = "NeutralFeedbackPeriods")
 	private List<FeedbackPeriodType> neutralFeedbackPeriods;
-    
+	
 	@Element(name = "PositiveFeedbackPeriods")
 	private List<FeedbackPeriodType> positiveFeedbackPeriods;
-    
+	
 	@Element(name = "TotalFeedbackPeriods")
 	private List<FeedbackPeriodType> totalFeedbackPeriods;
-    
+	
 	@Element(name = "UniqueNegativeFeedbackCount")
 	private Long uniqueNegativeFeedbackCount;
-    
+	
 	@Element(name = "UniquePositiveFeedbackCount")
 	private Long uniquePositiveFeedbackCount;
-    
+	
 	@Element(name = "AverageRatingDetails")
 	private List<AverageRatingDetailsType> averageRatingDetails;
-    
+	
 	@Element(name = "NeutralCommentCountFromSuspendedUsers")
 	private Long neutralCommentCountFromSuspendedUsers;
-    
+	
 	@Element(name = "UniqueNeutralFeedbackCount")
 	private Long uniqueNeutralFeedbackCount;
-    
-	private List<Object> any;
-    
+	
     
 	/**
      * public getter
@@ -316,23 +317,6 @@ public class FeedbackHistoryType   {
 	 */
 	public void setUniqueNeutralFeedbackCount(Long uniqueNeutralFeedbackCount) {
 	    this.uniqueNeutralFeedbackCount = uniqueNeutralFeedbackCount;
-	}
-	/**
-	 * public getter
-	 *
-     * @returns java.util.List<java.lang.Object>
-	 */
-	public List<Object> getAny() {
-	    return this.any;
-	}
-	
-	/**
-	 * public setter
-	 *
-     * @param java.util.List<java.lang.Object>
-	 */
-	public void setAny(List<Object> any) {
-	    this.any = any;
 	}
 
 }

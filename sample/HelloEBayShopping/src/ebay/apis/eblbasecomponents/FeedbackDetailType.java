@@ -2,8 +2,8 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
-import java.util.List;
 import java.util.Date;
 
 /**
@@ -12,61 +12,61 @@ import java.util.Date;
  * feedback, the textual comment, and other information.
  *   
  */
-public class FeedbackDetailType   {
+public class FeedbackDetailType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "CommentingUser")
 	private String commentingUser;
-    
+	
 	@Element(name = "CommentingUserScore")
 	private Integer commentingUserScore;
-    
+	
 	@Element(name = "CommentText")
 	private String commentText;
-    
+	
 	@Element(name = "CommentTime")
 	private Date commentTime;
-    
+	
 	@Element(name = "CommentType")
 	private CommentTypeCodeType commentType;
-    
+	
 	@Element(name = "FeedbackResponse")
 	private String feedbackResponse;
-    
+	
 	@Element(name = "FollowUp")
 	private String followUp;
-    
+	
 	@Element(name = "ItemID")
 	private String itemID;
-    
+	
 	@Element(name = "Role")
 	private TradingRoleCodeType role;
-    
+	
 	@Element(name = "ItemTitle")
 	private String itemTitle;
-    
+	
 	@Element(name = "ItemPrice")
 	private AmountType itemPrice;
-    
+	
 	@Element(name = "FeedbackID")
 	private String feedbackID;
-    
+	
 	@Element(name = "TransactionID")
 	private String transactionID;
-    
+	
 	@Element(name = "CommentReplaced")
 	private Boolean commentReplaced;
-    
+	
 	@Element(name = "ResponseReplaced")
 	private Boolean responseReplaced;
-    
+	
 	@Element(name = "FollowUpReplaced")
 	private Boolean followUpReplaced;
-    
+	
 	@Element(name = "Countable")
 	private Boolean countable;
-    
-	private List<Object> any;
-    
+	
     
 	/**
      * public getter
@@ -532,23 +532,6 @@ public class FeedbackDetailType   {
 	 */
 	public void setCountable(Boolean countable) {
 	    this.countable = countable;
-	}
-	/**
-	 * public getter
-	 *
-     * @returns java.util.List<java.lang.Object>
-	 */
-	public List<Object> getAny() {
-	    return this.any;
-	}
-	
-	/**
-	 * public setter
-	 *
-     * @param java.util.List<java.lang.Object>
-	 */
-	public void setAny(List<Object> any) {
-	    this.any = any;
 	}
 
 }

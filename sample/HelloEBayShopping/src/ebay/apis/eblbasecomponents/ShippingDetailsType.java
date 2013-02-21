@@ -2,6 +2,7 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 import java.util.List;
 
@@ -10,46 +11,46 @@ import java.util.List;
  * Type for the shipping-related details for an item or transaction.
  * 
  */
-public class ShippingDetailsType   {
+public class ShippingDetailsType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "GetItFast")
 	private Boolean getItFast;
-    
+	
 	@Element(name = "InsuranceCost")
 	private AmountType insuranceCost;
-    
+	
 	@Element(name = "InsuranceOption")
 	private InsuranceOptionCodeType insuranceOption;
-    
+	
 	@Element(name = "InternationalShippingServiceOption")
 	private List<InternationalShippingServiceOptionType> internationalShippingServiceOption;
-    
+	
 	@Element(name = "SalesTax")
 	private SalesTaxType salesTax;
-    
+	
 	@Element(name = "ShippingRateErrorMessage")
 	private String shippingRateErrorMessage;
-    
+	
 	@Element(name = "ShippingServiceOption")
 	private List<ShippingServiceOptionType> shippingServiceOption;
-    
+	
 	@Element(name = "TaxTable")
 	private TaxTableType taxTable;
-    
+	
 	@Element(name = "InternationalInsuranceCost")
 	private AmountType internationalInsuranceCost;
-    
+	
 	@Element(name = "InternationalInsuranceOption")
 	private InsuranceOptionCodeType internationalInsuranceOption;
-    
+	
 	@Element(name = "CODCost")
 	private AmountType codCost;
-    
+	
 	@Element(name = "ExcludeShipToLocation")
 	private List<String> excludeShipToLocation;
-    
-	private List<Object> any;
-    
+	
     
 	/**
      * public getter
@@ -466,23 +467,6 @@ public class ShippingDetailsType   {
 	 */
 	public void setExcludeShipToLocation(List<String> excludeShipToLocation) {
 	    this.excludeShipToLocation = excludeShipToLocation;
-	}
-	/**
-	 * public getter
-	 *
-     * @returns java.util.List<java.lang.Object>
-	 */
-	public List<Object> getAny() {
-	    return this.any;
-	}
-	
-	/**
-	 * public setter
-	 *
-     * @param java.util.List<java.lang.Object>
-	 */
-	public void setAny(List<Object> any) {
-	    this.any = any;
 	}
 
 }

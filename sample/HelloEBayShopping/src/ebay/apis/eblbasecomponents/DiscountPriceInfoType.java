@@ -2,8 +2,8 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
-import java.util.List;
 
 /**
  * 
@@ -16,28 +16,28 @@ import java.util.List;
  * Non-MSKU items.
  * 
  */
-public class DiscountPriceInfoType   {
+public class DiscountPriceInfoType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "OriginalRetailPrice")
 	private AmountType originalRetailPrice;
-    
+	
 	@Element(name = "MinimumAdvertisedPrice")
 	private AmountType minimumAdvertisedPrice;
-    
+	
 	@Element(name = "MinimumAdvertisedPriceExposure")
 	private MinimumAdvertisedPriceExposureCodeType minimumAdvertisedPriceExposure;
-    
+	
 	@Element(name = "PricingTreatment")
 	private PricingTreatmentCodeType pricingTreatment;
-    
+	
 	@Element(name = "SoldOneBay")
 	private Boolean soldOneBay;
-    
+	
 	@Element(name = "SoldOffeBay")
 	private Boolean soldOffeBay;
-    
-	private List<Object> any;
-    
+	
     
 	/**
      * public getter
@@ -304,23 +304,6 @@ public class DiscountPriceInfoType   {
 	 */
 	public void setSoldOffeBay(Boolean soldOffeBay) {
 	    this.soldOffeBay = soldOffeBay;
-	}
-	/**
-	 * public getter
-	 *
-     * @returns java.util.List<java.lang.Object>
-	 */
-	public List<Object> getAny() {
-	    return this.any;
-	}
-	
-	/**
-	 * public setter
-	 *
-     * @param java.util.List<java.lang.Object>
-	 */
-	public void setAny(List<Object> any) {
-	    this.any = any;
 	}
 
 }

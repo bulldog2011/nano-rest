@@ -2,6 +2,7 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 import java.util.List;
 
@@ -10,40 +11,40 @@ import java.util.List;
  * Information about an eBay catalog product.
  * 
  */
-public class CatalogProductType   {
+public class CatalogProductType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "DomainName")
 	private String domainName;
-    
+	
 	@Element(name = "DetailsURL")
 	private String detailsURL;
-    
+	
 	@Element(name = "DisplayStockPhotos")
 	private Boolean displayStockPhotos;
-    
+	
 	@Element(name = "ProductID")
 	private List<ProductIDType> productID;
-    
+	
 	@Element(name = "ItemCount")
 	private Integer itemCount;
-    
+	
 	@Element(name = "ItemSpecifics")
 	private NameValueListArrayType itemSpecifics;
-    
+	
 	@Element(name = "ReviewCount")
 	private Integer reviewCount;
-    
+	
 	@Element(name = "StockPhotoURL")
 	private String stockPhotoURL;
-    
+	
 	@Element(name = "Title")
 	private String title;
-    
+	
 	@Element(name = "ProductState")
 	private ProductStateCodeType productState;
-    
-	private List<Object> any;
-    
+	
     
 	/**
      * public getter
@@ -392,23 +393,6 @@ public class CatalogProductType   {
 	 */
 	public void setProductState(ProductStateCodeType productState) {
 	    this.productState = productState;
-	}
-	/**
-	 * public getter
-	 *
-     * @returns java.util.List<java.lang.Object>
-	 */
-	public List<Object> getAny() {
-	    return this.any;
-	}
-	
-	/**
-	 * public setter
-	 *
-     * @param java.util.List<java.lang.Object>
-	 */
-	public void setAny(List<Object> any) {
-	    this.any = any;
 	}
 
 }

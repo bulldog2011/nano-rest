@@ -2,8 +2,8 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
-import java.util.List;
 
 /**
  * 
@@ -14,13 +14,13 @@ import java.util.List;
  * (the verb or call name) followed by "RequestType": VerbNameRequestType
  * 
  */
-public abstract class AbstractRequestType   {
+public abstract class AbstractRequestType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "MessageID")
 	private String messageID;
-    
-	private List<Object> any;
-    
+	
     
 	/**
      * public getter
@@ -58,23 +58,6 @@ public abstract class AbstractRequestType   {
 	 */
 	public void setMessageID(String messageID) {
 	    this.messageID = messageID;
-	}
-	/**
-	 * public getter
-	 *
-     * @returns java.util.List<java.lang.Object>
-	 */
-	public List<Object> getAny() {
-	    return this.any;
-	}
-	
-	/**
-	 * public setter
-	 *
-     * @param java.util.List<java.lang.Object>
-	 */
-	public void setAny(List<Object> any) {
-	    this.any = any;
 	}
 
 }

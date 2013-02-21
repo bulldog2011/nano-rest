@@ -2,39 +2,39 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
-import java.util.List;
 
 /**
  * 
  * Contains search word information, as it is related to a category.
  * 
  */
-public class PopularSearchesType   {
+public class PopularSearchesType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "CategoryID")
 	private String categoryID;
-    
+	
 	@Element(name = "CategoryParentID")
 	private String categoryParentID;
-    
+	
 	@Element(name = "QueryKeywords")
 	private String queryKeywords;
-    
+	
 	@Element(name = "AlternativeSearches")
 	private String alternativeSearches;
-    
+	
 	@Element(name = "RelatedSearches")
 	private String relatedSearches;
-    
+	
 	@Element(name = "CategoryName")
 	private String categoryName;
-    
+	
 	@Element(name = "CategoryParentName")
 	private String categoryParentName;
-    
-	private List<Object> any;
-    
+	
     
 	/**
      * public getter
@@ -234,23 +234,6 @@ public class PopularSearchesType   {
 	 */
 	public void setCategoryParentName(String categoryParentName) {
 	    this.categoryParentName = categoryParentName;
-	}
-	/**
-	 * public getter
-	 *
-     * @returns java.util.List<java.lang.Object>
-	 */
-	public List<Object> getAny() {
-	    return this.any;
-	}
-	
-	/**
-	 * public setter
-	 *
-     * @param java.util.List<java.lang.Object>
-	 */
-	public void setAny(List<Object> any) {
-	    this.any = any;
 	}
 
 }

@@ -2,6 +2,7 @@
 // DO NOT CHANGE!
 package com.ebay.marketplace.search.v1.services;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 
 /**
@@ -10,17 +11,19 @@ import com.leansoft.nano.annotation.*;
  * 
  */
 @RootElement(name = "findItemsAdvancedResponse", namespace = "http://www.ebay.com/marketplace/search/v1/services")
-public class FindItemsAdvancedResponse extends BaseFindingServiceResponse  {
+public class FindItemsAdvancedResponse extends BaseFindingServiceResponse implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element
 	private CategoryHistogramContainer categoryHistogramContainer;
-    
+	
 	@Element
 	private AspectHistogramContainer aspectHistogramContainer;
-    
+	
 	@Element
 	private ConditionHistogramContainer conditionHistogramContainer;
-    
+	
     
 	/**
      * public getter

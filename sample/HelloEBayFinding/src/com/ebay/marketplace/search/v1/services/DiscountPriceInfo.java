@@ -2,6 +2,7 @@
 // DO NOT CHANGE!
 package com.ebay.marketplace.search.v1.services;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 
 /**
@@ -17,23 +18,25 @@ import com.leansoft.nano.annotation.*;
  * Electronics (Home and Garden is expected to be supported in the future).
  * 
  */
-public class DiscountPriceInfo   {
+public class DiscountPriceInfo implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element
 	private Amount originalRetailPrice;
-    
+	
 	@Element
 	private MapExposureEnum minimumAdvertisedPriceExposure;
-    
+	
 	@Element
 	private PriceTreatmentEnum pricingTreatment;
-    
+	
 	@Element
 	private Boolean soldOnEbay;
-    
+	
 	@Element
 	private Boolean soldOffEbay;
-    
+	
     
 	/**
      * public getter

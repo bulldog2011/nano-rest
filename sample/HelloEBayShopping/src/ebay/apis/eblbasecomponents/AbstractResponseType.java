@@ -2,6 +2,7 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 import java.util.List;
 import java.util.Date;
@@ -15,28 +16,28 @@ import java.util.Date;
  * - application-level (business-level) errors and warnings
  * 
  */
-public abstract class AbstractResponseType   {
+public abstract class AbstractResponseType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "Timestamp")
 	private Date timestamp;
-    
+	
 	@Element(name = "Ack")
 	private AckCodeType ack;
-    
+	
 	@Element(name = "Errors")
 	private List<ErrorType> errors;
-    
+	
 	@Element(name = "Build")
 	private String build;
-    
+	
 	@Element(name = "Version")
 	private String version;
-    
+	
 	@Element(name = "CorrelationID")
 	private String correlationID;
-    
-	private List<Object> any;
-    
+	
     
 	/**
      * public getter
@@ -255,23 +256,6 @@ public abstract class AbstractResponseType   {
 	 */
 	public void setCorrelationID(String correlationID) {
 	    this.correlationID = correlationID;
-	}
-	/**
-	 * public getter
-	 *
-     * @returns java.util.List<java.lang.Object>
-	 */
-	public List<Object> getAny() {
-	    return this.any;
-	}
-	
-	/**
-	 * public setter
-	 *
-     * @param java.util.List<java.lang.Object>
-	 */
-	public void setAny(List<Object> any) {
-	    this.any = any;
 	}
 
 }

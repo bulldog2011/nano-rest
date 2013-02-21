@@ -2,6 +2,7 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 import java.util.List;
 
@@ -10,11 +11,13 @@ import java.util.List;
  * A list of one or more valid names and corresponding values.
  * 
  */
-public class NameValueListArrayType   {
+public class NameValueListArrayType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "NameValueList")
 	private List<NameValueListType> nameValueList;
-    
+	
     
 	/**
      * public getter

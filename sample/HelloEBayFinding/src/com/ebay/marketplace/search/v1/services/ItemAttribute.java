@@ -2,6 +2,7 @@
 // DO NOT CHANGE!
 package com.ebay.marketplace.search.v1.services;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 
 /**
@@ -9,14 +10,16 @@ import com.leansoft.nano.annotation.*;
  * This type contains the item attribute name and value.
  * 
  */
-public class ItemAttribute   {
+public class ItemAttribute implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element
 	private String name;
-    
+	
 	@Element
 	private String value;
-    
+	
     
 	/**
      * public getter

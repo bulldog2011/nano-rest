@@ -2,6 +2,7 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 
 /**
@@ -10,29 +11,31 @@ import com.leansoft.nano.annotation.*;
  * 
  */
 @RootElement(name = "FindReviewsAndGuidesRequest", namespace = "urn:ebay:apis:eBLBaseComponents")
-public class FindReviewsAndGuidesRequestType extends AbstractRequestType  {
+public class FindReviewsAndGuidesRequestType extends AbstractRequestType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "ProductID")
 	private ProductIDType productID;
-    
+	
 	@Element(name = "UserID")
 	private String userID;
-    
+	
 	@Element(name = "CategoryID")
 	private String categoryID;
-    
+	
 	@Element(name = "MaxResultsPerPage")
 	private Integer maxResultsPerPage;
-    
+	
 	@Element(name = "PageNumber")
 	private Integer pageNumber;
-    
+	
 	@Element(name = "ReviewSort")
 	private ReviewSortCodeType reviewSort;
-    
+	
 	@Element(name = "SortOrder")
 	private SortOrderCodeType sortOrder;
-    
+	
     
 	/**
      * public getter

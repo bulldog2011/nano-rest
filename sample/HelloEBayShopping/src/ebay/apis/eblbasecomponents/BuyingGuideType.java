@@ -2,8 +2,8 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
-import java.util.List;
 import java.util.Date;
 
 /**
@@ -16,31 +16,31 @@ import java.util.Date;
  * digital camera is right for them.
  * 
  */
-public class BuyingGuideType   {
+public class BuyingGuideType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "Name")
 	private String name;
-    
+	
 	@Element(name = "URL")
 	private String url;
-    
+	
 	@Element(name = "CategoryID")
 	private String categoryID;
-    
+	
 	@Element(name = "Title")
 	private String title;
-    
+	
 	@Element(name = "Text")
 	private String text;
-    
+	
 	@Element(name = "CreationTime")
 	private Date creationTime;
-    
+	
 	@Element(name = "UserID")
 	private String userID;
-    
-	private List<Object> any;
-    
+	
     
 	/**
      * public getter
@@ -242,23 +242,6 @@ public class BuyingGuideType   {
 	 */
 	public void setUserID(String userID) {
 	    this.userID = userID;
-	}
-	/**
-	 * public getter
-	 *
-     * @returns java.util.List<java.lang.Object>
-	 */
-	public List<Object> getAny() {
-	    return this.any;
-	}
-	
-	/**
-	 * public setter
-	 *
-     * @param java.util.List<java.lang.Object>
-	 */
-	public void setAny(List<Object> any) {
-	    this.any = any;
 	}
 
 }

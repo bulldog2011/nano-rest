@@ -2,6 +2,7 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 
 /**
@@ -12,7 +13,9 @@ import com.leansoft.nano.annotation.*;
  * 
  */
 @RootElement(name = "GeteBayTimeResponse", namespace = "urn:ebay:apis:eBLBaseComponents")
-public class GeteBayTimeResponseType extends AbstractResponseType  {
+public class GeteBayTimeResponseType extends AbstractResponseType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
     
 

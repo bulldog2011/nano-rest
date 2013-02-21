@@ -2,6 +2,7 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 import java.util.List;
 
@@ -12,11 +13,13 @@ import java.util.List;
  * 
  */
 @RootElement(name = "GetItemStatusResponse", namespace = "urn:ebay:apis:eBLBaseComponents")
-public class GetItemStatusResponseType extends AbstractResponseType  {
+public class GetItemStatusResponseType extends AbstractResponseType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "Item")
 	private List<SimpleItemType> item;
-    
+	
     
 	/**
      * public getter

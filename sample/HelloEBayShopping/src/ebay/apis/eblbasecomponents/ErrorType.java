@@ -2,6 +2,7 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 import java.util.List;
 
@@ -12,31 +13,31 @@ import java.util.List;
  * the application passed in.
  * 
  */
-public class ErrorType   {
+public class ErrorType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "ShortMessage")
 	private String shortMessage;
-    
+	
 	@Element(name = "LongMessage")
 	private String longMessage;
-    
+	
 	@Element(name = "ErrorCode")
 	private String errorCode;
-    
+	
 	@Element(name = "UserDisplayHint")
 	private Boolean userDisplayHint;
-    
+	
 	@Element(name = "SeverityCode")
 	private SeverityCodeType severityCode;
-    
+	
 	@Element(name = "ErrorParameters")
 	private List<ErrorParameterType> errorParameters;
-    
+	
 	@Element(name = "ErrorClassification")
 	private ErrorClassificationCodeType errorClassification;
-    
-	private List<Object> any;
-    
+	
     
 	/**
      * public getter
@@ -276,23 +277,6 @@ public class ErrorType   {
 	 */
 	public void setErrorClassification(ErrorClassificationCodeType errorClassification) {
 	    this.errorClassification = errorClassification;
-	}
-	/**
-	 * public getter
-	 *
-     * @returns java.util.List<java.lang.Object>
-	 */
-	public List<Object> getAny() {
-	    return this.any;
-	}
-	
-	/**
-	 * public setter
-	 *
-     * @param java.util.List<java.lang.Object>
-	 */
-	public void setAny(List<Object> any) {
-	    this.any = any;
 	}
 
 }

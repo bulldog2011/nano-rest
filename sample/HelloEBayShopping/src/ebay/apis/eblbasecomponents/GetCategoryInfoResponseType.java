@@ -2,6 +2,7 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 import java.util.Date;
 
@@ -14,20 +15,22 @@ import java.util.Date;
  * 
  */
 @RootElement(name = "GetCategoryInfoResponse", namespace = "urn:ebay:apis:eBLBaseComponents")
-public class GetCategoryInfoResponseType extends AbstractResponseType  {
+public class GetCategoryInfoResponseType extends AbstractResponseType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "CategoryArray")
 	private CategoryArrayType categoryArray;
-    
+	
 	@Element(name = "CategoryCount")
 	private Integer categoryCount;
-    
+	
 	@Element(name = "UpdateTime")
 	private Date updateTime;
-    
+	
 	@Element(name = "CategoryVersion")
 	private String categoryVersion;
-    
+	
     
 	/**
      * public getter

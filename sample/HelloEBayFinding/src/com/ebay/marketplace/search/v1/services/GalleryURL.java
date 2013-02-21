@@ -2,6 +2,7 @@
 // DO NOT CHANGE!
 package com.ebay.marketplace.search.v1.services;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 
 /**
@@ -9,14 +10,16 @@ import com.leansoft.nano.annotation.*;
  * Defines the image URL returned in galleryInfoContainer.
  * 
  */
-public class GalleryURL   {
+public class GalleryURL implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Value
 	private String value;
-    
+	
 	@Attribute  
 	private GallerySizeEnum gallerySize;
-    
+	
     
 	/**
 	 * public getter

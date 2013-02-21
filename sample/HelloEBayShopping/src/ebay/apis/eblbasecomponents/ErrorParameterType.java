@@ -2,8 +2,8 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
-import java.util.List;
 
 /**
  * 
@@ -15,16 +15,16 @@ import java.util.List;
  * errors are returned.
  * 
  */
-public class ErrorParameterType   {
+public class ErrorParameterType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "Value")
 	private String value;
-    
-	private List<Object> any;
-    
+	
 	@Attribute(name = "ParamID")
 	private String paramID;
-    
+	
     
 	/**
      * public getter
@@ -50,23 +50,6 @@ public class ErrorParameterType   {
 	 */
 	public void setValue(String value) {
 	    this.value = value;
-	}
-	/**
-	 * public getter
-	 *
-     * @returns java.util.List<java.lang.Object>
-	 */
-	public List<Object> getAny() {
-	    return this.any;
-	}
-	
-	/**
-	 * public setter
-	 *
-     * @param java.util.List<java.lang.Object>
-	 */
-	public void setAny(List<Object> any) {
-	    this.any = any;
 	}
 	/**
 	 * public getter

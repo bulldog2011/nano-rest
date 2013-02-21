@@ -2,6 +2,7 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 
 /**
@@ -10,14 +11,16 @@ import com.leansoft.nano.annotation.*;
  * 
  */
 @RootElement(name = "GetUserProfileRequest", namespace = "urn:ebay:apis:eBLBaseComponents")
-public class GetUserProfileRequestType extends AbstractRequestType  {
+public class GetUserProfileRequestType extends AbstractRequestType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "UserID")
 	private String userID;
-    
+	
 	@Element(name = "IncludeSelector")
 	private String includeSelector;
-    
+	
     
 	/**
      * public getter

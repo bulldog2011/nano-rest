@@ -2,8 +2,8 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
-import java.util.List;
 
 /**
  * 
@@ -13,34 +13,34 @@ import java.util.List;
  * Not applicable for US eBay Motors, international, Real Estate, and Tickets.
  * 
  */
-public class CharityType   {
+public class CharityType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "CharityID")
 	private String charityID;
-    
+	
 	@Element(name = "CharityName")
 	private String charityName;
-    
+	
 	@Element(name = "CharityNumber")
 	private Integer charityNumber;
-    
+	
 	@Element(name = "DonationPercent")
 	private Float donationPercent;
-    
+	
 	@Element(name = "Mission")
 	private String mission;
-    
+	
 	@Element(name = "LogoURL")
 	private String logoURL;
-    
+	
 	@Element(name = "CharityListing")
 	private Boolean charityListing;
-    
+	
 	@Element(name = "Status")
 	private CharityStatusCodeType status;
-    
-	private List<Object> any;
-    
+	
     
 	/**
      * public getter
@@ -277,23 +277,6 @@ public class CharityType   {
 	 */
 	public void setStatus(CharityStatusCodeType status) {
 	    this.status = status;
-	}
-	/**
-	 * public getter
-	 *
-     * @returns java.util.List<java.lang.Object>
-	 */
-	public List<Object> getAny() {
-	    return this.any;
-	}
-	
-	/**
-	 * public setter
-	 *
-     * @param java.util.List<java.lang.Object>
-	 */
-	public void setAny(List<Object> any) {
-	    this.any = any;
 	}
 
 }

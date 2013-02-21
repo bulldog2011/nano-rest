@@ -2,45 +2,45 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
-import java.util.List;
 
 /**
  * 
  * Contains details about a category.
  * 
  */
-public class CategoryType   {
+public class CategoryType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "CategoryID")
 	private String categoryID;
-    
+	
 	@Element(name = "CategoryLevel")
 	private Integer categoryLevel;
-    
+	
 	@Element(name = "CategoryName")
 	private String categoryName;
-    
+	
 	@Element(name = "CategoryParentID")
 	private String categoryParentID;
-    
+	
 	@Element(name = "CategoryParentName")
 	private String categoryParentName;
-    
+	
 	@Element(name = "ItemCount")
 	private Integer itemCount;
-    
+	
 	@Element(name = "CategoryNamePath")
 	private String categoryNamePath;
-    
+	
 	@Element(name = "CategoryIDPath")
 	private String categoryIDPath;
-    
+	
 	@Element(name = "LeafCategory")
 	private Boolean leafCategory;
-    
-	private List<Object> any;
-    
+	
     
 	/**
      * public getter
@@ -314,23 +314,6 @@ public class CategoryType   {
 	 */
 	public void setLeafCategory(Boolean leafCategory) {
 	    this.leafCategory = leafCategory;
-	}
-	/**
-	 * public getter
-	 *
-     * @returns java.util.List<java.lang.Object>
-	 */
-	public List<Object> getAny() {
-	    return this.any;
-	}
-	
-	/**
-	 * public setter
-	 *
-     * @param java.util.List<java.lang.Object>
-	 */
-	public void setAny(List<Object> any) {
-	    this.any = any;
 	}
 
 }

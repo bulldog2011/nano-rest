@@ -2,8 +2,8 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
-import java.util.List;
 
 /**
  * 
@@ -12,16 +12,16 @@ import java.util.List;
  * and Store Inventory format items listed by eBay Stores sellers.
  *  
  */
-public class StorefrontType   {
+public class StorefrontType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "StoreURL")
 	private String storeURL;
-    
+	
 	@Element(name = "StoreName")
 	private String storeName;
-    
-	private List<Object> any;
-    
+	
     
 	/**
      * public getter
@@ -90,23 +90,6 @@ public class StorefrontType   {
 	 */
 	public void setStoreName(String storeName) {
 	    this.storeName = storeName;
-	}
-	/**
-	 * public getter
-	 *
-     * @returns java.util.List<java.lang.Object>
-	 */
-	public List<Object> getAny() {
-	    return this.any;
-	}
-	
-	/**
-	 * public setter
-	 *
-     * @param java.util.List<java.lang.Object>
-	 */
-	public void setAny(List<Object> any) {
-	    this.any = any;
 	}
 
 }

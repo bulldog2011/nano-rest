@@ -2,8 +2,8 @@
 // DO NOT CHANGE!
 package com.ebay.marketplace.search.v1.services;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
-import java.util.List;
 
 /**
  * 
@@ -11,16 +11,16 @@ import java.util.List;
  * histogram information (item counts).
  * 
  */
-public class AspectValueHistogram   {
+public class AspectValueHistogram implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element
 	private long count;
-    
-	private List<Object> any;
-    
+	
 	@Attribute  
 	private String valueName;
-    
+	
     
 	/**
      * public getter
@@ -48,23 +48,6 @@ public class AspectValueHistogram   {
 	 */
 	public void setCount(long count) {
 	    this.count = count;
-	}
-	/**
-	 * public getter
-	 *
-     * @returns java.util.List<java.lang.Object>
-	 */
-	public List<Object> getAny() {
-	    return this.any;
-	}
-	
-	/**
-	 * public setter
-	 *
-     * @param java.util.List<java.lang.Object>
-	 */
-	public void setAny(List<Object> any) {
-	    this.any = any;
 	}
 	/**
 	 * public getter

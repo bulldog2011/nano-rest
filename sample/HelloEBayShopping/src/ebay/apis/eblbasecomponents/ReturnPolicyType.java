@@ -2,51 +2,51 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
-import java.util.List;
 
 /**
  * 
  * Type for the return policy details of an item.
  * 
  */
-public class ReturnPolicyType   {
+public class ReturnPolicyType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "Refund")
 	private String refund;
-    
+	
 	@Element(name = "ReturnsWithin")
 	private String returnsWithin;
-    
+	
 	@Element(name = "ReturnsAccepted")
 	private String returnsAccepted;
-    
+	
 	@Element(name = "Description")
 	private String description;
-    
+	
 	@Element(name = "WarrantyOffered")
 	private String warrantyOffered;
-    
+	
 	@Element(name = "WarrantyType")
 	private String warrantyType;
-    
+	
 	@Element(name = "WarrantyDuration")
 	private String warrantyDuration;
-    
+	
 	@Element(name = "EAN")
 	private String ean;
-    
+	
 	@Element(name = "ShippingCostPaidBy")
 	private String shippingCostPaidBy;
-    
+	
 	@Element(name = "RestockingFeeValue")
 	private String restockingFeeValue;
-    
+	
 	@Element(name = "RestockingFeeValueOption")
 	private String restockingFeeValueOption;
-    
-	private List<Object> any;
-    
+	
     
 	/**
      * public getter
@@ -340,23 +340,6 @@ public class ReturnPolicyType   {
 	 */
 	public void setRestockingFeeValueOption(String restockingFeeValueOption) {
 	    this.restockingFeeValueOption = restockingFeeValueOption;
-	}
-	/**
-	 * public getter
-	 *
-     * @returns java.util.List<java.lang.Object>
-	 */
-	public List<Object> getAny() {
-	    return this.any;
-	}
-	
-	/**
-	 * public setter
-	 *
-     * @param java.util.List<java.lang.Object>
-	 */
-	public void setAny(List<Object> any) {
-	    this.any = any;
 	}
 
 }

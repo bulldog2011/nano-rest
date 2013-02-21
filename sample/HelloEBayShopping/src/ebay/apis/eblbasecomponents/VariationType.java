@@ -2,39 +2,39 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
-import java.util.List;
 
 /**
  * 
  * This element hold the values that define the SKU, StartPrice, Quantity, VariationDetails, and VariationSpecifics.
  * 
  */
-public class VariationType   {
+public class VariationType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "SKU")
 	private String sku;
-    
+	
 	@Element(name = "StartPrice")
 	private AmountType startPrice;
-    
+	
 	@Element(name = "Quantity")
 	private Integer quantity;
-    
+	
 	@Element(name = "VariationSpecifics")
 	private NameValueListArrayType variationSpecifics;
-    
+	
 	@Element(name = "QuantitySold")
 	private Integer quantitySold;
-    
+	
 	@Element(name = "SellingStatus")
 	private SellingStatusType sellingStatus;
-    
+	
 	@Element(name = "DiscountPriceInfo")
 	private DiscountPriceInfoType discountPriceInfo;
-    
-	private List<Object> any;
-    
+	
     
 	/**
      * public getter
@@ -282,23 +282,6 @@ public class VariationType   {
 	 */
 	public void setDiscountPriceInfo(DiscountPriceInfoType discountPriceInfo) {
 	    this.discountPriceInfo = discountPriceInfo;
-	}
-	/**
-	 * public getter
-	 *
-     * @returns java.util.List<java.lang.Object>
-	 */
-	public List<Object> getAny() {
-	    return this.any;
-	}
-	
-	/**
-	 * public setter
-	 *
-     * @param java.util.List<java.lang.Object>
-	 */
-	public void setAny(List<Object> any) {
-	    this.any = any;
 	}
 
 }

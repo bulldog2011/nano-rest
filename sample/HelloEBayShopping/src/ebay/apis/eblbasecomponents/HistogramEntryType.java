@@ -2,24 +2,24 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
-import java.util.List;
 
 /**
  * 
  * A generic histogram entry type.
  * 
  */
-public class HistogramEntryType   {
+public class HistogramEntryType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "Name")
 	private String name;
-    
+	
 	@Element(name = "Count")
 	private Integer count;
-    
-	private List<Object> any;
-    
+	
     
 	/**
      * public getter
@@ -98,23 +98,6 @@ public class HistogramEntryType   {
 	 */
 	public void setCount(Integer count) {
 	    this.count = count;
-	}
-	/**
-	 * public getter
-	 *
-     * @returns java.util.List<java.lang.Object>
-	 */
-	public List<Object> getAny() {
-	    return this.any;
-	}
-	
-	/**
-	 * public setter
-	 *
-     * @param java.util.List<java.lang.Object>
-	 */
-	public void setAny(List<Object> any) {
-	    this.any = any;
 	}
 
 }

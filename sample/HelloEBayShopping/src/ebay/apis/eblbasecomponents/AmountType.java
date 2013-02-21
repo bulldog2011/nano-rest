@@ -2,6 +2,7 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 
 /**
@@ -14,14 +15,16 @@ import com.leansoft.nano.annotation.*;
  * and payments are specified as amount types.
  * 
  */
-public class AmountType   {
+public class AmountType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Value
 	private double value;
-    
+	
 	@Attribute  
 	private CurrencyCodeType currencyID;
-    
+	
     
 	/**
 	 * public getter

@@ -2,6 +2,7 @@
 // DO NOT CHANGE!
 package com.ebay.marketplace.search.v1.services;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 import java.util.List;
 
@@ -10,112 +11,112 @@ import java.util.List;
  * Container for the data of a single item that matches the search criteria. Finding API calls return an object of this type, filled with the item's data.
  * 
  */
-public class SearchItem   {
+public class SearchItem implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element
 	private String itemId;
-    
+	
 	@Element
 	private String title;
-    
+	
 	@Element
 	private String globalId;
-    
+	
 	@Element
 	private String subtitle;
-    
+	
 	@Element
 	private Category primaryCategory;
-    
+	
 	@Element
 	private Category secondaryCategory;
-    
+	
 	@Element
 	private String galleryURL;
-    
+	
 	@Element
 	private GalleryInfoContainer galleryInfoContainer;
-    
+	
 	@Element
 	private String viewItemURL;
-    
+	
 	@Element
 	private String charityId;
-    
+	
 	@Element
 	private ProductId productId;
-    
+	
 	@Element
 	private List<String> paymentMethod;
-    
+	
 	@Element
 	private Boolean autoPay;
-    
+	
 	@Element
 	private String postalCode;
-    
+	
 	@Element
 	private String location;
-    
+	
 	@Element
 	private String country;
-    
+	
 	@Element
 	private Storefront storeInfo;
-    
+	
 	@Element
 	private SellerInfo sellerInfo;
-    
+	
 	@Element
 	private ShippingInfo shippingInfo;
-    
+	
 	@Element
 	private SellingStatus sellingStatus;
-    
+	
 	@Element
 	private ListingInfo listingInfo;
-    
+	
 	@Element
 	private Boolean returnsAccepted;
-    
+	
 	@Element
 	private List<String> galleryPlusPictureURL;
-    
+	
 	@Element
 	private String compatibility;
-    
+	
 	@Element
 	private Distance distance;
-    
+	
 	@Element
 	private Condition condition;
-    
+	
 	@Element
 	private Boolean isMultiVariationListing;
-    
+	
 	@Element
 	private DiscountPriceInfo discountPriceInfo;
-    
+	
 	@Element
 	private String pictureURLSuperSize;
-    
+	
 	@Element
 	private String pictureURLLarge;
-    
+	
 	@Element
 	private UnitPriceInfo unitPrice;
-    
+	
 	@Element
 	private List<ItemAttribute> attribute;
-    
+	
 	@Element
 	private Boolean topRatedListing;
-    
+	
 	@Element
 	private String delimiter;
-    
-	private List<Object> any;
-    
+	
     
 	/**
      * public getter
@@ -1282,23 +1283,6 @@ public class SearchItem   {
 	 */
 	public void setDelimiter(String delimiter) {
 	    this.delimiter = delimiter;
-	}
-	/**
-	 * public getter
-	 *
-     * @returns java.util.List<java.lang.Object>
-	 */
-	public List<Object> getAny() {
-	    return this.any;
-	}
-	
-	/**
-	 * public setter
-	 *
-     * @param java.util.List<java.lang.Object>
-	 */
-	public void setAny(List<Object> any) {
-	    this.any = any;
 	}
 
 }

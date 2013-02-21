@@ -2,6 +2,7 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 import com.leansoft.nano.custom.types.Duration;
 import java.util.List;
@@ -12,229 +13,229 @@ import java.util.Date;
  * Contains information for an item.
  * 
  */
-public class SimpleItemType   {
+public class SimpleItemType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "BestOfferEnabled")
 	private Boolean bestOfferEnabled;
-    
+	
 	@Element(name = "BuyItNowPrice")
 	private AmountType buyItNowPrice;
-    
+	
 	@Element(name = "Description")
 	private String description;
-    
+	
 	@Element(name = "ItemID")
 	private String itemID;
-    
+	
 	@Element(name = "BuyItNowAvailable")
 	private Boolean buyItNowAvailable;
-    
+	
 	@Element(name = "ConvertedBuyItNowPrice")
 	private AmountType convertedBuyItNowPrice;
-    
+	
 	@Element(name = "EndTime")
 	private Date endTime;
-    
+	
 	@Element(name = "StartTime")
 	private Date startTime;
-    
+	
 	@Element(name = "ViewItemURLForNaturalSearch")
 	private String viewItemURLForNaturalSearch;
-    
+	
 	@Element(name = "ListingType")
 	private ListingTypeCodeType listingType;
-    
+	
 	@Element(name = "Location")
 	private String location;
-    
+	
 	@Element(name = "PaymentMethods")
 	private List<BuyerPaymentMethodCodeType> paymentMethods;
-    
+	
 	@Element(name = "GalleryURL")
 	private String galleryURL;
-    
+	
 	@Element(name = "PictureURL")
 	private List<String> pictureURL;
-    
+	
 	@Element(name = "PostalCode")
 	private String postalCode;
-    
+	
 	@Element(name = "PrimaryCategoryID")
 	private String primaryCategoryID;
-    
+	
 	@Element(name = "PrimaryCategoryName")
 	private String primaryCategoryName;
-    
+	
 	@Element(name = "Quantity")
 	private Integer quantity;
-    
+	
 	@Element(name = "Seller")
 	private SimpleUserType seller;
-    
+	
 	@Element(name = "BidCount")
 	private Integer bidCount;
-    
+	
 	@Element(name = "ConvertedCurrentPrice")
 	private AmountType convertedCurrentPrice;
-    
+	
 	@Element(name = "CurrentPrice")
 	private AmountType currentPrice;
-    
+	
 	@Element(name = "HighBidder")
 	private SimpleUserType highBidder;
-    
+	
 	@Element(name = "ListingStatus")
 	private ListingStatusCodeType listingStatus;
-    
+	
 	@Element(name = "QuantitySold")
 	private Integer quantitySold;
-    
+	
 	@Element(name = "ReserveMet")
 	private Boolean reserveMet;
-    
+	
 	@Element(name = "ShipToLocations")
 	private List<String> shipToLocations;
-    
+	
 	@Element(name = "Site")
 	private SiteCodeType site;
-    
+	
 	@Element(name = "TimeLeft")
 	private Duration timeLeft;
-    
+	
 	@Element(name = "Title")
 	private String title;
-    
+	
 	@Element(name = "ShippingCostSummary")
 	private ShippingCostSummaryType shippingCostSummary;
-    
+	
 	@Element(name = "ItemSpecifics")
 	private NameValueListArrayType itemSpecifics;
-    
+	
 	@Element(name = "HitCount")
 	private Long hitCount;
-    
+	
 	@Element(name = "Subtitle")
 	private String subtitle;
-    
+	
 	@Element(name = "PrimaryCategoryIDPath")
 	private String primaryCategoryIDPath;
-    
+	
 	@Element(name = "SecondaryCategoryID")
 	private String secondaryCategoryID;
-    
+	
 	@Element(name = "SecondaryCategoryName")
 	private String secondaryCategoryName;
-    
+	
 	@Element(name = "SecondaryCategoryIDPath")
 	private String secondaryCategoryIDPath;
-    
+	
 	@Element(name = "Charity")
 	private CharityType charity;
-    
+	
 	@Element(name = "GermanMotorsSearchable")
 	private Boolean germanMotorsSearchable;
-    
+	
 	@Element(name = "GetItFast")
 	private Boolean getItFast;
-    
+	
 	@Element(name = "Gift")
 	private Boolean gift;
-    
+	
 	@Element(name = "PictureExists")
 	private Boolean pictureExists;
-    
+	
 	@Element(name = "RecentListing")
 	private Boolean recentListing;
-    
+	
 	@Element(name = "Storefront")
 	private StorefrontType storefront;
-    
+	
 	@Element(name = "DistanceFromBuyer")
 	private DistanceType distanceFromBuyer;
-    
+	
 	@Element(name = "Country")
 	private CountryCodeType country;
-    
+	
 	@Element(name = "WatchCount")
 	private Integer watchCount;
-    
+	
 	@Element(name = "HalfItemCondition")
 	private HalfItemConditionCodeType halfItemCondition;
-    
+	
 	@Element(name = "SellerComments")
 	private String sellerComments;
-    
+	
 	@Element(name = "ReturnPolicy")
 	private ReturnPolicyType returnPolicy;
-    
+	
 	@Element(name = "MinimumToBid")
 	private AmountType minimumToBid;
-    
+	
 	@Element(name = "ProductID")
 	private ProductIDType productID;
-    
+	
 	@Element(name = "AutoPay")
 	private Boolean autoPay;
-    
+	
 	@Element(name = "BusinessSellerDetails")
 	private BusinessSellerDetailsType businessSellerDetails;
-    
+	
 	@Element(name = "PaymentAllowedSite")
 	private List<SiteCodeType> paymentAllowedSite;
-    
+	
 	@Element(name = "IntegratedMerchantCreditCardEnabled")
 	private Boolean integratedMerchantCreditCardEnabled;
-    
+	
 	@Element(name = "Variations")
 	private VariationsType variations;
-    
+	
 	@Element(name = "HandlingTime")
 	private Integer handlingTime;
-    
+	
 	@Element(name = "LotSize")
 	private Integer lotSize;
-    
+	
 	@Element(name = "ConditionID")
 	private Integer conditionID;
-    
+	
 	@Element(name = "ConditionDisplayName")
 	private String conditionDisplayName;
-    
+	
 	@Element(name = "QuantityAvailableHint")
 	private QuantityAvailableHintCodeType quantityAvailableHint;
-    
+	
 	@Element(name = "QuantityThreshold")
 	private Integer quantityThreshold;
-    
+	
 	@Element(name = "DiscountPriceInfo")
 	private DiscountPriceInfoType discountPriceInfo;
-    
+	
 	@Element(name = "ExcludeShipToLocation")
 	private List<String> excludeShipToLocation;
-    
+	
 	@Element(name = "TopRatedListing")
 	private Boolean topRatedListing;
-    
+	
 	@Element(name = "VhrUrl")
 	private String vhrUrl;
-    
+	
 	@Element(name = "VhrAvailable")
 	private Boolean vhrAvailable;
-    
+	
 	@Element(name = "QuantityInfo")
 	private QuantityInfo quantityInfo;
-    
+	
 	@Element(name = "UnitInfo")
 	private UnitInfoType unitInfo;
-    
+	
 	@Element(name = "GlobalShipping")
 	private Boolean globalShipping;
-    
-	private List<Object> any;
-    
+	
 	@Element(name = "ConditionDescription")
 	private String conditionDescription;
-    
+	
     
 	/**
      * public getter
@@ -3057,23 +3058,6 @@ public class SimpleItemType   {
 	 */
 	public void setGlobalShipping(Boolean globalShipping) {
 	    this.globalShipping = globalShipping;
-	}
-	/**
-	 * public getter
-	 *
-     * @returns java.util.List<java.lang.Object>
-	 */
-	public List<Object> getAny() {
-	    return this.any;
-	}
-	
-	/**
-	 * public setter
-	 *
-     * @param java.util.List<java.lang.Object>
-	 */
-	public void setAny(List<Object> any) {
-	    this.any = any;
 	}
 	/**
      * public getter

@@ -2,6 +2,7 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 import java.util.List;
 
@@ -11,17 +12,19 @@ import java.util.List;
  * 
  */
 @RootElement(name = "GetUserProfileResponse", namespace = "urn:ebay:apis:eBLBaseComponents")
-public class GetUserProfileResponseType extends AbstractResponseType  {
+public class GetUserProfileResponseType extends AbstractResponseType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "User")
 	private SimpleUserType user;
-    
+	
 	@Element(name = "FeedbackHistory")
 	private FeedbackHistoryType feedbackHistory;
-    
+	
 	@Element(name = "FeedbackDetails")
 	private List<FeedbackDetailType> feedbackDetails;
-    
+	
     
 	/**
      * public getter

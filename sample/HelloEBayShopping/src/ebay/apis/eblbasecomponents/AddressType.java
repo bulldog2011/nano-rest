@@ -2,8 +2,8 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
-import java.util.List;
 
 /**
  * 
@@ -12,82 +12,82 @@ import java.util.List;
  * shipping address and buyer and seller registration address.
  * 
  */
-public class AddressType   {
+public class AddressType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "Name")
 	private String name;
-    
+	
 	@Element(name = "Street")
 	private String street;
-    
+	
 	@Element(name = "Street1")
 	private String street1;
-    
+	
 	@Element(name = "Street2")
 	private String street2;
-    
+	
 	@Element(name = "CityName")
 	private String cityName;
-    
+	
 	@Element(name = "County")
 	private String county;
-    
+	
 	@Element(name = "StateOrProvince")
 	private String stateOrProvince;
-    
+	
 	@Element(name = "CountryName")
 	private String countryName;
-    
+	
 	@Element(name = "Phone")
 	private String phone;
-    
+	
 	@Element(name = "PhoneCountryPrefix")
 	private String phoneCountryPrefix;
-    
+	
 	@Element(name = "PhoneAreaOrCityCode")
 	private String phoneAreaOrCityCode;
-    
+	
 	@Element(name = "PhoneLocalNumber")
 	private String phoneLocalNumber;
-    
+	
 	@Element(name = "Phone2CountryPrefix")
 	private String phone2CountryPrefix;
-    
+	
 	@Element(name = "Phone2AreaOrCityCode")
 	private String phone2AreaOrCityCode;
-    
+	
 	@Element(name = "Phone2LocalNumber")
 	private String phone2LocalNumber;
-    
+	
 	@Element(name = "PostalCode")
 	private String postalCode;
-    
+	
 	@Element(name = "AddressID")
 	private String addressID;
-    
+	
 	@Element(name = "ExternalAddressID")
 	private String externalAddressID;
-    
+	
 	@Element(name = "InternationalName")
 	private String internationalName;
-    
+	
 	@Element(name = "InternationalStateAndCity")
 	private String internationalStateAndCity;
-    
+	
 	@Element(name = "InternationalStreet")
 	private String internationalStreet;
-    
+	
 	@Element(name = "CompanyName")
 	private String companyName;
-    
+	
 	@Element(name = "FirstName")
 	private String firstName;
-    
+	
 	@Element(name = "LastName")
 	private String lastName;
-    
-	private List<Object> any;
-    
+	
     
 	/**
      * public getter
@@ -794,23 +794,6 @@ public class AddressType   {
 	 */
 	public void setLastName(String lastName) {
 	    this.lastName = lastName;
-	}
-	/**
-	 * public getter
-	 *
-     * @returns java.util.List<java.lang.Object>
-	 */
-	public List<Object> getAny() {
-	    return this.any;
-	}
-	
-	/**
-	 * public setter
-	 *
-     * @param java.util.List<java.lang.Object>
-	 */
-	public void setAny(List<Object> any) {
-	    this.any = any;
 	}
 
 }

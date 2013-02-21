@@ -2,6 +2,7 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 import java.util.List;
 
@@ -10,13 +11,13 @@ import java.util.List;
  * Information about an eBay catalog product.
  * 
  */
-public class HalfProductsType   {
+public class HalfProductsType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "Product")
 	private List<HalfCatalogProductType> product;
-    
-	private List<Object> any;
-    
+	
     
 	/**
      * public getter
@@ -60,23 +61,6 @@ public class HalfProductsType   {
 	 */
 	public void setProduct(List<HalfCatalogProductType> product) {
 	    this.product = product;
-	}
-	/**
-	 * public getter
-	 *
-     * @returns java.util.List<java.lang.Object>
-	 */
-	public List<Object> getAny() {
-	    return this.any;
-	}
-	
-	/**
-	 * public setter
-	 *
-     * @param java.util.List<java.lang.Object>
-	 */
-	public void setAny(List<Object> any) {
-	    this.any = any;
 	}
 
 }

@@ -2,6 +2,7 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 
 /**
@@ -9,14 +10,16 @@ import com.leansoft.nano.annotation.*;
  * Product ID has an attribute of ProductIDCodeType and a string value.
  * 
  */
-public class ProductIDType   {
+public class ProductIDType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Value
 	private String value;
-    
+	
 	@Attribute  
 	private ProductIDCodeType type;
-    
+	
     
 	/**
 	 * public getter

@@ -2,6 +2,7 @@
 // DO NOT CHANGE!
 package com.ebay.marketplace.search.v1.services;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 
 /**
@@ -12,7 +13,9 @@ import com.leansoft.nano.annotation.*;
  * 
  */
 @RootElement(name = "getVersionRequest", namespace = "http://www.ebay.com/marketplace/search/v1/services")
-public class GetVersionRequest extends BaseServiceRequest  {
+public class GetVersionRequest extends BaseServiceRequest implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
     
 

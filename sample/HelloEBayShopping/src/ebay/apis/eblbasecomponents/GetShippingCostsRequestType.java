@@ -2,6 +2,7 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 
 /**
@@ -22,23 +23,25 @@ import com.leansoft.nano.annotation.*;
  * 
  */
 @RootElement(name = "GetShippingCostsRequest", namespace = "urn:ebay:apis:eBLBaseComponents")
-public class GetShippingCostsRequestType extends AbstractRequestType  {
+public class GetShippingCostsRequestType extends AbstractRequestType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "ItemID")
 	private String itemID;
-    
+	
 	@Element(name = "QuantitySold")
 	private Integer quantitySold;
-    
+	
 	@Element(name = "DestinationPostalCode")
 	private String destinationPostalCode;
-    
+	
 	@Element(name = "DestinationCountryCode")
 	private CountryCodeType destinationCountryCode;
-    
+	
 	@Element(name = "IncludeDetails")
 	private Boolean includeDetails;
-    
+	
     
 	/**
      * public getter

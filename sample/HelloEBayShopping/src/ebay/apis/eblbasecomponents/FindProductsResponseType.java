@@ -2,6 +2,7 @@
 // DO NOT CHANGE!
 package ebay.apis.eblbasecomponents;
 
+import java.io.Serializable;
 import com.leansoft.nano.annotation.*;
 import java.util.List;
 
@@ -13,32 +14,34 @@ import java.util.List;
  * 
  */
 @RootElement(name = "FindProductsResponse", namespace = "urn:ebay:apis:eBLBaseComponents")
-public class FindProductsResponseType extends AbstractResponseType  {
+public class FindProductsResponseType extends AbstractResponseType implements Serializable {
+
+    private static final long serialVersionUID = -1L;
 
 	@Element(name = "ApproximatePages")
 	private Integer approximatePages;
-    
+	
 	@Element(name = "MoreResults")
 	private Boolean moreResults;
-    
+	
 	@Element(name = "DomainHistogram")
 	private DomainHistogramType domainHistogram;
-    
+	
 	@Element(name = "ItemArray")
 	private SimpleItemArrayType itemArray;
-    
+	
 	@Element(name = "PageNumber")
 	private Integer pageNumber;
-    
+	
 	@Element(name = "Product")
 	private List<CatalogProductType> product;
-    
+	
 	@Element(name = "TotalProducts")
 	private Integer totalProducts;
-    
+	
 	@Element(name = "DuplicateItems")
 	private Boolean duplicateItems;
-    
+	
     
 	/**
      * public getter
