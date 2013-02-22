@@ -47,7 +47,7 @@ public enum BulkCatalogListerStatusCodeType {
 
     /**
      * 
-   *         
+   * 
    * (out) Reserved for internal or future use.
    * 
      */

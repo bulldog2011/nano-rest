@@ -280,7 +280,6 @@ public class GetItemTransactionsRequestType extends AbstractRequestType implemen
      * returned in the <b>Transaction.FinalValueFee</b> field. The Final Value Fee is
      * assessed right after the creation of an order line item.
      * 
-     *           
      * <br>
      * 
      *
@@ -299,7 +298,6 @@ public class GetItemTransactionsRequestType extends AbstractRequestType implemen
      * returned in the <b>Transaction.FinalValueFee</b> field. The Final Value Fee is
      * assessed right after the creation of an order line item.
      * 
-     *           
      * <br>
      * 
      *

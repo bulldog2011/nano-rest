@@ -526,7 +526,6 @@ public class SellingStatusType implements Serializable {
      * will not change for the item if a credit is issued. (The credit only appears in
      * the seller's account data.)
      * 
-     *         
      * <br>
      * 
      *
@@ -556,7 +555,6 @@ public class SellingStatusType implements Serializable {
      * will not change for the item if a credit is issued. (The credit only appears in
      * the seller's account data.)
      * 
-     *         
      * <br>
      * 
      *

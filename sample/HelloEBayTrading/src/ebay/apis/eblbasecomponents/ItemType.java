@@ -1132,7 +1132,6 @@ public class ItemType implements Serializable {
      *
      * 
      * The seller's description of the item. 
-     *         
      * In listing requests, you can submit your description
      * using CDATA if you want to use HTML or XML-reserved characters in the
      * description. An error is returned if this contains malicious JavaScript
@@ -1179,7 +1178,6 @@ public class ItemType implements Serializable {
 	 *
      * 
      * The seller's description of the item. 
-     *         
      * In listing requests, you can submit your description
      * using CDATA if you want to use HTML or XML-reserved characters in the
      * description. An error is returned if this contains malicious JavaScript
@@ -7296,7 +7294,6 @@ public class ItemType implements Serializable {
      *
      * 
      * Contains information about the weight, volume or other quantity measurement of a listed item. The European Union requires listings for certain types of products to include the price per unit so buyers can accurately compare prices. eBay uses the <strong>UnitInfo</strong> data and the item's listed price to calculate and display the per-unit price on eBay EU sites. 
-     *         
      *                   <br/><br/>
      *                   <span class="tablenote">
      *                   <strong>Note:</strong> This information is currently required only for EU business sellers, and only for listings with a Buy It Now option.
@@ -7314,7 +7311,6 @@ public class ItemType implements Serializable {
 	 *
      * 
      * Contains information about the weight, volume or other quantity measurement of a listed item. The European Union requires listings for certain types of products to include the price per unit so buyers can accurately compare prices. eBay uses the <strong>UnitInfo</strong> data and the item's listed price to calculate and display the per-unit price on eBay EU sites. 
-     *         
      *                   <br/><br/>
      *                   <span class="tablenote">
      *                   <strong>Note:</strong> This information is currently required only for EU business sellers, and only for listings with a Buy It Now option.

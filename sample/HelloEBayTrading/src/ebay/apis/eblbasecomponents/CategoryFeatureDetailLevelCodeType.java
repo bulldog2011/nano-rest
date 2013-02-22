@@ -6,14 +6,13 @@ package ebay.apis.eblbasecomponents;
  * 
  * This type is deprecated. Use <b>DetailLevelCodeType</b> instead.
  * 
- *       
- *      
+ * 
  */
 public enum CategoryFeatureDetailLevelCodeType {
 
     /**
      * 
-   *         
+   * 
    *   Return all available data.
    * 
      */
@@ -22,7 +21,7 @@ public enum CategoryFeatureDetailLevelCodeType {
 
     /**
      * 
-   *         
+   * 
    *   Return the category feature definitions only.
    * 
      */
@@ -31,7 +30,7 @@ public enum CategoryFeatureDetailLevelCodeType {
 
     /**
      * 
-   *         
+   * 
    * (out) Reserved for internal or future use.
    * 
      */

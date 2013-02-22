@@ -11,8 +11,7 @@ import java.util.List;
  * 
  * This type is deprecated as Cross Promotions are no longer supported in the APIs.
  * 
- *       
- *      
+ * 
  */
 public class PromotedItemType implements Serializable {
 
@@ -47,7 +46,7 @@ public class PromotedItemType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      *   The unique ID of the item for which there is a promotion.
      * 
      *
@@ -61,7 +60,7 @@ public class PromotedItemType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      *   The unique ID of the item for which there is a promotion.
      * 
      *
@@ -74,7 +73,7 @@ public class PromotedItemType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * URL for an image hosted by eBay Picture Services (EPS) or self-hosted for
      * the promoted item, if any.
      * 
@@ -89,7 +88,7 @@ public class PromotedItemType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * URL for an image hosted by eBay Picture Services (EPS) or self-hosted for
      * the promoted item, if any.
      * 
@@ -103,7 +102,7 @@ public class PromotedItemType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * The ordinal position of the cross-promoted item
      * in the display. If the display is from top to bottom,
      * 1 is at top. If the display is from left to right, 1
@@ -120,7 +119,7 @@ public class PromotedItemType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * The ordinal position of the cross-promoted item
      * in the display. If the display is from top to bottom,
      * 1 is at top. If the display is from left to right, 1
@@ -136,7 +135,7 @@ public class PromotedItemType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * The manner in which the cross-promoted item was chosen
      * to be associated with the referring item. Output only.
      * 
@@ -151,7 +150,7 @@ public class PromotedItemType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * The manner in which the cross-promoted item was chosen
      * to be associated with the referring item. Output only.
      * 
@@ -165,7 +164,7 @@ public class PromotedItemType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * The item title of the promoted item that is displayed in the
      * referring item's page. 
      * <br><br>
@@ -185,7 +184,7 @@ public class PromotedItemType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * The item title of the promoted item that is displayed in the
      * referring item's page. 
      * <br><br>
@@ -204,7 +203,7 @@ public class PromotedItemType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * The listing type under which the cross-promoted item
      * is being offered.<br>
      * <br>
@@ -224,7 +223,7 @@ public class PromotedItemType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * The listing type under which the cross-promoted item
      * is being offered.<br>
      * <br>
@@ -243,7 +242,7 @@ public class PromotedItemType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * Contains the details about the promoted item for a given PromotionPriceType. Output only.
      * Returned with request versions 485 or higher.
      * 
@@ -258,7 +257,7 @@ public class PromotedItemType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * Contains the details about the promoted item for a given PromotionPriceType. Output only.
      * Returned with request versions 485 or higher.
      * 
@@ -272,7 +271,7 @@ public class PromotedItemType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * Time left before the listing for the cross-promoted item ends. Output only.
      * The duration is represented in the ISO 8601 duration format (PnYnMnDTnHnMnS).
      * See Data Types in the eBay Web Services guide for information about this
@@ -290,7 +289,7 @@ public class PromotedItemType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * Time left before the listing for the cross-promoted item ends. Output only.
      * The duration is represented in the ISO 8601 duration format (PnYnMnDTnHnMnS).
      * See Data Types in the eBay Web Services guide for information about this

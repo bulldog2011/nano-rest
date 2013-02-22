@@ -6,14 +6,13 @@ package ebay.apis.eblbasecomponents;
  * 
  * This type is deprecated because Coss Promotions are no longer supported in the APIs.
  * 
- *       
- *      
+ * 
  */
 public enum MerchDisplayCodeType {
 
     /**
      * 
-   *         
+   * 
    * Uses the default eBay theme for cross-promotion widgets.
    * 
      */
@@ -22,7 +21,7 @@ public enum MerchDisplayCodeType {
 
     /**
      * 
-   *         
+   * 
    * Uses the store theme for cross-promotion widgets.
    * 
      */
@@ -31,7 +30,7 @@ public enum MerchDisplayCodeType {
 
     /**
      * 
-   *         
+   * 
    * Reserved for internal or future use.
    * 
      */

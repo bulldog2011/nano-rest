@@ -12,8 +12,7 @@ import java.util.Date;
  * <b>GetCategoryFeatures</b> with <b>PaymentMethods</b> as a 
  * <b>FeatureID</b> value in the request.
  * 
- *       
- *      
+ * 
  */
 public class PaymentOptionDetailsType implements Serializable {
 
@@ -36,7 +35,7 @@ public class PaymentOptionDetailsType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * A payment method value defined in the schema.
      * 
      *
@@ -50,7 +49,7 @@ public class PaymentOptionDetailsType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * A payment method value defined in the schema.
      * 
      *
@@ -63,7 +62,7 @@ public class PaymentOptionDetailsType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * Full name of the payment method for display purposes.
      * 
      *
@@ -77,7 +76,7 @@ public class PaymentOptionDetailsType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * Full name of the payment method for display purposes.
      * 
      *
@@ -90,7 +89,7 @@ public class PaymentOptionDetailsType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * Returns the latest version number for this field. The version can be
      * used to determine if and when to refresh cached client data.
      * 
@@ -105,7 +104,7 @@ public class PaymentOptionDetailsType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * Returns the latest version number for this field. The version can be
      * used to determine if and when to refresh cached client data.
      * 
@@ -119,7 +118,7 @@ public class PaymentOptionDetailsType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * Gives the time in GMT that the feature flags for the details were last
      * updated. This timestamp can be used to determine if and when to refresh
      * cached client data.
@@ -135,7 +134,7 @@ public class PaymentOptionDetailsType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * Gives the time in GMT that the feature flags for the details were last
      * updated. This timestamp can be used to determine if and when to refresh
      * cached client data.

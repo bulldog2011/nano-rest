@@ -17,7 +17,6 @@ import java.util.Date;
  * Auction listings and single-quantity, fixed-price listings can only spawn one order
  * line item.
  * 
- *       
  * <br>
  * 
  */
@@ -1280,7 +1279,6 @@ public class TransactionType implements Serializable {
      * <b>Transaction.FinalValueFee</b> will not change if a credit is
      * issued. The credit only appears in the seller's account data.
      * 
-     *         
      * <br><br>
      * Not applicable to Half.com.
      * 
@@ -1305,7 +1303,6 @@ public class TransactionType implements Serializable {
      * <b>Transaction.FinalValueFee</b> will not change if a credit is
      * issued. The credit only appears in the seller's account data.
      * 
-     *         
      * <br><br>
      * Not applicable to Half.com.
      * 

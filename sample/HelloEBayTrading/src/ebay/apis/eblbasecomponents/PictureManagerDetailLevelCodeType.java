@@ -6,14 +6,13 @@ package ebay.apis.eblbasecomponents;
  * 
  * This type is deprecated as Pictures Manager was retired.
  * 
- *       
- *      
+ * 
  */
 public enum PictureManagerDetailLevelCodeType {
 
     /**
      * 
-   *         
+   * 
    * (in) All pictures, folders, and account settings. Default value.
    * 
      */
@@ -22,7 +21,7 @@ public enum PictureManagerDetailLevelCodeType {
 
     /**
      * 
-   *         
+   * 
    * (in) Only data about the account subscription.
    * 
      */
@@ -31,7 +30,7 @@ public enum PictureManagerDetailLevelCodeType {
 
     /**
      * 
-   *         
+   * 
    * (in) Return only data about pictures and folders in the authenticated user's account.
    * 
      */
@@ -40,7 +39,7 @@ public enum PictureManagerDetailLevelCodeType {
 
     /**
      * 
-   *         
+   * 
    * (out) Reserved for internal or future use
    * 
      */

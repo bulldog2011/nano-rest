@@ -32,7 +32,8 @@ public class TradingConfig {
 	}
 
 	/**
-	 * Set eBay Site Id, find id in SiteCodeType
+	 * Set eBay Site Id, 
+	 * find id here : http://developer.ebay.com/DevZone/shopping/docs/CallRef/types/SiteCodeType.html
 	 * 
 	 * @param siteId target site Id
 	 */

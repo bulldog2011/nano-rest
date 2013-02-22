@@ -9,8 +9,7 @@ import com.leansoft.nano.annotation.*;
  * 
  * This type is deprecated as the <b>GetProduct*</b> calls are no longer available.
  * 
- *       
- *      
+ * 
  */
 public class LabelType implements Serializable {
 
@@ -27,7 +26,7 @@ public class LabelType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * The label to display when presenting the attribute to a user
      * (e.g., "Title" or "Manufacturer"). <br>
      * <br>
@@ -55,7 +54,7 @@ public class LabelType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * The label to display when presenting the attribute to a user
      * (e.g., "Title" or "Manufacturer"). <br>
      * <br>

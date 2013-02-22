@@ -6,14 +6,13 @@ package ebay.apis.eblbasecomponents;
  * 
  * This type is deprecated because this type is not used by any call.
  *   
- *       
- *      
+ * 
  */
 public enum BidderTypeCodeType {
 
     /**
      * 
-   *         
+   * 
    * (in) Retrieve all bidders for ended or open listings.
    * 
      */
@@ -22,7 +21,7 @@ public enum BidderTypeCodeType {
 
     /**
      * 
-   *         
+   * 
    * (in) Retrieve all high bidders.
    * 
      */
@@ -31,7 +30,7 @@ public enum BidderTypeCodeType {
 
     /**
      * 
-   *         
+   * 
    * (out) Reserved for internal or future use.
    * 
      */

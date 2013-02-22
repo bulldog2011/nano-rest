@@ -6,14 +6,13 @@ package ebay.apis.eblbasecomponents;
  * 
  * This type is deprecated as <b>GetProduct*</b> calls were deprecated.
  * 
- *       
- *      
+ * 
  */
 public enum ProductSortCodeType {
 
     /**
      * 
-   *         
+   * 
    * Sort by product popularity (as determined by eBay),
    * and return the most popular products first.
    * 
@@ -23,7 +22,7 @@ public enum ProductSortCodeType {
 
     /**
      * 
-   *         
+   * 
    * Sort by product popularity (as determined by eBay),
    * and return the least popular products first.
    * 
@@ -33,7 +32,7 @@ public enum ProductSortCodeType {
 
     /**
      * 
-   *         
+   * 
    * Sort by average rating, and return the lowest rated
    * products first.
    * 
@@ -43,7 +42,7 @@ public enum ProductSortCodeType {
 
     /**
      * 
-   *         
+   * 
    * Sort by average rating, and return the highest rated
    * products first.
    * 
@@ -53,7 +52,7 @@ public enum ProductSortCodeType {
 
     /**
      * 
-   *         
+   * 
    * Sort by the number of reviews, and return products with
    * the fewest reviews first.
    * 
@@ -63,7 +62,7 @@ public enum ProductSortCodeType {
 
     /**
      * 
-   *         
+   * 
    * Sort by the number of reviews, and return products with
    * the most reviews first.
    * 
@@ -73,7 +72,7 @@ public enum ProductSortCodeType {
 
     /**
      * 
-   *         
+   * 
    * Sort by the number of active items listed with this product,
    * and return products with the fewest items first.
    * 
@@ -83,7 +82,7 @@ public enum ProductSortCodeType {
 
     /**
      * 
-   *         
+   * 
    * Sort by the number of active items listed with this product,
    * and return products with the most items first.
    * 
@@ -93,7 +92,7 @@ public enum ProductSortCodeType {
 
     /**
      * 
-   *         
+   * 
    * Sort by the product title, and return products in ascending order.
    * For example, with Western character sets, this means alphabetical order
    * (e.g., A to Z), where titles that start with the word "A" appear
@@ -105,7 +104,7 @@ public enum ProductSortCodeType {
 
     /**
      * 
-   *         
+   * 
    * Sort by the product title, and return products in reverse order
    * (e.g., Z to A).
    * 
@@ -115,7 +114,7 @@ public enum ProductSortCodeType {
 
     /**
      * 
-   *         
+   * 
    * Reserved for values that are not available in the version of the schema
    * you are using. If eBay adds a new value to this code type as of a
    * particular version, we return CustomCode when you specify a

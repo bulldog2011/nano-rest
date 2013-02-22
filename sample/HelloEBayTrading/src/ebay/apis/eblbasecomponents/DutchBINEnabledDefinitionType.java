@@ -9,8 +9,7 @@ import com.leansoft.nano.annotation.*;
  * 
  * This type is deprecated as Dutch auctions are deprecated.
  * 
- *       
- *      
+ * 
  */
 public class DutchBINEnabledDefinitionType implements Serializable {
 

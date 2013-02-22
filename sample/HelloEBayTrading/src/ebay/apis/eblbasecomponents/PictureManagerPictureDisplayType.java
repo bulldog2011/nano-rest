@@ -9,8 +9,7 @@ import com.leansoft.nano.annotation.*;
  * 
  * This type is deprecated as Pictures Manager was retired.
  * 
- *       
- *      
+ * 
  */
 public class PictureManagerPictureDisplayType implements Serializable {
 
@@ -36,7 +35,7 @@ public class PictureManagerPictureDisplayType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      *  The style of picture display, with a maximum size.
      * 
      *
@@ -50,7 +49,7 @@ public class PictureManagerPictureDisplayType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      *  The style of picture display, with a maximum size.
      * 
      *
@@ -63,7 +62,7 @@ public class PictureManagerPictureDisplayType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * The URL to the image in the Picture Manager album.
      * 
      *
@@ -77,7 +76,7 @@ public class PictureManagerPictureDisplayType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * The URL to the image in the Picture Manager album.
      * 
      *
@@ -90,7 +89,7 @@ public class PictureManagerPictureDisplayType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * The total file size of the picture, in bytes.
      * 
      *
@@ -104,7 +103,7 @@ public class PictureManagerPictureDisplayType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * The total file size of the picture, in bytes.
      * 
      *
@@ -117,7 +116,7 @@ public class PictureManagerPictureDisplayType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * The height of a specific image, or the maximum allowed height, in pixels.
      * Varies for different calls.
      * 
@@ -132,7 +131,7 @@ public class PictureManagerPictureDisplayType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * The height of a specific image, or the maximum allowed height, in pixels.
      * Varies for different calls.
      * 
@@ -146,7 +145,7 @@ public class PictureManagerPictureDisplayType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * The width of a specific image, or the maximum allowed width, in pixels.
      * Varies for different calls.
      * 
@@ -161,7 +160,7 @@ public class PictureManagerPictureDisplayType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * The width of a specific image, or the maximum allowed width, in pixels.
      * Varies for different calls.
      * 

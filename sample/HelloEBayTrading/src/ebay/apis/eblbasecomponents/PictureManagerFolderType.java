@@ -10,8 +10,7 @@ import java.util.List;
  * 
  *  This type is deprecated as Pictures Manager was retired.
  * 
- *       
- *      
+ * 
  */
 public class PictureManagerFolderType implements Serializable {
 
@@ -31,7 +30,7 @@ public class PictureManagerFolderType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * The ID of the folder.
      * 
      *
@@ -45,7 +44,7 @@ public class PictureManagerFolderType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * The ID of the folder.
      * 
      *
@@ -58,7 +57,7 @@ public class PictureManagerFolderType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * The name of the folder.
      * 
      *
@@ -72,7 +71,7 @@ public class PictureManagerFolderType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * The name of the folder.
      * 
      *
@@ -85,7 +84,7 @@ public class PictureManagerFolderType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * A picture within the folder, identified by a name, date, URL, and other metadata.
      * 
      *
@@ -99,7 +98,7 @@ public class PictureManagerFolderType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * A picture within the folder, identified by a name, date, URL, and other metadata.
      * 
      *

@@ -10,8 +10,7 @@ import java.util.List;
  * 
  * This type is deprecated because <b>MyMessagesAlert*</b> are deprecated.
  * 
- *       
- *      
+ * 
  */
 public class MyMessagesAlertArrayType implements Serializable {
 
@@ -25,7 +24,7 @@ public class MyMessagesAlertArrayType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * This container will be deprecated in an upcoming release.
      * This field formerly
      * contained the data for one alert.
@@ -41,7 +40,7 @@ public class MyMessagesAlertArrayType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * This container will be deprecated in an upcoming release.
      * This field formerly
      * contained the data for one alert.

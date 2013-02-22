@@ -9,8 +9,7 @@ import com.leansoft.nano.annotation.*;
  * 
  * This type is deprecated as the call is no longer available.
  * 
- *       
- *      
+ * 
  */
 @RootElement(name = "GetAttributesCSResponse", namespace = "urn:ebay:apis:eBLBaseComponents")
 public class GetAttributesCSResponseType extends AbstractResponseType implements Serializable {
@@ -28,7 +27,7 @@ public class GetAttributesCSResponseType extends AbstractResponseType implements
      * public getter
      *
      * 
-     *           
+     * 
      * Current version of the Item Specifics meta-data system for
      * the site.
      * This value changes each time changes are made to the meta-data.
@@ -47,7 +46,7 @@ public class GetAttributesCSResponseType extends AbstractResponseType implements
 	 * public setter
 	 *
      * 
-     *           
+     * 
      * Current version of the Item Specifics meta-data system for
      * the site.
      * This value changes each time changes are made to the meta-data.
@@ -65,7 +64,7 @@ public class GetAttributesCSResponseType extends AbstractResponseType implements
      * public getter
      *
      * 
-     *           
+     * 
      * A string containing a list of all the attributes that are
      * applicable to the site (or characteristic sets in the request),
      * along with related meta-data.
@@ -95,7 +94,7 @@ public class GetAttributesCSResponseType extends AbstractResponseType implements
 	 * public setter
 	 *
      * 
-     *           
+     * 
      * A string containing a list of all the attributes that are
      * applicable to the site (or characteristic sets in the request),
      * along with related meta-data.

@@ -9,8 +9,7 @@ import com.leansoft.nano.annotation.*;
  * 
  * This type is deprecated as the Bid Assistant feature is no longer available.
  * 
- *       
- *      
+ * 
  */
 public class BidAssistantListType implements Serializable {
 
@@ -27,7 +26,7 @@ public class BidAssistantListType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * Use this element to specify the bid group id for the Bid Assistant items 
      * that you want information about.
      * 
@@ -42,7 +41,7 @@ public class BidAssistantListType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * Use this element to specify the bid group id for the Bid Assistant items 
      * that you want information about.
      * 
@@ -56,7 +55,7 @@ public class BidAssistantListType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * Specifies whether or not to include Item.PrivateNotes and Item.eBayNotes
      * in the response.
      * 
@@ -71,7 +70,7 @@ public class BidAssistantListType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * Specifies whether or not to include Item.PrivateNotes and Item.eBayNotes
      * in the response.
      * 

@@ -38,8 +38,7 @@ public class PictureManagerDetailsType implements Serializable {
      * 
      * This type is deprecated as Pictures Manager was retired.
      * 
-     *         
-     *        
+     * 
      *
      * @returns ebay.apis.eblbasecomponents.PictureManagerSubscriptionLevelCodeType
 	 */
@@ -53,8 +52,7 @@ public class PictureManagerDetailsType implements Serializable {
      * 
      * This type is deprecated as Pictures Manager was retired.
      * 
-     *         
-     *        
+     * 
      *
      * @param ebay.apis.eblbasecomponents.PictureManagerSubscriptionLevelCodeType
 	 */
@@ -65,7 +63,7 @@ public class PictureManagerDetailsType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * The amount of storage already in use. Measured in bytes. Read-only value.
      * 
      *
@@ -79,7 +77,7 @@ public class PictureManagerDetailsType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * The amount of storage already in use. Measured in bytes. Read-only value.
      * 
      *
@@ -92,7 +90,7 @@ public class PictureManagerDetailsType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * The amount of storage space remaining in the authenticated user's album.
      * Measured in bytes. Read-only value.
      * 
@@ -107,7 +105,7 @@ public class PictureManagerDetailsType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * The amount of storage space remaining in the authenticated user's album.
      * Measured in bytes. Read-only value.
      * 
@@ -121,7 +119,7 @@ public class PictureManagerDetailsType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * Whether to keep a copy of the original picture without resizing.
      * Default is false. true = keep originals.
      * 
@@ -136,7 +134,7 @@ public class PictureManagerDetailsType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * Whether to keep a copy of the original picture without resizing.
      * Default is false. true = keep originals.
      * 
@@ -150,7 +148,7 @@ public class PictureManagerDetailsType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * Whether to show the EPS watermark when photos are displayed.
      * Default is false. true = show.
      * 
@@ -165,7 +163,7 @@ public class PictureManagerDetailsType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * Whether to show the EPS watermark when photos are displayed.
      * Default is false. true = show.
      * 
@@ -179,7 +177,7 @@ public class PictureManagerDetailsType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * Whether to show the user ID watermark when photos are displayed.
      * Default is false. true = show.
      * 
@@ -194,7 +192,7 @@ public class PictureManagerDetailsType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * Whether to show the user ID watermark when photos are displayed.
      * Default is false. true = show.
      * 
@@ -208,7 +206,7 @@ public class PictureManagerDetailsType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * The folder requested in the album.
      * 
      *
@@ -222,7 +220,7 @@ public class PictureManagerDetailsType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * The folder requested in the album.
      * 
      *

@@ -9,8 +9,7 @@ import com.leansoft.nano.annotation.*;
  * 
  * This type is deprecated because attributes are deprecated.
  * 
- *       
- *      
+ * 
  */
 public class LookupAttributeType implements Serializable {
 
@@ -27,7 +26,7 @@ public class LookupAttributeType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * No longer applicable to any category.
      * 
      *
@@ -41,7 +40,7 @@ public class LookupAttributeType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * No longer applicable to any category.
      * 
      *
@@ -54,7 +53,7 @@ public class LookupAttributeType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      *   No longer applicable to any category.
      * 
      *
@@ -68,7 +67,7 @@ public class LookupAttributeType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      *   No longer applicable to any category.
      * 
      *

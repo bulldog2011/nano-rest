@@ -10,8 +10,7 @@ import java.util.Date;
  * 
  * This type is no longer used; replaced by <b>ShippingLocationDetails</b>.
  * 
- *       
- *      
+ * 
  */
 public class RegionDetailsType implements Serializable {
 
@@ -34,7 +33,7 @@ public class RegionDetailsType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * Numeric identifier for a region within a country.
      * 
      *
@@ -48,7 +47,7 @@ public class RegionDetailsType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * Numeric identifier for a region within a country.
      * 
      *
@@ -61,7 +60,7 @@ public class RegionDetailsType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * Full name of the region.
      * 
      *
@@ -75,7 +74,7 @@ public class RegionDetailsType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * Full name of the region.
      * 
      *
@@ -88,7 +87,7 @@ public class RegionDetailsType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * Returns the latest version number for this field. The version can
      * be used to determine if and when to refresh cached client data.
      * 
@@ -103,7 +102,7 @@ public class RegionDetailsType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * Returns the latest version number for this field. The version can
      * be used to determine if and when to refresh cached client data.
      * 
@@ -117,7 +116,7 @@ public class RegionDetailsType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * Gives the time in GMT that the feature flags for the details were last
      * updated. This timestamp can be used to determine if and when to refresh
      * cached client data.
@@ -133,7 +132,7 @@ public class RegionDetailsType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * Gives the time in GMT that the feature flags for the details were last
      * updated. This timestamp can be used to determine if and when to refresh
      * cached client data.

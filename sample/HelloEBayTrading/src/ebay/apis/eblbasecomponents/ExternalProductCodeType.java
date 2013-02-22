@@ -6,14 +6,13 @@ package ebay.apis.eblbasecomponents;
  * 
  * This type is deprecated as the partent of this type is no longer available.
  * 
- *       
- *      
+ * 
  */
 public enum ExternalProductCodeType {
 
     /**
      * 
-   *         
+   * 
    * ExternalProductID.Value contains an ISBN value.
    * Required when you pass an ISBN as the external product ID.
    * (This value is also applicable to Half.com listings.)
@@ -24,7 +23,7 @@ public enum ExternalProductCodeType {
 
     /**
      * 
-   *         
+   * 
    * ExternalProductID.Value contains a UPC value.
    * Required when you pass a UPC as the external product ID.
    * (This value is also applicable to Half.com listings.)
@@ -35,7 +34,7 @@ public enum ExternalProductCodeType {
 
     /**
      * 
-   *         
+   * 
    * ExternalProductID.Value contains an eBay catalog product ID.
    * Required when you pass an eBay product ID
    * as the external product ID.
@@ -46,7 +45,7 @@ public enum ExternalProductCodeType {
 
     /**
      * 
-   *         
+   * 
    * ExternalProductID.Value contains an EAN value.
    * Required when you pass an EAN as the external product ID.
    * 
@@ -56,7 +55,7 @@ public enum ExternalProductCodeType {
 
     /**
      * 
-   *         
+   * 
    * ExternalProductID.Value contains a set of keywords that uniquely identify the product.
    * Only applicable when listing event ticket.
    * See the eBay Web Services guide for information about valid
@@ -69,7 +68,7 @@ public enum ExternalProductCodeType {
 
     /**
      * 
-   *         
+   * 
    * Reserved for future use.
    * 
      */
@@ -78,7 +77,7 @@ public enum ExternalProductCodeType {
 
     /**
      * 
-   *         
+   * 
    * Reserved for internal or future use
    * 
      */

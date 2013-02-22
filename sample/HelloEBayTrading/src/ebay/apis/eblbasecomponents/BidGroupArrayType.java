@@ -10,8 +10,7 @@ import java.util.List;
  * 
  * This type is deprecated as the Bid Assistant feature is no longer available.
  *  
- *       
- *      
+ * 
  */
 public class BidGroupArrayType implements Serializable {
 
@@ -25,7 +24,7 @@ public class BidGroupArrayType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * Contains a list of bid groups.
      * 
      *
@@ -39,7 +38,7 @@ public class BidGroupArrayType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * Contains a list of bid groups.
      * 
      *

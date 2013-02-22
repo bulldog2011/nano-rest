@@ -25,7 +25,7 @@ public class ExtendedProductFinderIDType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * A product finder ID. GetCategory2CS always (and only) returns this
      * when Category.ProductFinderIDs is returned. 
      * 
@@ -40,7 +40,7 @@ public class ExtendedProductFinderIDType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * A product finder ID. GetCategory2CS always (and only) returns this
      * when Category.ProductFinderIDs is returned. 
      * 
@@ -54,7 +54,7 @@ public class ExtendedProductFinderIDType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * If false or not present, the product finder can be used as input to
      * GetProductSearchResults to search for catalog data (Pre-filled Item Information)
      * that a seller might want to include in a listing.
@@ -70,7 +70,7 @@ public class ExtendedProductFinderIDType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * If false or not present, the product finder can be used as input to
      * GetProductSearchResults to search for catalog data (Pre-filled Item Information)
      * that a seller might want to include in a listing.

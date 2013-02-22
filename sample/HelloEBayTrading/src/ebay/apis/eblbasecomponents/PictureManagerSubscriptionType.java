@@ -9,8 +9,7 @@ import com.leansoft.nano.annotation.*;
  * 
  * This type is deprecated as Pictures Manager was retired.
  * 
- *       
- *      
+ * 
  */
 public class PictureManagerSubscriptionType implements Serializable {
 
@@ -30,7 +29,7 @@ public class PictureManagerSubscriptionType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * The level of Picture Manager subscription. Each level has a
      * monthly fee and provides a certain amount of storage space.
      *     
@@ -45,7 +44,7 @@ public class PictureManagerSubscriptionType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * The level of Picture Manager subscription. Each level has a
      * monthly fee and provides a certain amount of storage space.
      *     
@@ -59,7 +58,7 @@ public class PictureManagerSubscriptionType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      *       The monthly fee for the subscription. Read-only value.
      *     
      *
@@ -73,7 +72,7 @@ public class PictureManagerSubscriptionType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      *       The monthly fee for the subscription. Read-only value.
      *     
      *
@@ -86,7 +85,7 @@ public class PictureManagerSubscriptionType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      *       The total amount of storage space available for the subscription type.
      *       Read-only value.
      *     
@@ -101,7 +100,7 @@ public class PictureManagerSubscriptionType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      *       The total amount of storage space available for the subscription type.
      *       Read-only value.
      *     

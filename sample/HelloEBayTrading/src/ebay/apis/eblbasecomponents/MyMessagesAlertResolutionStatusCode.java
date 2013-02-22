@@ -6,14 +6,13 @@ package ebay.apis.eblbasecomponents;
  * 
  * This type is deprecated because <b>MyMessagesAlert*</b> are deprecated.
  * 
- *       
- *      
+ * 
  */
 public enum MyMessagesAlertResolutionStatusCode {
 
     /**
      * 
-   *         
+   * 
    * The alert has not been resolved. If the alert requires user action, an unresolved status
    * means that the user did not take action on the alert. If the alert does not require user
    * action, an unresolved status means that the alert has not been read. Note that an
@@ -25,7 +24,7 @@ public enum MyMessagesAlertResolutionStatusCode {
 
     /**
      * 
-   *         
+   * 
    * The alert was resolved by auto resolution, for example,
    * by expiring after a certain date.
    * 
@@ -35,7 +34,7 @@ public enum MyMessagesAlertResolutionStatusCode {
 
     /**
      * 
-   *         
+   * 
    * The alert was resolved by user. If the alert requires user action, resolved status
    * means that the user took the necessary action on the alert. If the alert does not require user
    * action, resolved status means that the alert was read by the user.

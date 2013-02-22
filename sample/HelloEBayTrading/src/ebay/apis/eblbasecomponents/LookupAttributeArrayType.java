@@ -10,8 +10,7 @@ import java.util.List;
  * 
  * This type is deprecated because attributes are deprecated.
  * 
- *       
- *      
+ * 
  */
 public class LookupAttributeArrayType implements Serializable {
 
@@ -25,7 +24,7 @@ public class LookupAttributeArrayType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * No longer applicable to any category.
      * 
      *
@@ -39,7 +38,7 @@ public class LookupAttributeArrayType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * No longer applicable to any category.
      * 
      *

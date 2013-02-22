@@ -6,14 +6,13 @@ package ebay.apis.eblbasecomponents;
  * 
  * This type is deprecated because this type is not used by any call.
  * 
- *       
- *      
+ * 
  */
 public enum GeneralPaymentMethodCodeType {
 
     /**
      * 
-   *         
+   * 
    * Custom Code.
    * 
      */
@@ -22,7 +21,7 @@ public enum GeneralPaymentMethodCodeType {
 
     /**
      * 
-   *         
+   * 
    * Electronic check.
    * 
      */
@@ -31,7 +30,7 @@ public enum GeneralPaymentMethodCodeType {
 
     /**
      * 
-   *         
+   * 
    * ACH.
    * 
      */
@@ -40,7 +39,7 @@ public enum GeneralPaymentMethodCodeType {
 
     /**
      * 
-   *         
+   * 
    * Credit-card.
    * 
      */
@@ -49,7 +48,7 @@ public enum GeneralPaymentMethodCodeType {
 
     /**
      * 
-   *         
+   * 
    * Pay balance.
    * 
      */
@@ -58,7 +57,7 @@ public enum GeneralPaymentMethodCodeType {
 
     /**
      * 
-   *         
+   * 
    * Reserved for internal or future use.
    * 
      */

@@ -6,14 +6,13 @@ package ebay.apis.eblbasecomponents;
  * 
  * This type is deprecated; use <b>SetShippingDiscountProfiles</b> to set Flat Shipping preferences.
  * 
- *       
- *      
+ * 
  */
 public enum FlatShippingRateOptionCodeType {
 
     /**
      * 
-   *         
+   * 
    * Charge highest shipping cost for the first item and
    * X amount for each
    * additional item.
@@ -24,7 +23,7 @@ public enum FlatShippingRateOptionCodeType {
 
     /**
      * 
-   *         
+   * 
    * Charge highest shipping cost for the first item and deduct X amount from the
    * shipping cost of each additional item.
    * 
@@ -34,7 +33,7 @@ public enum FlatShippingRateOptionCodeType {
 
     /**
      * 
-   *         
+   * 
    * Charge highest shipping cost for the first item and ship each additional item free.
    * 
      */
@@ -43,7 +42,7 @@ public enum FlatShippingRateOptionCodeType {
 
     /**
      * 
-   *         
+   * 
    * Reserved for internal or future use.
    * 
      */

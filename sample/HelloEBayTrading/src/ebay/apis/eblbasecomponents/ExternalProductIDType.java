@@ -10,8 +10,7 @@ import java.util.List;
  * 
  * This type is deprecated as the partent of this type is no longer available.
  * 
- *       
- *      
+ * 
  */
 public class ExternalProductIDType implements Serializable {
 
@@ -34,7 +33,7 @@ public class ExternalProductIDType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * An industry-standard value that uniquely identifies the product. The valid
      * values are dictated by the Type property. Required if Type is specified. Max
      * length 13 for ISBN (as of February 2007), 13 for EAN, 12 for UPC, and 4000 for
@@ -70,7 +69,7 @@ public class ExternalProductIDType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * An industry-standard value that uniquely identifies the product. The valid
      * values are dictated by the Type property. Required if Type is specified. Max
      * length 13 for ISBN (as of February 2007), 13 for EAN, 12 for UPC, and 4000 for
@@ -105,7 +104,7 @@ public class ExternalProductIDType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * Applicable for listing use cases only (not buy-side searching).
      * Indicates what eBay should do if more than one product matches
      * the value passed in Value. Only takes effect when more than one
@@ -125,7 +124,7 @@ public class ExternalProductIDType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * Applicable for listing use cases only (not buy-side searching).
      * Indicates what eBay should do if more than one product matches
      * the value passed in Value. Only takes effect when more than one
@@ -144,7 +143,7 @@ public class ExternalProductIDType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * The kind of identifier being used. The choices are listed
      * For requests, required if Value is specified.
      * For Half.com listing use cases, only ISBN, UPC, and EAN are supported.
@@ -160,7 +159,7 @@ public class ExternalProductIDType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * The kind of identifier being used. The choices are listed
      * For requests, required if Value is specified.
      * For Half.com listing use cases, only ISBN, UPC, and EAN are supported.
@@ -175,7 +174,7 @@ public class ExternalProductIDType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * An industry-standard value that provides an alternate identification for
      * the product, if any. Currently, this only returns an alternate ISBN
      * value. If the catalog defines both an ISBN-13 and ISBN-10,
@@ -197,7 +196,7 @@ public class ExternalProductIDType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * An industry-standard value that provides an alternate identification for
      * the product, if any. Currently, this only returns an alternate ISBN
      * value. If the catalog defines both an ISBN-13 and ISBN-10,

@@ -10,8 +10,7 @@ import java.util.List;
  * 
  * This type is deprecated as the Bid Assistant feature is no longer available.
  * 
- *       
- *      
+ * 
  */
 public class BidGroupType implements Serializable {
 
@@ -34,7 +33,7 @@ public class BidGroupType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * Contains a list of bid group item types.
      * 
      *
@@ -48,7 +47,7 @@ public class BidGroupType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * Contains a list of bid group item types.
      * 
      *
@@ -61,7 +60,7 @@ public class BidGroupType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * Contains the bid group ID.
      * 
      *
@@ -75,7 +74,7 @@ public class BidGroupType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * Contains the bid group ID.
      * 
      *
@@ -88,7 +87,7 @@ public class BidGroupType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * Contains the bid group name.
      * 
      *
@@ -102,7 +101,7 @@ public class BidGroupType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * Contains the bid group name.
      * 
      *
@@ -115,7 +114,7 @@ public class BidGroupType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * Contains the bid group status.
      * 
      *
@@ -129,7 +128,7 @@ public class BidGroupType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * Contains the bid group status.
      * 
      *

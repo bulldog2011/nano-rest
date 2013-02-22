@@ -9,8 +9,7 @@ import com.leansoft.nano.annotation.*;
  * 
  * This type is deprecated because 3rd Party Checkout was deprecated.
  * 
- *       
- *      
+ * 
  */
 public class ProStoresCheckoutPreferenceType implements Serializable {
 
@@ -24,7 +23,7 @@ public class ProStoresCheckoutPreferenceType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * This field is no longer applicable as all checkouts go through eBay's checkout flow, 
      * and there is no longer a checkout flow through ProStores.
      * 
@@ -39,7 +38,7 @@ public class ProStoresCheckoutPreferenceType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * This field is no longer applicable as all checkouts go through eBay's checkout flow, 
      * and there is no longer a checkout flow through ProStores.
      * 

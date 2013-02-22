@@ -6,14 +6,13 @@ package ebay.apis.eblbasecomponents;
  * 
  * This type is deprecated as Pictures Manager was retired.
  * 
- *       
- *      
+ * 
  */
 public enum PictureManagerSubscriptionLevelCodeType {
 
     /**
      * 
-   *         
+   * 
    * (out) Free to Stores users.
    * 
      */
@@ -22,7 +21,7 @@ public enum PictureManagerSubscriptionLevelCodeType {
 
     /**
      * 
-   *         
+   * 
    * (out) 10 MB of storage.
    * 
      */
@@ -31,7 +30,7 @@ public enum PictureManagerSubscriptionLevelCodeType {
 
     /**
      * 
-   *         
+   * 
    * (out) 50 MB of storage.
    * 
      */
@@ -40,7 +39,7 @@ public enum PictureManagerSubscriptionLevelCodeType {
 
     /**
      * 
-   *         
+   * 
    * (out) 125 MB of storage.
    * 
      */
@@ -49,7 +48,7 @@ public enum PictureManagerSubscriptionLevelCodeType {
 
     /**
      * 
-   *         
+   * 
    * (out) 300 MB of storage.
    * 
      */
@@ -58,7 +57,7 @@ public enum PictureManagerSubscriptionLevelCodeType {
 
     /**
      * 
-   *         
+   * 
    * (out) Reserved for internal or future use
    * 
      */

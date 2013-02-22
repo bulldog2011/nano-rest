@@ -483,7 +483,6 @@ public class ReturnPolicyType implements Serializable {
      * <br>
      * eBay uses this text string as-is in the Return Policy section of the View Item page. Avoid HTML, and avoid character entity references (such as &amp;pound; or &amp;#163;). If you include special characters in the return policy description, use the literal UTF-8 or ISO-8559-1 character (e.g. &#163;). <br>
      * 
-     *         
      * <br>
      * <b>For AddItem, VerifyAddItem, and RelistItem:</b>
      * If the seller accepts returns (ReturnsAcceptedOption=ReturnsAccepted)
@@ -510,7 +509,6 @@ public class ReturnPolicyType implements Serializable {
      * <br>
      * eBay uses this text string as-is in the Return Policy section of the View Item page. Avoid HTML, and avoid character entity references (such as &amp;pound; or &amp;#163;). If you include special characters in the return policy description, use the literal UTF-8 or ISO-8559-1 character (e.g. &#163;). <br>
      * 
-     *         
      * <br>
      * <b>For AddItem, VerifyAddItem, and RelistItem:</b>
      * If the seller accepts returns (ReturnsAcceptedOption=ReturnsAccepted)

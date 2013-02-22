@@ -9,8 +9,7 @@ import com.leansoft.nano.annotation.*;
  * 
  * This type is deprecated as the Bid Assistant feature is no longer available.
  *  
- *       
- *      
+ * 
  */
 public class BidGroupItemType implements Serializable {
 
@@ -30,7 +29,7 @@ public class BidGroupItemType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * Contains a list of the items in a bid group.
      * 
      *
@@ -44,7 +43,7 @@ public class BidGroupItemType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * Contains a list of the items in a bid group.
      * 
      *
@@ -57,7 +56,7 @@ public class BidGroupItemType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * Contains the status of the items in the bid group.
      * 
      *
@@ -71,7 +70,7 @@ public class BidGroupItemType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * Contains the status of the items in the bid group.
      * 
      *
@@ -84,7 +83,7 @@ public class BidGroupItemType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * Contains the maximum bid amount for the item in the bid group.
      * 
      *
@@ -98,7 +97,7 @@ public class BidGroupItemType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * Contains the maximum bid amount for the item in the bid group.
      * 
      *

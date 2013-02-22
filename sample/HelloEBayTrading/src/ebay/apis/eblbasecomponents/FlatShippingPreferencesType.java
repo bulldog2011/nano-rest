@@ -10,8 +10,7 @@ import java.util.List;
  * 
  * This type is deprecated; use <b>SetShippingDiscountProfiles</b> to set Flat Shipping preferences.
  * 
- *       
- *      
+ * 
  */
 public class FlatShippingPreferencesType implements Serializable {
 
@@ -37,7 +36,7 @@ public class FlatShippingPreferencesType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * DO NOT USE THIS FIELD. Flat Rate Shipping discount profiles are created and
      * managed with SetShippingDiscountProfiles. Use GetShippingDiscountProfiles to
      * retrieve Flat Rate Shipping discount profiles.
@@ -53,7 +52,7 @@ public class FlatShippingPreferencesType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * DO NOT USE THIS FIELD. Flat Rate Shipping discount profiles are created and
      * managed with SetShippingDiscountProfiles. Use GetShippingDiscountProfiles to
      * retrieve Flat Rate Shipping discount profiles.
@@ -68,7 +67,7 @@ public class FlatShippingPreferencesType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * DO NOT USE THIS FIELD. Flat Rate Shipping discount profiles are created and
      * managed with SetShippingDiscountProfiles. Use GetShippingDiscountProfiles to
      * retrieve Flat Rate Shipping discount profiles.
@@ -84,7 +83,7 @@ public class FlatShippingPreferencesType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * DO NOT USE THIS FIELD. Flat Rate Shipping discount profiles are created and
      * managed with SetShippingDiscountProfiles. Use GetShippingDiscountProfiles to
      * retrieve Flat Rate Shipping discount profiles.
@@ -99,7 +98,7 @@ public class FlatShippingPreferencesType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * DO NOT USE THIS FIELD. Shipping insurance parameters are passed in through
      * SetShippingDiscountProfiles and retrieved using GetShippingDiscountProfiles.
      * <br><br>
@@ -116,7 +115,7 @@ public class FlatShippingPreferencesType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * DO NOT USE THIS FIELD. Shipping insurance parameters are passed in through
      * SetShippingDiscountProfiles and retrieved using GetShippingDiscountProfiles.
      * <br><br>
@@ -132,7 +131,7 @@ public class FlatShippingPreferencesType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * DO NOT USE THIS FIELD. Flat Rate Shipping discount profiles are created and
      * managed with SetShippingDiscountProfiles. Use GetShippingDiscountProfiles to
      * retrieve Flat Rate Shipping discount profiles.
@@ -148,7 +147,7 @@ public class FlatShippingPreferencesType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * DO NOT USE THIS FIELD. Flat Rate Shipping discount profiles are created and
      * managed with SetShippingDiscountProfiles. Use GetShippingDiscountProfiles to
      * retrieve Flat Rate Shipping discount profiles.
@@ -163,7 +162,7 @@ public class FlatShippingPreferencesType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * DO NOT USE THIS FIELD. Shipping insurance parameters are passed in through
      * SetShippingDiscountProfiles and retrieved using GetShippingDiscountProfiles.
      * <br><br>
@@ -180,7 +179,7 @@ public class FlatShippingPreferencesType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * DO NOT USE THIS FIELD. Shipping insurance parameters are passed in through
      * SetShippingDiscountProfiles and retrieved using GetShippingDiscountProfiles.
      * <br><br>

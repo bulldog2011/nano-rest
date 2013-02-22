@@ -9,8 +9,7 @@ import com.leansoft.nano.annotation.*;
  * 
  * This type is deprecated as the <b>GetProduct*</b> calls are no longer available.
  * 
- *       
- *      
+ * 
  */
 public class DistanceType implements Serializable {
 
@@ -27,7 +26,7 @@ public class DistanceType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * The measurement used in a proximity search distance calculation.
      * 
      *
@@ -41,7 +40,7 @@ public class DistanceType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * The measurement used in a proximity search distance calculation.
      * 
      *
@@ -54,7 +53,7 @@ public class DistanceType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * The unit used in a proximity search distance calculation.
      * 
      *
@@ -68,7 +67,7 @@ public class DistanceType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * The unit used in a proximity search distance calculation.
      * 
      *

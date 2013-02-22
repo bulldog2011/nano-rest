@@ -12,8 +12,14 @@ public class FindingService {
 	
 	public static RequestProcessor getFindItemsByKeywordsHttpRequest( 
 			FindItemsByKeywordsRequest requestObject, 
-			HttpCallback<FindItemsByKeywordsResponse> callback) {
-		return new BaseFindingRequestProcessor<FindItemsByKeywordsResponse>(requestObject, "findItemsByKeywords", FindItemsByKeywordsResponse.class, callback);
+			HttpCallback<FindItemsByKeywordsResponse> callback,
+			FindingConfig config) {
+		return new BaseFindingRequestProcessor<FindItemsByKeywordsResponse>(
+				requestObject, 
+				"findItemsByKeywords", 
+				FindItemsByKeywordsResponse.class, 
+				callback, 
+				config);
 	}
 
 }

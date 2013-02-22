@@ -13,11 +13,13 @@ public class ShoppingService {
 	
 	public static RequestProcessor getFindPopularItemsHttpRequest( 
 			FindPopularItemsRequestType requestObject, 
-			HttpCallback<FindPopularItemsResponseType> callback) {
+			HttpCallback<FindPopularItemsResponseType> callback,
+			ShoppingConfig config) {
 		return new BaseShoppingRequestProcessor<FindPopularItemsResponseType>(requestObject, 
 				"FindPopularItems", 
 				FindPopularItemsResponseType.class, 
-				callback);
+				callback, 
+				config);
 	}
 
 }

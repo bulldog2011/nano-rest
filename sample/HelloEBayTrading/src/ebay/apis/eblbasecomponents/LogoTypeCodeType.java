@@ -6,14 +6,13 @@ package ebay.apis.eblbasecomponents;
  * 
  * This type is deprecated because this type is not used by any call.
  * 
- *       
- *      
+ * 
  */
 public enum LogoTypeCodeType {
 
     /**
      * 
-   *         
+   * 
    * The PayPal Winning Bidder Notice logo.
    * 
      */
@@ -22,7 +21,7 @@ public enum LogoTypeCodeType {
 
     /**
      * 
-   *         
+   * 
    * The seller's eBay Store logo.
    * 
      */
@@ -31,7 +30,7 @@ public enum LogoTypeCodeType {
 
     /**
      * 
-   *         
+   * 
    * A custom logo specified in LogoURL.
    * 
      */
@@ -40,7 +39,7 @@ public enum LogoTypeCodeType {
 
     /**
      * 
-   *         
+   * 
    * Reserved for internal or future use.
    * 
      */

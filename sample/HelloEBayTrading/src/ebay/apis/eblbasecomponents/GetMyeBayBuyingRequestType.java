@@ -302,7 +302,7 @@ public class GetMyeBayBuyingRequestType extends AbstractRequestType implements S
      * public getter
      *
      * 
-     *           
+     * 
      * Indicates whether or not the Bid Assistant feature is being used. 
      * 
      *
@@ -316,7 +316,7 @@ public class GetMyeBayBuyingRequestType extends AbstractRequestType implements S
 	 * public setter
 	 *
      * 
-     *           
+     * 
      * Indicates whether or not the Bid Assistant feature is being used. 
      * 
      *

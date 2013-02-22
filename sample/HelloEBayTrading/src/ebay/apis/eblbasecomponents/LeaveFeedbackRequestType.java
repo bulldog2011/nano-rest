@@ -148,7 +148,6 @@ public class LeaveFeedbackRequestType extends AbstractRequestType implements Ser
      * <b>TransactionID</b>, <b>TargetUser</b>) are needed. Feedback cannot be left for order
      * line items with creation dates more than 60 days in the past.
      * 
-     *           
      * </span>
      * 
      *
@@ -171,7 +170,6 @@ public class LeaveFeedbackRequestType extends AbstractRequestType implements Ser
      * <b>TransactionID</b>, <b>TargetUser</b>) are needed. Feedback cannot be left for order
      * line items with creation dates more than 60 days in the past.
      * 
-     *           
      * </span>
      * 
      *

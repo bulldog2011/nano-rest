@@ -6,14 +6,13 @@ package ebay.apis.eblbasecomponents;
  * 
  * This type is deprecated because Coss Promotions are no longer supported in the APIs.
  * 
- *       
- *      
+ * 
  */
 public enum MerchandizingPrefCodeType {
 
     /**
      * 
-   *         
+   * 
    * Seller allows item cross-promotion.
    * 
      */
@@ -22,7 +21,7 @@ public enum MerchandizingPrefCodeType {
 
     /**
      * 
-   *         
+   * 
    * Seller does not allow item cross-promotion.
    * 
      */
@@ -31,7 +30,7 @@ public enum MerchandizingPrefCodeType {
 
     /**
      * 
-   *         
+   * 
    * Reserved for internal or future use.
    * 
      */

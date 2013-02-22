@@ -10,8 +10,7 @@ import java.util.List;
  * 
  * This type is deprecated as the call is no longer available.
  * 
- *       
- *      
+ * 
  */
 @RootElement(name = "GetAttributesCSRequest", namespace = "urn:ebay:apis:eBLBaseComponents")
 public class GetAttributesCSRequestType extends AbstractRequestType implements Serializable {
@@ -32,7 +31,7 @@ public class GetAttributesCSRequestType extends AbstractRequestType implements S
      * public getter
      *
      * 
-     *           
+     * 
      * A version of the Item Specifics definitions (attribute meta-data)
      * for the site.
      * Typically, an application passes the version value that was
@@ -55,7 +54,7 @@ public class GetAttributesCSRequestType extends AbstractRequestType implements S
 	 * public setter
 	 *
      * 
-     *           
+     * 
      * A version of the Item Specifics definitions (attribute meta-data)
      * for the site.
      * Typically, an application passes the version value that was
@@ -77,7 +76,7 @@ public class GetAttributesCSRequestType extends AbstractRequestType implements S
      * public getter
      *
      * 
-     *           
+     * 
      * An array of characteristic setIDs (which always correspond to
      * attribute set IDs).
      * Each characteristic setcorresponds to a level in the eBay
@@ -101,7 +100,7 @@ public class GetAttributesCSRequestType extends AbstractRequestType implements S
 	 * public setter
 	 *
      * 
-     *           
+     * 
      * An array of characteristic setIDs (which always correspond to
      * attribute set IDs).
      * Each characteristic setcorresponds to a level in the eBay
@@ -124,7 +123,7 @@ public class GetAttributesCSRequestType extends AbstractRequestType implements S
      * public getter
      *
      * 
-     *           
+     * 
      * If true, includes a list of CategoryMapping nodes in the response.
      * Each CategoryMapping node specifies category information as well as
      * attributes and values that your application can auto-fill for
@@ -143,7 +142,7 @@ public class GetAttributesCSRequestType extends AbstractRequestType implements S
 	 * public setter
 	 *
      * 
-     *           
+     * 
      * If true, includes a list of CategoryMapping nodes in the response.
      * Each CategoryMapping node specifies category information as well as
      * attributes and values that your application can auto-fill for

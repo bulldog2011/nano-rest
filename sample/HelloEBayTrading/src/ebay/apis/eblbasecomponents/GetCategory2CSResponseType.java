@@ -10,8 +10,7 @@ import java.util.List;
  * 
  * This type is deprecated as the call is no longer available.
  * 
- *       
- *      
+ * 
  */
 @RootElement(name = "GetCategory2CSResponse", namespace = "urn:ebay:apis:eBLBaseComponents")
 public class GetCategory2CSResponseType extends AbstractResponseType implements Serializable {
@@ -35,7 +34,7 @@ public class GetCategory2CSResponseType extends AbstractResponseType implements 
      * public getter
      *
      * 
-     *           
+     * 
      * Contains data about categories that are mapped to characteristics sets.
      * Use this data to determine:<br>
      * - The names and IDs of the characteristics sets<br>
@@ -56,7 +55,7 @@ public class GetCategory2CSResponseType extends AbstractResponseType implements 
 	 * public setter
 	 *
      * 
-     *           
+     * 
      * Contains data about categories that are mapped to characteristics sets.
      * Use this data to determine:<br>
      * - The names and IDs of the characteristics sets<br>
@@ -76,7 +75,7 @@ public class GetCategory2CSResponseType extends AbstractResponseType implements 
      * public getter
      *
      * 
-     *           
+     * 
      * Contains data about categories (if any) whose characteristics set mappings have changed
      * since the version specified in the request. When a characteristics set mapping
      * changes, the data appears in both the UnmappedCategoryArray object
@@ -93,7 +92,7 @@ public class GetCategory2CSResponseType extends AbstractResponseType implements 
 	 * public setter
 	 *
      * 
-     *           
+     * 
      * Contains data about categories (if any) whose characteristics set mappings have changed
      * since the version specified in the request. When a characteristics set mapping
      * changes, the data appears in both the UnmappedCategoryArray object
@@ -109,7 +108,7 @@ public class GetCategory2CSResponseType extends AbstractResponseType implements 
      * public getter
      *
      * 
-     *           
+     * 
      * Current version of the mappings for the site.
      * This value changes each time changes are made to the mappings.
      * The current version value is not necessarily greater than the previous
@@ -127,7 +126,7 @@ public class GetCategory2CSResponseType extends AbstractResponseType implements 
 	 * public setter
 	 *
      * 
-     *           
+     * 
      * Current version of the mappings for the site.
      * This value changes each time changes are made to the mappings.
      * The current version value is not necessarily greater than the previous
@@ -144,7 +143,7 @@ public class GetCategory2CSResponseType extends AbstractResponseType implements 
      * public getter
      *
      * 
-     *           
+     * 
      * A list of one or more characteristics sets mapped to the category, if any. Use this
      * information when working with Item Specifics (Attributes) and Pre-filled Item
      * Information (Catalogs) functionality.
@@ -160,7 +159,7 @@ public class GetCategory2CSResponseType extends AbstractResponseType implements 
 	 * public setter
 	 *
      * 
-     *           
+     * 
      * A list of one or more characteristics sets mapped to the category, if any. Use this
      * information when working with Item Specifics (Attributes) and Pre-filled Item
      * Information (Catalogs) functionality.

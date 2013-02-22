@@ -236,7 +236,7 @@ public class ReviseItemRequestType extends AbstractRequestType implements Serial
      * public getter
      *
      * 
-     *           
+     * 
      * When the VerifyOnly boolean tag value is supplied as 'true', the response will include the calculated
      * listing price change if there is an increase in the BIN/Start price, but does not persist the values in DB.
      * This call is similar to VerifyAddItem in revise mode.
@@ -252,7 +252,7 @@ public class ReviseItemRequestType extends AbstractRequestType implements Serial
 	 * public setter
 	 *
      * 
-     *           
+     * 
      * When the VerifyOnly boolean tag value is supplied as 'true', the response will include the calculated
      * listing price change if there is an increase in the BIN/Start price, but does not persist the values in DB.
      * This call is similar to VerifyAddItem in revise mode.

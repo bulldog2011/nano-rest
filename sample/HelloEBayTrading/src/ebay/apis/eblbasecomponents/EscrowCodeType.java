@@ -6,14 +6,13 @@ package ebay.apis.eblbasecomponents;
  * 
  * This type is deprecated because this type is not used by any call.
  * 
- *       
- *      
+ * 
  */
 public enum EscrowCodeType {
 
     /**
      * 
-   *         
+   * 
    * By Buyer
    * 
      */
@@ -22,7 +21,7 @@ public enum EscrowCodeType {
 
     /**
      * 
-   *         
+   * 
    * By Seller
    * 
      */
@@ -31,7 +30,7 @@ public enum EscrowCodeType {
 
     /**
      * 
-   *         
+   * 
    * None
    * 
      */
@@ -40,7 +39,7 @@ public enum EscrowCodeType {
 
     /**
      * 
-   *         
+   * 
    * Reserved for internal or future use
    * 
      */

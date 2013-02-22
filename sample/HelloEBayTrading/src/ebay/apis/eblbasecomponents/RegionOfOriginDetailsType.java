@@ -10,8 +10,7 @@ import java.util.Date;
  * 
  * This type is no longer used; replaced by <b>ShippingLocationDetails</b>.
  * 
- *       
- *      
+ * 
  */
 public class RegionOfOriginDetailsType implements Serializable {
 
@@ -37,7 +36,7 @@ public class RegionOfOriginDetailsType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * String identifier for a continent, a geographic region, or a country.
      * 
      *
@@ -51,7 +50,7 @@ public class RegionOfOriginDetailsType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * String identifier for a continent, a geographic region, or a country.
      * 
      *
@@ -64,7 +63,7 @@ public class RegionOfOriginDetailsType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * Full name of the continent, geographic region, or country; useful for display 
      * purposes.
      * 
@@ -79,7 +78,7 @@ public class RegionOfOriginDetailsType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * Full name of the continent, geographic region, or country; useful for display 
      * purposes.
      * 
@@ -93,7 +92,7 @@ public class RegionOfOriginDetailsType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * Indicates the status of the Region of Origin value. Only Region of Origin values 
      * in the 'Active' state can be used.
      * 
@@ -108,7 +107,7 @@ public class RegionOfOriginDetailsType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * Indicates the status of the Region of Origin value. Only Region of Origin values 
      * in the 'Active' state can be used.
      * 
@@ -122,7 +121,7 @@ public class RegionOfOriginDetailsType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * Returns the latest version number for this field. The version can be
      * used to determine if and when to refresh cached client data.
      * 
@@ -137,7 +136,7 @@ public class RegionOfOriginDetailsType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * Returns the latest version number for this field. The version can be
      * used to determine if and when to refresh cached client data.
      * 
@@ -151,7 +150,7 @@ public class RegionOfOriginDetailsType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * Gives the time in GMT that the feature flags for the details were last
      * updated. This timestamp can be used to determine if and when to refresh
      * cached client data.
@@ -167,7 +166,7 @@ public class RegionOfOriginDetailsType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * Gives the time in GMT that the feature flags for the details were last
      * updated. This timestamp can be used to determine if and when to refresh
      * cached client data.

@@ -6,7 +6,6 @@ package ebay.apis.eblbasecomponents;
  * 
  * This type is deprecated as Pictures Manager was retired.
  * 
- *       
  * Manager account.
  * 
  */
@@ -14,7 +13,7 @@ public enum PictureManagerActionCodeType {
 
     /**
      * 
-   *         
+   * 
    * (in) Adds a folder or setting  to the account.
    * 
      */
@@ -23,7 +22,7 @@ public enum PictureManagerActionCodeType {
 
     /**
      * 
-   *         
+   * 
    * (in) Deletes a folder or setting from the account.
    * 
      */
@@ -32,7 +31,7 @@ public enum PictureManagerActionCodeType {
 
     /**
      * 
-   *         
+   * 
    * (in) Renames a folder or picture.
    * 
      */
@@ -41,7 +40,7 @@ public enum PictureManagerActionCodeType {
 
     /**
      * 
-   *         
+   * 
    * (in) Moves a picture to the user's default folder in the 
    * default album. If the picture is already there, 
    * then no action occurs.
@@ -52,7 +51,7 @@ public enum PictureManagerActionCodeType {
 
     /**
      * 
-   *         
+   * 
    * (in) Changes a subscription level.
    * 
      */
@@ -61,7 +60,7 @@ public enum PictureManagerActionCodeType {
 
     /**
      * 
-   *         
+   * 
    * (out) Reserved for internal or future use
    * 
      */

@@ -10,8 +10,7 @@ import java.util.Date;
  * 
  * This type is deprecated because <b>MyMessagesAlert*</b> are deprecated.
  * 
- *       
- *      
+ * 
  */
 public class MyMessagesForwardDetailsType implements Serializable {
 
@@ -28,7 +27,7 @@ public class MyMessagesForwardDetailsType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * The date and time a user forwarded a message.
      * 
      *
@@ -42,7 +41,7 @@ public class MyMessagesForwardDetailsType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * The date and time a user forwarded a message.
      * 
      *
@@ -55,7 +54,7 @@ public class MyMessagesForwardDetailsType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * Encoding used to forward a message.
      * 
      *
@@ -69,7 +68,7 @@ public class MyMessagesForwardDetailsType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * Encoding used to forward a message.
      * 
      *

@@ -10,8 +10,7 @@ import java.util.List;
  * 
  * This type is deprecated as the <b>GetProduct*</b> calls are no longer available.
  * 
- *       
- *      
+ * 
  */
 public class CharacteristicsSetType implements Serializable {
 
@@ -34,7 +33,7 @@ public class CharacteristicsSetType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * The well-known name of the characteristic set (e.g., "Tickets" or "Books").
      * 
      *
@@ -48,7 +47,7 @@ public class CharacteristicsSetType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * The well-known name of the characteristic set (e.g., "Tickets" or "Books").
      * 
      *
@@ -61,7 +60,7 @@ public class CharacteristicsSetType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * Numeric value that identifies the characteristic set in a language-independent
      * way. Identifies the characteristic set that is mapped to a catalog-enabled
      * category associated with the product. Unique across all eBay sites.
@@ -77,7 +76,7 @@ public class CharacteristicsSetType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * Numeric value that identifies the characteristic set in a language-independent
      * way. Identifies the characteristic set that is mapped to a catalog-enabled
      * category associated with the product. Unique across all eBay sites.
@@ -92,7 +91,7 @@ public class CharacteristicsSetType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * Version of the characteristics set. Not to be confused with
      * AttributeSystemVersion, which can be used to retrieve changes to attribute
      * meta-data. In item-listing requests, if you specify the version of the
@@ -113,7 +112,7 @@ public class CharacteristicsSetType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * Version of the characteristics set. Not to be confused with
      * AttributeSystemVersion, which can be used to retrieve changes to attribute
      * meta-data. In item-listing requests, if you specify the version of the
@@ -133,7 +132,7 @@ public class CharacteristicsSetType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * A salient aspect or feature of an item. Used to describe an item in a standard
      * way so that buyers can find it more easily. An individual, standardized
      * characteristic that is common to all items within the specified characteristic
@@ -155,7 +154,7 @@ public class CharacteristicsSetType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * A salient aspect or feature of an item. Used to describe an item in a standard
      * way so that buyers can find it more easily. An individual, standardized
      * characteristic that is common to all items within the specified characteristic

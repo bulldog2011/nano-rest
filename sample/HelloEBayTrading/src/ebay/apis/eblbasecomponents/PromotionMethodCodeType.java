@@ -6,14 +6,13 @@ package ebay.apis.eblbasecomponents;
  * 
  *   This type is deprecated as Cross Promotions are no longer supported in the APIs.
  * 
- *       
- *      
+ * 
  */
 public enum PromotionMethodCodeType {
 
     /**
      * 
-   *         
+   * 
    * Promote/present items that are related to or can be used with the
    * specified item.
    * 
@@ -23,7 +22,7 @@ public enum PromotionMethodCodeType {
 
     /**
      * 
-   *         
+   * 
    * Promote/present items that of higher quality or more expensive
    * than the specified item.
    * 
@@ -33,7 +32,7 @@ public enum PromotionMethodCodeType {
 
     /**
      * 
-   *         
+   * 
    * Reserved for internal or future use.
    * 
      */

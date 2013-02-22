@@ -6,14 +6,13 @@ package ebay.apis.eblbasecomponents;
  * 
  * This type is deprecated as Pictures Manager was retired.
  * 
- *       
- *      
+ * 
  */
 public enum PictureManagerPictureDisplayTypeCodeType {
 
     /**
      * 
-   *         
+   * 
    * A small image, thumbnail size. Maximum size 96 pixels.
    * 
      */
@@ -22,7 +21,7 @@ public enum PictureManagerPictureDisplayTypeCodeType {
 
     /**
      * 
-   *         
+   * 
    * A BIBO image. Maximum size 200 pixels.
    * 
      */
@@ -31,7 +30,7 @@ public enum PictureManagerPictureDisplayTypeCodeType {
 
     /**
      * 
-   *         
+   * 
    * A standard size image. Maximum size 400 pixels.
    * 
      */
@@ -40,7 +39,7 @@ public enum PictureManagerPictureDisplayTypeCodeType {
 
     /**
      * 
-   *         
+   * 
    * A large image. Maximum size 500 pixels.
    * 
      */
@@ -49,7 +48,7 @@ public enum PictureManagerPictureDisplayTypeCodeType {
 
     /**
      * 
-   *         
+   * 
    * A very large image. Maximum size 800 pixels.
    * 
      */
@@ -58,7 +57,7 @@ public enum PictureManagerPictureDisplayTypeCodeType {
 
     /**
      * 
-   *         
+   * 
    * The original uploaded image.
    * 
      */
@@ -67,7 +66,7 @@ public enum PictureManagerPictureDisplayTypeCodeType {
 
     /**
      * 
-   *         
+   * 
    * Reserved for internal or future use
    * 
      */

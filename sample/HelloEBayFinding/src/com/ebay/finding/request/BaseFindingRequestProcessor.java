@@ -1,5 +1,8 @@
 package com.ebay.finding.request;
 
+import android.text.TextUtils;
+
+import com.ebay.finding.FindingConfig;
 import com.ebay.finding.FindingConstants;
 import com.ebay.finding.auth.AppNameAuthenticationProvider;
 import com.ebay.marketplace.search.v1.services.AckValue;
@@ -15,26 +18,43 @@ import com.leansoft.nanorest.request.NanoXmlRequestProcessor;
 public class BaseFindingRequestProcessor<T> extends NanoXmlRequestProcessor<T> {
 	
 	private final Class<T> responseType;
-
+	
+	private NanoXmlResponseParser<ErrorMessage> errorMessageParser = 
+			new NanoXmlResponseParser<ErrorMessage>(ErrorMessage.class);
+	
 	public BaseFindingRequestProcessor(Object requestObject, String opName, Class<T> responseType, 
-			HttpCallback<T> callback) {
+			HttpCallback<T> callback, FindingConfig config) {
 		
 		super(requestObject,
 			  responseType,
 		      callback);
 		
+		validateConfig(config);
+		
 		this.responseType = responseType;
 		
 		
 		RestClient client = getRestClient();
-		client.setUrl(FindingConstants.PRODUCTION_ENDPOINT);
-		client.setAuthentication(new AppNameAuthenticationProvider());
+		client.setUrl(config.getServerUrl());
+		client.setAuthentication(new AppNameAuthenticationProvider(config.getAppName()));
+		if (!TextUtils.isEmpty(config.getGlobalId())) {
+			client.addHeader(FindingConstants.X_EBAY_SOA_GLOBAL_ID_HEADER,  config.getGlobalId());
+		}
+		if (!TextUtils.isEmpty(config.getServiceVersion())) {
+			client.addHeader(FindingConstants.X_EBAY_SOA_SERVICE_VERSION_HEADER,  config.getServiceVersion());
+		}
 		
-		client.addHeader(FindingConstants.X_EBAY_SOA_OPERATION_NAME,  opName);
+		client.addHeader(FindingConstants.X_EBAY_SOA_OPERATION_NAME_HEADER,  opName);
 	}
 	
-	private NanoXmlResponseParser<ErrorMessage> errorMessageParser = 
-			new NanoXmlResponseParser<ErrorMessage>(ErrorMessage.class);
+	private void validateConfig(FindingConfig config) {
+		if (TextUtils.isEmpty(config.getAppName())) {
+			throw new IllegalArgumentException("App name is missing in config");
+		}
+		if (TextUtils.isEmpty(config.getServerUrl())) {
+			throw new IllegalArgumentException("Server url is missing in config");
+		}
+	}
 	
 	@Override
     protected void handleResponse() {

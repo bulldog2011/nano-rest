@@ -6,14 +6,13 @@ package ebay.apis.eblbasecomponents;
  * 
  * This type is deprecated as the Bid Assistant feature is no longer available.
  *  
- *       
- *      
+ * 
  */
 public enum BidGroupItemStatusCodeType {
 
     /**
      * 
-   *         
+   * 
    * (out) The items in the group currently being bid on.
    * 
      */
@@ -22,7 +21,7 @@ public enum BidGroupItemStatusCodeType {
 
     /**
      * 
-   *         
+   * 
    * (out) Items in the group that were not bid on because a user retracted a bid
    * and closed his group or because eBay Customer Support ended a group and all
    * the active and pending items within that group were cancelled.
@@ -33,7 +32,7 @@ public enum BidGroupItemStatusCodeType {
 
     /**
      * 
-   *         
+   * 
    * (out) Items in the bid group that are currently active, but have not yet been
    * bid on.
    * 
@@ -43,7 +42,7 @@ public enum BidGroupItemStatusCodeType {
 
     /**
      * 
-   *         
+   * 
    * (out) Items that have been skipped and not bid on (and bidded has ended).
    * 
      */
@@ -52,7 +51,7 @@ public enum BidGroupItemStatusCodeType {
 
     /**
      * 
-   *         
+   * 
    * (out) Item has ended.
    * 
      */
@@ -61,7 +60,7 @@ public enum BidGroupItemStatusCodeType {
 
     /**
      * 
-   *         
+   * 
    * (out) Item was purchased and has ended.
    * 
      */
@@ -70,7 +69,7 @@ public enum BidGroupItemStatusCodeType {
 
     /**
      * 
-   *         
+   * 
    * (out) Item has ended.
    * 
      */
@@ -79,7 +78,7 @@ public enum BidGroupItemStatusCodeType {
 
     /**
      * 
-   *         
+   * 
    * Reserved for future use.
    * 
      */

@@ -10,8 +10,7 @@ import java.util.List;
  * 
  * This type is deprecated as the <b>GetProduct*</b> calls are no longer available.
  * 
- *       
- *      
+ * 
  */
 public class CharacteristicType implements Serializable {
 
@@ -43,7 +42,7 @@ public class CharacteristicType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * Constant value that identifies the characteristic in a language-independent way.
      * Unique within the characteristic set.
      * 
@@ -58,7 +57,7 @@ public class CharacteristicType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * Constant value that identifies the characteristic in a language-independent way.
      * Unique within the characteristic set.
      * 
@@ -72,7 +71,7 @@ public class CharacteristicType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * Applicable when working with Pre-filled Item Information (Catalogs) functionality.
      * Returned if the characteristic is a Date data type. Specifies the pattern
      * to use when presenting the date to a user. Possible values:
@@ -92,7 +91,7 @@ public class CharacteristicType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * Applicable when working with Pre-filled Item Information (Catalogs) functionality.
      * Returned if the characteristic is a Date data type. Specifies the pattern
      * to use when presenting the date to a user. Possible values:
@@ -111,7 +110,7 @@ public class CharacteristicType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * The suggested order in which the characteristic should be presented
      * to the user in a list. Indicates the relative position of the sort
      * key in the list of characteristics. The characteristic with the
@@ -136,7 +135,7 @@ public class CharacteristicType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * The suggested order in which the characteristic should be presented
      * to the user in a list. Indicates the relative position of the sort
      * key in the list of characteristics. The characteristic with the
@@ -160,7 +159,7 @@ public class CharacteristicType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * Applicable when working with Pre-filled Item Information (Catalogs) functionality.
      * The unit of measure (e.g., Inch) to use when the characteristic is numeric indicates a measurement.
      * Not returned if not applicable.
@@ -177,7 +176,7 @@ public class CharacteristicType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * Applicable when working with Pre-filled Item Information (Catalogs) functionality.
      * The unit of measure (e.g., Inch) to use when the characteristic is numeric indicates a measurement.
      * Not returned if not applicable.
@@ -193,7 +192,7 @@ public class CharacteristicType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * Applicable when working with Pre-filled Item Information (Catalogs) functionality.
      * The label to display when presenting the attribute to a user.
      * Not necessarily the same as the attribute's label as defined in the
@@ -210,7 +209,7 @@ public class CharacteristicType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * Applicable when working with Pre-filled Item Information (Catalogs) functionality.
      * The label to display when presenting the attribute to a user.
      * Not necessarily the same as the attribute's label as defined in the
@@ -226,7 +225,7 @@ public class CharacteristicType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * Applicable when working with Pre-filled Item Information (Catalogs) functionality.
      * Indicates the order in which eBay's search engine will sort the results if you
      * pass this characteristic as a sort attribute in GetProductSearchResults.
@@ -248,7 +247,7 @@ public class CharacteristicType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * Applicable when working with Pre-filled Item Information (Catalogs) functionality.
      * Indicates the order in which eBay's search engine will sort the results if you
      * pass this characteristic as a sort attribute in GetProductSearchResults.
@@ -269,7 +268,7 @@ public class CharacteristicType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * List of one or more valid values for the characteristic.
      * 
      *
@@ -283,7 +282,7 @@ public class CharacteristicType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * List of one or more valid values for the characteristic.
      * 
      *

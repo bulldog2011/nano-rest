@@ -6,14 +6,13 @@ package ebay.apis.eblbasecomponents;
  * 
  * This type is deprecated as the Bid Assistant feature is no longer available.
  * 
- *       
- *      
+ * 
  */
 public enum BidGroupStatusCodeType {
 
     /**
      * 
-   *         
+   * 
    * (out) Indicates that the bid group is open.
    * 
      */
@@ -22,7 +21,7 @@ public enum BidGroupStatusCodeType {
 
     /**
      * 
-   *         
+   * 
    * (out) Indicates that the bid group is Closed.
    * 
      */
@@ -31,7 +30,7 @@ public enum BidGroupStatusCodeType {
 
     /**
      * 
-   *         
+   * 
    * Reserved for future use.
    * 
      */

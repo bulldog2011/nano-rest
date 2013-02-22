@@ -25,8 +25,7 @@ public class SearchDetailsType implements Serializable {
      * 
      * This type is deprecated as <b>GetProduct*</b> calls were deprecated.
      * 
-     *         
-     *        
+     * 
      *
      * @returns java.lang.Boolean
 	 */
@@ -40,8 +39,7 @@ public class SearchDetailsType implements Serializable {
      * 
      * This type is deprecated as <b>GetProduct*</b> calls were deprecated.
      * 
-     *         
-     *        
+     * 
      *
      * @param java.lang.Boolean
 	 */
@@ -52,7 +50,7 @@ public class SearchDetailsType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      *           Indicates whether a listing has an image associated with it.
      * 
      *
@@ -66,7 +64,7 @@ public class SearchDetailsType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      *           Indicates whether a listing has an image associated with it.
      * 
      *
@@ -79,7 +77,7 @@ public class SearchDetailsType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * Indicates whether a listing is no more than one day old.
      * 
      *
@@ -93,7 +91,7 @@ public class SearchDetailsType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * Indicates whether a listing is no more than one day old.
      * 
      *

@@ -317,7 +317,7 @@ public class GetMyeBayBuyingResponseType extends AbstractResponseType implements
      * public getter
      *
      * 
-     *           
+     * 
      * Contains the items that were bid on using the Bid Assistant feature.
      * 
      *
@@ -331,7 +331,7 @@ public class GetMyeBayBuyingResponseType extends AbstractResponseType implements
 	 * public setter
 	 *
      * 
-     *           
+     * 
      * Contains the items that were bid on using the Bid Assistant feature.
      * 
      *

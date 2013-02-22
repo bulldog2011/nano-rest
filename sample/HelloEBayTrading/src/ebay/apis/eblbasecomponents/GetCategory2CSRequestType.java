@@ -9,8 +9,7 @@ import com.leansoft.nano.annotation.*;
  * 
  * This type is deprecated as the call is no longer available.
  * 
- *       
- *      
+ * 
  */
 @RootElement(name = "GetCategory2CSRequest", namespace = "urn:ebay:apis:eBLBaseComponents")
 public class GetCategory2CSRequestType extends AbstractRequestType implements Serializable {
@@ -28,7 +27,7 @@ public class GetCategory2CSRequestType extends AbstractRequestType implements Se
      * public getter
      *
      * 
-     *           
+     * 
      * ID of a category for which to retrieve mappings.
      * If not specified, the call
      * retrieves a map for all categories.
@@ -44,7 +43,7 @@ public class GetCategory2CSRequestType extends AbstractRequestType implements Se
 	 * public setter
 	 *
      * 
-     *           
+     * 
      * ID of a category for which to retrieve mappings.
      * If not specified, the call
      * retrieves a map for all categories.
@@ -59,7 +58,7 @@ public class GetCategory2CSRequestType extends AbstractRequestType implements Se
      * public getter
      *
      * 
-     *           
+     * 
      * A version of the mappings for the site.
      * Typically, an application passes the version value that was returned the last
      * time the application executed this call.
@@ -82,7 +81,7 @@ public class GetCategory2CSRequestType extends AbstractRequestType implements Se
 	 * public setter
 	 *
      * 
-     *           
+     * 
      * A version of the mappings for the site.
      * Typically, an application passes the version value that was returned the last
      * time the application executed this call.

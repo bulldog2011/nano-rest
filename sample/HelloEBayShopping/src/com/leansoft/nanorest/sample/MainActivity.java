@@ -1,5 +1,6 @@
 package com.leansoft.nanorest.sample;
 
+import com.ebay.shopping.ShoppingConfig;
 import com.ebay.shopping.ShoppingService;
 import com.leansoft.nanorest.RequestProcessor;
 import com.leansoft.nanorest.callback.HttpCallback;
@@ -21,11 +22,15 @@ import android.app.Activity;
 public class MainActivity extends Activity {
 	
 	private Button btn;
+	
+	private ShoppingConfig config = new ShoppingConfig();
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		
+		config.setAppId("YOUR_APPID_HERE");
 			
         btn = (Button) this.findViewById(R.id.btn);
         btn.setOnClickListener(new OnClickListener() {
@@ -39,7 +44,8 @@ public class MainActivity extends Activity {
 		        
 				RequestProcessor requestProcessor = ShoppingService.getFindPopularItemsHttpRequest(
 						request, 
-						new FindPopularItemsCallback()
+						new FindPopularItemsCallback(),
+						config
 						);
 				requestProcessor.invokeAsync(MainActivity.this.getApplicationContext());
 			}

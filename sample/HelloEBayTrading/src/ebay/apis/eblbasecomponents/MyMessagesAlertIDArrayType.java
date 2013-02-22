@@ -10,8 +10,7 @@ import java.util.List;
  * 
  * This type is deprecated because <b>MyMessagesAlert*</b> are deprecated.
  * 
- *       
- *      
+ * 
  */
 public class MyMessagesAlertIDArrayType implements Serializable {
 
@@ -25,7 +24,7 @@ public class MyMessagesAlertIDArrayType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * This field will be deprecated in an upcoming release. This field formerly
      * was an ID that uniquely identified an alert for a given user.
      * 
@@ -40,7 +39,7 @@ public class MyMessagesAlertIDArrayType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * This field will be deprecated in an upcoming release. This field formerly
      * was an ID that uniquely identified an alert for a given user.
      * 

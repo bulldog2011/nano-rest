@@ -10,8 +10,7 @@ import java.util.Date;
  * 
  * This type is deprecated because <b>MyMessagesAlert*</b> are deprecated.
  * 
- *       
- *      
+ * 
  */
 public class MyMessagesAlertType implements Serializable {
 
@@ -85,7 +84,7 @@ public class MyMessagesAlertType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * This field will be deprecated in an upcoming release.
      * This field formerly
      * contained the display name of the eBay application that
@@ -102,7 +101,7 @@ public class MyMessagesAlertType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * This field will be deprecated in an upcoming release.
      * This field formerly
      * contained the display name of the eBay application that
@@ -118,7 +117,7 @@ public class MyMessagesAlertType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * This field will be deprecated in an upcoming release.
      * This field formerly
      * contained the displayable user ID of the recipient.
@@ -134,7 +133,7 @@ public class MyMessagesAlertType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * This field will be deprecated in an upcoming release.
      * This field formerly
      * contained the displayable user ID of the recipient.
@@ -149,7 +148,7 @@ public class MyMessagesAlertType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * This field will be deprecated in an upcoming release.
      * This field formerly
      * contained the subject of the alert.
@@ -165,7 +164,7 @@ public class MyMessagesAlertType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * This field will be deprecated in an upcoming release.
      * This field formerly
      * contained the subject of the alert.
@@ -180,7 +179,7 @@ public class MyMessagesAlertType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * This field will be deprecated in an upcoming release.
      * This field formerly
      * contained a number ranging from 0 to 10000 (inclusive),
@@ -197,7 +196,7 @@ public class MyMessagesAlertType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * This field will be deprecated in an upcoming release.
      * This field formerly
      * contained a number ranging from 0 to 10000 (inclusive),
@@ -213,7 +212,7 @@ public class MyMessagesAlertType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * This field will be deprecated in an upcoming release.
      * This field formerly
      * contained an ID that uniquely identifies an alert for a
@@ -230,7 +229,7 @@ public class MyMessagesAlertType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * This field will be deprecated in an upcoming release.
      * This field formerly
      * contained an ID that uniquely identifies an alert for a
@@ -246,7 +245,7 @@ public class MyMessagesAlertType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * This field will be deprecated in an upcoming release.
      * This field formerly
      * contained an ID used by an external application to
@@ -263,7 +262,7 @@ public class MyMessagesAlertType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * This field will be deprecated in an upcoming release.
      * This field formerly
      * contained an ID used by an external application to
@@ -279,7 +278,7 @@ public class MyMessagesAlertType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * This field will be deprecated in an upcoming release.
      * This field formerly
      * contained the content type of the body text. The two
@@ -297,7 +296,7 @@ public class MyMessagesAlertType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * This field will be deprecated in an upcoming release.
      * This field formerly
      * contained the content type of the body text. The two
@@ -314,7 +313,7 @@ public class MyMessagesAlertType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * This field will be deprecated in an upcoming release.
      * This field formerly
      * contained the alert body. This can be either plain text
@@ -335,7 +334,7 @@ public class MyMessagesAlertType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * This field will be deprecated in an upcoming release.
      * This field formerly
      * contained the alert body. This can be either plain text
@@ -355,7 +354,7 @@ public class MyMessagesAlertType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * This field will be deprecated in an upcoming release.
      * This field formerly
      * contained whether or not an alert was resolved, and how.
@@ -371,7 +370,7 @@ public class MyMessagesAlertType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * This field will be deprecated in an upcoming release.
      * This field formerly
      * contained whether or not an alert was resolved, and how.
@@ -386,7 +385,7 @@ public class MyMessagesAlertType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * This field will be deprecated in an upcoming release.
      * This field formerly
      * contained whether or not an alert was viewed by a given
@@ -404,7 +403,7 @@ public class MyMessagesAlertType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * This field will be deprecated in an upcoming release.
      * This field formerly
      * contained whether or not an alert was viewed by a given
@@ -421,7 +420,7 @@ public class MyMessagesAlertType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * This field will be deprecated in an upcoming release.
      * This field formerly
      * contained the date and time an alert was created by a sender.
@@ -437,7 +436,7 @@ public class MyMessagesAlertType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * This field will be deprecated in an upcoming release.
      * This field formerly
      * contained the date and time an alert was created by a sender.
@@ -481,7 +480,7 @@ public class MyMessagesAlertType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * This field will be deprecated in an upcoming release.
      * This field formerly
      * contained the date and time at which an alert expires.
@@ -497,7 +496,7 @@ public class MyMessagesAlertType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * This field will be deprecated in an upcoming release.
      * This field formerly
      * contained the date and time at which an alert expires.
@@ -512,7 +511,7 @@ public class MyMessagesAlertType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * This field will be deprecated in an upcoming release.
      * This field formerly
      * contained the date and time at which an alert is resolved.
@@ -528,7 +527,7 @@ public class MyMessagesAlertType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * This field will be deprecated in an upcoming release.
      * This field formerly
      * contained the date and time at which an alert is resolved.
@@ -543,7 +542,7 @@ public class MyMessagesAlertType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * This field will be deprecated in an upcoming release.
      * This field formerly
      * contained the date and time an alert was last viewed by
@@ -560,7 +559,7 @@ public class MyMessagesAlertType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * This field will be deprecated in an upcoming release.
      * This field formerly
      * contained the date and time an alert was last viewed by
@@ -576,7 +575,7 @@ public class MyMessagesAlertType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * This field will be deprecated in an upcoming release.
      * This field formerly
      * contained a unique eBay item ID associated with an
@@ -593,7 +592,7 @@ public class MyMessagesAlertType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * This field will be deprecated in an upcoming release.
      * This field formerly
      * contained a unique eBay item ID associated with an
@@ -609,7 +608,7 @@ public class MyMessagesAlertType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * This field will be deprecated in an upcoming release.
      * This field formerly
      * contained whether or not a time-delayed
@@ -626,7 +625,7 @@ public class MyMessagesAlertType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * This field will be deprecated in an upcoming release.
      * This field formerly
      * contained whether or not a time-delayed
@@ -642,7 +641,7 @@ public class MyMessagesAlertType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * This field will be deprecated in an upcoming release.
      * This field formerly
      * contained a URL that the recipient must visit to resolve
@@ -659,7 +658,7 @@ public class MyMessagesAlertType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * This field will be deprecated in an upcoming release.
      * This field formerly
      * contained a URL that the recipient must visit to resolve
@@ -675,7 +674,7 @@ public class MyMessagesAlertType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * This field will be deprecated in an upcoming release.
      * This field formerly
      * contained details relating to the response to an alert
@@ -692,7 +691,7 @@ public class MyMessagesAlertType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * This field will be deprecated in an upcoming release.
      * This field formerly
      * contained details relating to the response to an alert
@@ -708,7 +707,7 @@ public class MyMessagesAlertType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * This field will be deprecated in an upcoming release.
      * This field formerly
      * contained details relating to the forwarding of an alert
@@ -726,7 +725,7 @@ public class MyMessagesAlertType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * This field will be deprecated in an upcoming release.
      * This field formerly
      * contained details relating to the forwarding of an alert
@@ -743,7 +742,7 @@ public class MyMessagesAlertType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * This field will be deprecated in an upcoming release.
      * This field formerly
      * contained details relating to a My Messages folder.
@@ -759,7 +758,7 @@ public class MyMessagesAlertType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * This field will be deprecated in an upcoming release.
      * This field formerly
      * contained details relating to a My Messages folder.

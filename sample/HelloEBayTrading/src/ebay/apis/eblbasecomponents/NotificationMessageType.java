@@ -10,6 +10,7 @@ import com.leansoft.nano.annotation.*;
  * (out) A template for an SMS notification message.
  * 
  */
+@RootElement(name = "NotificationMessage", namespace = "urn:ebay:apis:eBLBaseComponents")
 public class NotificationMessageType extends AbstractResponseType implements Serializable {
 
     private static final long serialVersionUID = -1L;

@@ -6,14 +6,13 @@ package ebay.apis.eblbasecomponents;
  * 
  * This type is no longer used; replaced by <b>ShippingLocationDetails</b>.
  * 
- *       
- *      
+ * 
  */
 public enum StatusCodeType {
 
     /**
      * 
-   *         
+   * 
    * (out) Indicates that the region of origin is active.
    * 
      */
@@ -22,7 +21,7 @@ public enum StatusCodeType {
 
     /**
      * 
-   *         
+   * 
    * (out) Indicates that the region of origin is inactive.
    * 
      */
@@ -31,7 +30,7 @@ public enum StatusCodeType {
 
     /**
      * 
-   *         
+   * 
    * Reserved for future use.
    * 
      */

@@ -11,8 +11,7 @@ import java.util.Date;
  * 
  * This type is deprecated as Pictures Manager was retired.
  * 
- *       
- *      
+ * 
  */
 public class PictureManagerPictureType implements Serializable {
 
@@ -35,7 +34,7 @@ public class PictureManagerPictureType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * The URL that identifies the picture in the album. If a URI has
      * spaces, replace them with %20.
      * 
@@ -50,7 +49,7 @@ public class PictureManagerPictureType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * The URL that identifies the picture in the album. If a URI has
      * spaces, replace them with %20.
      * 
@@ -64,7 +63,7 @@ public class PictureManagerPictureType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * The name of the picture, specified by the user.
      * 
      *
@@ -78,7 +77,7 @@ public class PictureManagerPictureType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * The name of the picture, specified by the user.
      * 
      *
@@ -91,7 +90,7 @@ public class PictureManagerPictureType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * The date the picture was uploaded to the Picture Manager account.
      * 
      *
@@ -105,7 +104,7 @@ public class PictureManagerPictureType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * The date the picture was uploaded to the Picture Manager account.
      * 
      *
@@ -118,7 +117,7 @@ public class PictureManagerPictureType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * The type of picture display in Picture Manager.
      * 
      *
@@ -132,7 +131,7 @@ public class PictureManagerPictureType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * The type of picture display in Picture Manager.
      * 
      *

@@ -6,14 +6,13 @@ package ebay.apis.eblbasecomponents;
  * 
  * This type is deprecated as Cross Promotions are no longer supported in the APIs.
  * 
- *       
- *      
+ * 
  */
 public enum PromotionItemPriceTypeCodeType {
 
     /**
      * 
-   *         
+   * 
    * (out) Bid offer in a competitive-bidding listing.
    * 
      */
@@ -22,7 +21,7 @@ public enum PromotionItemPriceTypeCodeType {
 
     /**
      * 
-   *         
+   * 
    * (out) Buy It Now offer in a fixed-price or Buy It Now listing.
    * 
      */
@@ -31,7 +30,7 @@ public enum PromotionItemPriceTypeCodeType {
 
     /**
      * 
-   *         
+   * 
    * (out) Best Offer in Best Offer Only listing.
    * 
      */
@@ -40,7 +39,7 @@ public enum PromotionItemPriceTypeCodeType {
 
     /**
      * 
-   *         
+   * 
    * (out) Advertised price for a Classified Ad format listing.
    * 
      */
@@ -49,7 +48,7 @@ public enum PromotionItemPriceTypeCodeType {
 
     /**
      * 
-   *         
+   * 
    * (out) Reserved for internal or future use.
    * 
      */

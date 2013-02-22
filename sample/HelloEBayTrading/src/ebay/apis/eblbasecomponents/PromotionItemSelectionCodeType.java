@@ -6,14 +6,13 @@ package ebay.apis.eblbasecomponents;
  * 
  * This type is deprecated as Cross Promotions are no longer supported in the APIs.
  * 
- *       
- *      
+ * 
  */
 public enum PromotionItemSelectionCodeType {
 
     /**
      * 
-   *         
+   * 
    * (out) Manual selection.
    * 
      */
@@ -22,7 +21,7 @@ public enum PromotionItemSelectionCodeType {
 
     /**
      * 
-   *         
+   * 
    * (out) Automatic selection.
    * 
      */
@@ -31,7 +30,7 @@ public enum PromotionItemSelectionCodeType {
 
     /**
      * 
-   *         
+   * 
    * (out) Reserved for internal or future use.
    * 
      */

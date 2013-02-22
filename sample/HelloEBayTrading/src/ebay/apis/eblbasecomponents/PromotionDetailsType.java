@@ -9,8 +9,7 @@ import com.leansoft.nano.annotation.*;
  * 
  * This type is deprecated as Cross Promotions are no longer supported in the APIs.
  * 
- *       
- *      
+ * 
  */
 public class PromotionDetailsType implements Serializable {
 
@@ -33,7 +32,7 @@ public class PromotionDetailsType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * The price of the cross-promoted item in the currency of the site upon which
      * the item is listed. If the item is listed on a site different
      * from the site specified in the request, then ConvertedPromotionPrice is also
@@ -50,7 +49,7 @@ public class PromotionDetailsType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * The price of the cross-promoted item in the currency of the site upon which
      * the item is listed. If the item is listed on a site different
      * from the site specified in the request, then ConvertedPromotionPrice is also
@@ -66,7 +65,7 @@ public class PromotionDetailsType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * The listing type for the promoted item and how the item price is used. Not
      * related to the Promotional Price Display feature.
      * 
@@ -81,7 +80,7 @@ public class PromotionDetailsType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * The listing type for the promoted item and how the item price is used. Not
      * related to the Promotional Price Display feature.
      * 
@@ -95,7 +94,7 @@ public class PromotionDetailsType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * Bid count if the item is an auction item and has bids.
      * 
      *
@@ -109,7 +108,7 @@ public class PromotionDetailsType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * Bid count if the item is an auction item and has bids.
      * 
      *
@@ -122,7 +121,7 @@ public class PromotionDetailsType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * The converted price of the cross-promoted item. Emitted
      * only when the item is listed on a site other than the site specified in the
      * request. Returns the price in the currency of the site specified in the
@@ -139,7 +138,7 @@ public class PromotionDetailsType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * The converted price of the cross-promoted item. Emitted
      * only when the item is listed on a site other than the site specified in the
      * request. Returns the price in the currency of the site specified in the

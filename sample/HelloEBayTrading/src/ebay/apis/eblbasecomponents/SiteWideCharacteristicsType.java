@@ -10,8 +10,7 @@ import java.util.List;
  * 
  * This type is deprecated because the calls that use it are deprected.
  * 
- *       
- *      
+ * 
  */
 public class SiteWideCharacteristicsType implements Serializable {
 
@@ -28,7 +27,7 @@ public class SiteWideCharacteristicsType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * No longer applicable to any category.
      * 
      *
@@ -42,7 +41,7 @@ public class SiteWideCharacteristicsType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * No longer applicable to any category.
      * 
      *
@@ -55,7 +54,7 @@ public class SiteWideCharacteristicsType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * A category that does not support the specified site-wide characteristics set.
      * 
      *
@@ -69,7 +68,7 @@ public class SiteWideCharacteristicsType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * A category that does not support the specified site-wide characteristics set.
      * 
      *

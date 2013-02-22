@@ -1,5 +1,6 @@
 package com.leansoft.nanorest.sample;
 
+import com.ebay.finding.FindingConfig;
 import com.ebay.finding.FindingService;
 import com.ebay.marketplace.search.v1.services.AckValue;
 import com.ebay.marketplace.search.v1.services.FindItemsByKeywordsRequest;
@@ -21,11 +22,15 @@ import android.app.Activity;
 public class MainActivity extends Activity {
 	
 	private Button btn;
+	
+	private FindingConfig config = new FindingConfig();
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		
+		config.setAppName("YOUR_APPNAME_HERE");
 			
         btn = (Button) this.findViewById(R.id.btn);
         btn.setOnClickListener(new OnClickListener() {
@@ -42,7 +47,8 @@ public class MainActivity extends Activity {
 		        
 				RequestProcessor requestProcessor = FindingService.getFindItemsByKeywordsHttpRequest(
 						request, 
-						new FindItemsByKeywordsCallback()
+						new FindItemsByKeywordsCallback(),
+						config
 						);
 				requestProcessor.invokeAsync(MainActivity.this.getApplicationContext());
 			}

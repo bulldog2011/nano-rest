@@ -6,14 +6,13 @@ package ebay.apis.eblbasecomponents;
  * 
  * This type is deprecated because this type is not used by any call.
  * 
- *       
- *      
+ * 
  */
 public enum BidderStatusCodeType {
 
     /**
      * 
-   *         
+   * 
    * Seller has approved the bidder.
    * 
      */
@@ -22,7 +21,7 @@ public enum BidderStatusCodeType {
 
     /**
      * 
-   *         
+   * 
    * Seller has denied the bidder's approval request.
    * 
      */
@@ -31,7 +30,7 @@ public enum BidderStatusCodeType {
 
     /**
      * 
-   *         
+   * 
    * Seller has not yet approved or denied the
    * bidder (or the status is still being processed).
    * 
@@ -41,7 +40,7 @@ public enum BidderStatusCodeType {
 
     /**
      * 
-   *         
+   * 
    * Reserved for internal or future use.
    * 
      */

@@ -9,8 +9,7 @@ import com.leansoft.nano.annotation.*;
  *  
  * This type is deprecated as the eBay Express is no longer available.
  * 
- *       
- *      
+ * 
  */
 public class ExpressPicturesRequiredDefinitionType implements Serializable {
 

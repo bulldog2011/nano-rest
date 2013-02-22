@@ -10,6 +10,7 @@ import com.leansoft.nano.annotation.*;
  * This event is not functional. 
  * 
  */
+@RootElement(name = "ItemsCanceledEvent", namespace = "urn:ebay:apis:eBLBaseComponents")
 public class ItemsCanceledEventType extends AbstractResponseType implements Serializable {
 
     private static final long serialVersionUID = -1L;

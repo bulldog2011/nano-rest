@@ -6,14 +6,13 @@ package ebay.apis.eblbasecomponents;
  * 
  * This type is deprecated as Cross Promotions are no longer supported in the APIs.
  * 
- *       
- *      
+ * 
  */
 public enum PromotionSchemeCodeType {
 
     /**
      * 
-   *         
+   * 
    * The seller specifies individual items in the store that are
    * promoted when a buyer views, bids on, or purchases a store item.
    * 
@@ -23,7 +22,7 @@ public enum PromotionSchemeCodeType {
 
     /**
      * 
-   *         
+   * 
    * The seller specifies a store category from which items are promoted
    * when a buyer views, bids on, or purchases an individual item in the store.
    * 
@@ -33,7 +32,7 @@ public enum PromotionSchemeCodeType {
 
     /**
      * 
-   *         
+   * 
    * The seller specifies referring and promoted categories, both from
    * the store. When a buyer views or acts on any item from that category, items
    * from the promoted category are also displayed.
@@ -44,7 +43,7 @@ public enum PromotionSchemeCodeType {
 
     /**
      * 
-   *         
+   * 
    * The seller specifies a referring item and defines promoted items
    * selected from a store category, eBay category, or keywords.
    * 
@@ -54,7 +53,7 @@ public enum PromotionSchemeCodeType {
 
     /**
      * 
-   *         
+   * 
    * The seller specifies a store category or eBay category, with
    * optional keywords, for referring items and one for promoted items. When a
    * referring item is selected from the category and keywords, items from the
@@ -66,7 +65,7 @@ public enum PromotionSchemeCodeType {
 
     /**
      * 
-   *         
+   * 
    * This scheme is returned as a backfill scheme used to promote items.
    * 
      */
@@ -75,7 +74,7 @@ public enum PromotionSchemeCodeType {
 
     /**
      * 
-   *         
+   * 
    * This scheme is returned as related category scheme used to promote
    * items.
    * 
@@ -85,7 +84,7 @@ public enum PromotionSchemeCodeType {
 
     /**
      * 
-   *         
+   * 
    * This scheme is returned as a backfill scheme used to promote items.
    * 
      */
@@ -94,7 +93,7 @@ public enum PromotionSchemeCodeType {
 
     /**
      * 
-   *         
+   * 
    * This scheme is returned as a backfill scheme used to promote items.
    * 
      */
@@ -103,7 +102,7 @@ public enum PromotionSchemeCodeType {
 
     /**
      * 
-   *         
+   * 
    * Reserved for internal or future use.
    * 
      */

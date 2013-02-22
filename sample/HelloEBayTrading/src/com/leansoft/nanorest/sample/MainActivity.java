@@ -21,20 +21,21 @@ import android.app.Activity;
 public class MainActivity extends Activity {
 	
 	private Button btn;
+	
+	private TradingConfig config = new TradingConfig();
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		
+		config.seteBayToken("YOUR_TOKEN_HERE");
 			
         btn = (Button) this.findViewById(R.id.btn);
         btn.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View arg0) {
-				
-				TradingConfig config = new TradingConfig();
-				config.seteBayToken("YOUR_TOKEN_HERE");
 				
 				GeteBayOfficialTimeRequestType request = new GeteBayOfficialTimeRequestType();
 		        

@@ -9,8 +9,7 @@ import com.leansoft.nano.annotation.*;
  * 
  * This type is deprecated as the eBay Express is no longer available.
  * 
- *       
- *      
+ * 
  */
 public class ExpressItemRequirementsType implements Serializable {
 
@@ -75,7 +74,7 @@ public class ExpressItemRequirementsType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * If false, indicates that an item is not Express-eligible because
      * the seller is not Express-eligible. Only returned if false,
      * and no other settings are returned in this case.
@@ -91,7 +90,7 @@ public class ExpressItemRequirementsType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * If false, indicates that an item is not Express-eligible because
      * the seller is not Express-eligible. Only returned if false,
      * and no other settings are returned in this case.
@@ -106,7 +105,7 @@ public class ExpressItemRequirementsType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * If true, this field indicates the item was opted out of Express;
      * that is, ExpressOptOut was true in the listing request.
      * Only returned if true, and no other settings are returned in this case.
@@ -122,7 +121,7 @@ public class ExpressItemRequirementsType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * If true, this field indicates the item was opted out of Express;
      * that is, ExpressOptOut was true in the listing request.
      * Only returned if true, and no other settings are returned in this case.
@@ -137,7 +136,7 @@ public class ExpressItemRequirementsType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * If true, indicates eBay has marked the item as eligible for
      * eBay Express based on direct evaluation. Only returned if true,
      * and no other settings are returned in this case.
@@ -153,7 +152,7 @@ public class ExpressItemRequirementsType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * If true, indicates eBay has marked the item as eligible for
      * eBay Express based on direct evaluation. Only returned if true,
      * and no other settings are returned in this case.
@@ -168,7 +167,7 @@ public class ExpressItemRequirementsType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * If true, indicates the item listing format is eligible for Express.
      * If false, the listing format is ineligible (and the item is therefore
      * ineligible).
@@ -184,7 +183,7 @@ public class ExpressItemRequirementsType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * If true, indicates the item listing format is eligible for Express.
      * If false, the listing format is ineligible (and the item is therefore
      * ineligible).
@@ -199,7 +198,7 @@ public class ExpressItemRequirementsType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * If true, the item's primary category is enabled for Express.
      * If false, the primary category is not enabled for Express
      * (and the item is therefore ineligible).
@@ -215,7 +214,7 @@ public class ExpressItemRequirementsType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * If true, the item's primary category is enabled for Express.
      * If false, the primary category is not enabled for Express
      * (and the item is therefore ineligible).
@@ -230,7 +229,7 @@ public class ExpressItemRequirementsType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * If true, the seller has an Express-eligible PayPal account.
      * 
      *
@@ -244,7 +243,7 @@ public class ExpressItemRequirementsType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * If true, the seller has an Express-eligible PayPal account.
      * 
      *
@@ -257,7 +256,7 @@ public class ExpressItemRequirementsType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * If true, domestic shipping costs are specified for the item.
      * If false, they aren't specified (and the item is therefore ineligible).
      * 
@@ -272,7 +271,7 @@ public class ExpressItemRequirementsType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * If true, domestic shipping costs are specified for the item.
      * If false, they aren't specified (and the item is therefore ineligible).
      * 
@@ -286,7 +285,7 @@ public class ExpressItemRequirementsType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * If true, the item is covered by a return policy that meets
      * the site's requirements for Express.
      * Only returned for Express Germany. (A return policy is optional for
@@ -303,7 +302,7 @@ public class ExpressItemRequirementsType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * If true, the item is covered by a return policy that meets
      * the site's requirements for Express.
      * Only returned for Express Germany. (A return policy is optional for
@@ -319,7 +318,7 @@ public class ExpressItemRequirementsType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * If true, the item includes a picture.
      * If false, the item doesn't include a picture.
      * Only returned if the category requires a picture for Express.
@@ -336,7 +335,7 @@ public class ExpressItemRequirementsType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * If true, the item includes a picture.
      * If false, the item doesn't include a picture.
      * Only returned if the category requires a picture for Express.
@@ -352,7 +351,7 @@ public class ExpressItemRequirementsType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * If true, the item specifies an eligible item condition.
      * If false, the item doesn't specify an eligible item condition.
      * Only returned if the category requires an item condition for Express.
@@ -369,7 +368,7 @@ public class ExpressItemRequirementsType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * If true, the item specifies an eligible item condition.
      * If false, the item doesn't specify an eligible item condition.
      * Only returned if the category requires an item condition for Express.
@@ -385,7 +384,7 @@ public class ExpressItemRequirementsType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * If true, the price of the item is above the minimum price allowed on
      * Express. That is, the StartPrice, BuyItNowPrice,
      * or CurrentPrice is above the minimum.)
@@ -401,7 +400,7 @@ public class ExpressItemRequirementsType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * If true, the price of the item is above the minimum price allowed on
      * Express. That is, the StartPrice, BuyItNowPrice,
      * or CurrentPrice is above the minimum.)
@@ -416,7 +415,7 @@ public class ExpressItemRequirementsType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * If true, the price of the item is below the maximum price
      * allowed on Express. (That is, the StartPrice, BuyItNowPrice,
      * or CurrentPrice is below the maximum.)
@@ -432,7 +431,7 @@ public class ExpressItemRequirementsType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * If true, the price of the item is below the maximum price
      * allowed on Express. (That is, the StartPrice, BuyItNowPrice,
      * or CurrentPrice is below the maximum.)
@@ -447,7 +446,7 @@ public class ExpressItemRequirementsType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * If true, indicates the item meets the site's eBay Express
      * requirements for checkout. (A common case when this could be false
      * would be when ThirdPartyCheckout is true but
@@ -464,7 +463,7 @@ public class ExpressItemRequirementsType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * If true, indicates the item meets the site's eBay Express
      * requirements for checkout. (A common case when this could be false
      * would be when ThirdPartyCheckout is true but
@@ -480,7 +479,7 @@ public class ExpressItemRequirementsType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * If true, the item has no pre-approved bidder list.
      * 
      *
@@ -494,7 +493,7 @@ public class ExpressItemRequirementsType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * If true, the item has no pre-approved bidder list.
      * 
      *
@@ -507,7 +506,7 @@ public class ExpressItemRequirementsType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * If true, the item is not an eBay Giving Works item.
      * Only returned if the site does not allow charity listings on Express.
      * (In other words, if the site excludes charity listings from Express,
@@ -524,7 +523,7 @@ public class ExpressItemRequirementsType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * If true, the item is not an eBay Giving Works item.
      * Only returned if the site does not allow charity listings on Express.
      * (In other words, if the site excludes charity listings from Express,
@@ -540,7 +539,7 @@ public class ExpressItemRequirementsType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * If true, the item offers a combined shipping discount.
      * Only returned if the Express site has an item-level
      * combined shipping discount requirement.
@@ -558,7 +557,7 @@ public class ExpressItemRequirementsType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * If true, the item offers a combined shipping discount.
      * Only returned if the Express site has an item-level
      * combined shipping discount requirement.
@@ -575,7 +574,7 @@ public class ExpressItemRequirementsType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * If true, the country you specified for the item meets the
      * specified site's shipping origin requirements for Express.
      * 
@@ -590,7 +589,7 @@ public class ExpressItemRequirementsType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * If true, the country you specified for the item meets the
      * specified site's shipping origin requirements for Express.
      * 
@@ -604,7 +603,7 @@ public class ExpressItemRequirementsType implements Serializable {
      * public getter
      *
      * 
-     *         
+     * 
      * If true, the PayPal account for the item accepts payments
      * from a buyer with an unconfirmed address. If false, the
      * account blocks unconfirmed addresses (and the item is therefore
@@ -621,7 +620,7 @@ public class ExpressItemRequirementsType implements Serializable {
 	 * public setter
 	 *
      * 
-     *         
+     * 
      * If true, the PayPal account for the item accepts payments
      * from a buyer with an unconfirmed address. If false, the
      * account blocks unconfirmed addresses (and the item is therefore
