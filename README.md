@@ -40,7 +40,8 @@ Download latest [0.5.0 snapshot release](https://github.com/bulldog2011/bulldog-
 1. [Hello eBay Finding](https://github.com/bulldog2011/nano-rest/tree/master/sample/HelloEBayFinding)
 2. [Hello eBay Shopping](https://github.com/bulldog2011/nano-rest/tree/master/sample/HelloEBayShopping)
 3. [Hello eBay Trading](https://github.com/bulldog2011/nano-rest/tree/master/sample/HelloEBayTrading)  
-4. [eBay Search App](https://github.com/bulldog2011/nano-rest/tree/master/sample/EBaySearch)
+4. [eBay Search App](https://github.com/bulldog2011/nano-rest/tree/master/sample/EBaySearch), seach using eBay Finding API.
+5. [eBay Demo](https://github.com/bulldog2011/nano-rest/tree/master/sample/EBayDemo), combile eBay Finding/Shopping/Trading API calls in one App. 
 
 ###Copyright and License
 Copyright 2012 LeanSoft, Inc.
