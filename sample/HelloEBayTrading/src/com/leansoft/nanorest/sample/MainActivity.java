@@ -1,7 +1,7 @@
 package com.leansoft.nanorest.sample;
 
-import com.ebay.shopping.TradingConfig;
-import com.ebay.shopping.TradingService;
+import com.ebay.trading.TradingConfig;
+import com.ebay.trading.TradingService;
 import com.leansoft.nanorest.RequestProcessor;
 import com.leansoft.nanorest.callback.HttpCallback;
 import com.leansoft.nanorest.domain.ResponseStatus;
