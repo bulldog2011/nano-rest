@@ -1,3 +1,8 @@
+
+
+##_DISCLAIMER_
+#### This project has been deprecated, for web service on Android, please see [Nano](https://github.com/bulldog2011/nano) which has been updated to support SOAP/XML based web service directly.
+
 nano-rest
 =========
 
